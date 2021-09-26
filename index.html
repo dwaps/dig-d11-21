@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mon site</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <header>
+      <div id="logo">
+        <a href="">
+          <img src="assets/img/logo.jpg" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#presentation">Présentation</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <h1>Bienvenue sur ce site !</h1>
+      </section>
+      <section id="presentation">
+        <h2>Qui sommes-nous ?</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, modi. Exercitationem, quis. Amet quam commodi aspernatur? <a href="">fghjklkjhg</a> Neque harum quidem temporibus sunt facilis porro unde asperiores eveniet! Vitae veritatis doloribus unde.
+        </p>
+      </section>
+      <section id="services">
+        <h2>Nos prestations</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, consectetur? Voluptates neque provident est similique pariatur nemo aperiam earum doloribus amet tempore nobis aliquam magnam, officiis culpa odit architecto adipisci.</p>
+      </section>
+      <section id="contact">
+        <h2>Nous contacter</h2>
+        <form action="#" method="GET">
+          <fieldset>
+            <legend>Informations</legend>
+            <div>
+              <p>Civilités:</p>
+              <span>Monsieur: <input checked type="radio" name="civ"></span>
+              <span>Madame: <input type="radio" name="civ"></span>
+            </div>
+            <div>
+              <span>Nom: <input type="text" name="lastname" placeholder="Votre nom"></span>
+              <span>Prénom: <input type="text" name="firstname" placeholder="Votre prénom"></span>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Message</legend>
+            <span>Sujet du message: <input name="subject" type="text"></span>
+            <span>Votre message: <textarea name="message"></textarea></span>
+          </fieldset>
+          <button type="submit">Envoyer</button>
+          <button type="reset">Effacer</button>
+        </form>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; DWAPS Michael - 2021</p>
+    </footer>
+  </body>
+
+</html>
