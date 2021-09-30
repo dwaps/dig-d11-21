@@ -1,0 +1,89 @@
+/* Sélecteur universel */
+* {
+  margin: 10px;
+  box-sizing: border;
+}
+
+/* Sélecteur d'éléments */
+h3, p {
+  color: red;
+}
+
+/* Sélecteur de descendants */
+section h3 {
+  color:  darkred;
+}
+
+/* Sélecteur de parents adjacents */
+p + p {
+  background-color: lightgreen;
+}
+
+/* Sélecteur d'enfants (direct) */
+section > p {
+  background-color: purple;
+}
+
+/* Sélecteur de frères */
+p ~ p {
+  font-size: 1.7rem;
+}
+
+/* Sélecteur d'attributs */
+[title][href] {
+  font-size: 2rem;
+  color: white;
+}
+[class="par par-small par-lg"] {
+  color: green;
+  font-weight: bold;
+}
+.par-lg {
+  color: yellow;
+}
+/* 
+  ^= --> Commence par
+  $= --> Fini par
+  *= --> Contient la séquence de caractères
+  ~= --> Contient le mot exact
+  = --> Contient exactement
+ */
+[class$="par-"] {
+  color: darkblue;
+}
+
+/* Sélecteur de pseudo éléments */
+h3::before {
+  content: " 🙂 " url(../favicon.png);
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: darkmagenta;
+}
+
+::selection {
+  background: #000;
+  color: white;
+}
+
+/* Sélecteur de pseudo classes dynamiques */
+a:hover {
+  display: inline-block;
+  transform: scale(2);
+}
+
+/* Sélecteur de pseudo classes structurelles */
+li:nth-of-type(2) { /* --> 2ème du type */
+  background: red;
+  color: white;
+}
+
+li:nth-child(3) { /* 3ème enfant */
+  /* background: black;
+  color: white; */
+}
+
+li:nth-child(3n-2) {
+  background: black;
+  color: white;
+}
