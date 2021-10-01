@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body>
+  <body id="body" onscroll="pageScrolled()">
 
     <header>
       <div id="logo">
         <a href="">
-          <img src="assets/img/logo.jpg" alt="Logo">
+          <img src="assets/img/logo.jpg" alt="Logo" onerror="this.src = 'assets/img/no-img.png'">
         </a>
       </div>
       <nav>
@@ -67,6 +67,13 @@
     <footer>
       <p>&copy; DWAPS Michael - 2021</p>
     </footer>
+
+    <script>
+      function pageScrolled() {
+        if (window.scrollY > 50) body.classList.add('scrolled');
+        else body.classList.remove('scrolled');
+      }
+    </script>
   </body>
 
 </html>

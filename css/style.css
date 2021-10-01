@@ -39,11 +39,19 @@ header {
   justify-content: space-between;
   background-color: tomato;
   box-shadow: 0 1px 5px #333;
+  transition: background-color 700ms ease-in-out;
 }
+  body.scrolled header {
+    background-color: #6b6a6a9a;
+  }
+  body.scrolled header #logo img {
+    width: 50px;
+  }
   #logo img {
     width: 100px;
     margin-top: 10px;
     margin-left: 10px;
+    transition: width 200ms ease-in-out;
   }
 
 /* NAV */
