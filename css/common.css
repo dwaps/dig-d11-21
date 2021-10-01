@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0dbc7;
+  font-family: sans-serif;
+  line-height: 30px;
+  color: #444;
+}
+
+h1, h2 {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+  a:hover,
+  a:active,
+  a:focus {
+    color: #aaa;
+  }

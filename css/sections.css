@@ -1,0 +1,12 @@
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px;
+  min-height: 500px;
+  margin-bottom: 20px;
+}
+  #contact {
+    text-align: left;
+  }
