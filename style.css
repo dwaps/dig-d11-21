@@ -31,25 +31,22 @@ header {
 
 main {
   display: flex;
-  flex: 1;
+  flex-direction: column;
 }
-  nav, aside {
-    width: 250px;
+  nav {
+    background-color: deepskyblue;
+    text-transform: uppercase;
+    text-align: center;
+    order: 1;
+    display: flex;
+    flex-direction: column;
   }
+    nav > * {
+      padding: 0.7rem 0;
+    }
   section {
     background-color: burlywood;
   }
-  nav {
-    display: flex;
-    flex-direction: column;
-    background-color: deepskyblue;
-    order: -1;
-    text-transform: uppercase;
-    text-align: center;
-  }
-    nav > * {
-      padding: 10px 0;
-    }
   aside {
     background-color: magenta;
   }
@@ -58,11 +55,24 @@ footer {
   background-color: indianred;
 }
 
-@media screen and (max-width: 880px) {
-  nav > a:last-of-type {
-    order: -1;
+/* Medium Screen */
+@media (min-width: 768px) {
+  main {
+    flex-flow: row wrap;
+    flex: 1 0 auto;
   }
-  aside {
-    display: none;
+    nav {
+      width: calc(20vw - 8px);
+      order: -1;
+    }
+    section {
+      flex: 1;
+    }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  nav, aside {
+    width: 200px;
   }
 }
