@@ -1,0 +1,89 @@
+#accueil{
+    margin-top: 25px;
+    background-color: rgb(79, 93, 138);
+}
+
+nav{
+    background-color: rgb(63, 63, 63);
+
+}
+
+.carousel{
+    text-align: center;
+}
+.carousel-item img{
+    width: 900px;
+    height: 300px;
+}
+#service{
+    margin-top: 50px;
+    display: flex;
+    
+    border-bottom: solid;
+
+}
+
+.serv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.serv img{
+    width: 300px;
+    height: 300px;
+}
+
+#team{
+    margin-top: 50px;
+    display: flex;
+    
+    border-bottom: solid;
+}
+
+.team{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.team img{
+    width: 300px;
+    height: 300px;
+}
+
+#portfolio{
+    margin-top: 50px;
+    display: flex;
+    
+    border-bottom: solid;
+}
+
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.portfolio p{
+    margin-top: 50px;
+}
+.portfolio img{
+    margin-bottom: 50px;
+}
+#contact{
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 20px;
+}
+#maps img{
+    width: 550px;
+    height: 350px;
+}
+footer{
+    text-align: center;
+    color: rgb(74, 115, 250);
+    background-color: rgb(63, 63, 63);
+}

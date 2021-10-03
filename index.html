@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" /> <!-- encodage de la page -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--<link rel="stylesheet" href="css\.css" /> --> <!-- lien vers le css -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="asset/style/styleb.css">
+    <title>Mon_site</title>
+</head>
+<body onscroll="scrolled()">
+
+    <!-- HEADER -->
+    <header id="header">
+        <a href="index.html"><img src="./asset/img/logo.jpg" alt="Logo" onerror="this.src = 'assets/img/no-img.png'"></a>
+
+        <nav id="nav" class="navbar navbar-expand-md justify-content-center fixed-top nav">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+
+    <!-- MAIN CONTENT-->
+    <main>
+      <div id="content" class="container"> 
+        <section id="accueil" class="container-fluid">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel" data-slide-to="1"></li>
+              <li data-target="#carousel" data-slide-to="2"></li>
+              <li data-target="#carousel" data-slide-to="3"></li>
+              <li data-target="#carousel" data-slide-to="4"></li>
+              <li data-target="#carousel" data-slide-to="5"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="asset/img/carouselImg1.jpeg" class="rounded" alt="img1">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/img/carouselImg2.jpg" class="rounded" alt="img2">
+              </div>
+              <div class="carousel-item">
+                <img src="asset/img/carouselImg3.jpg" class="rounded" alt="img3">
+              </div>
+                  <div class="carousel-item">
+                    <img src="asset/img/carouselImg4.jpeg" class="rounded" alt="img4">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="asset/img/carouselImg5.jpg" class="rounded" alt="img5">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="asset/img/carouselImg6.jpg" class="rounded" alt="img6">
+                  </div>
+                </div>
+                
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+
+              </div>
+            </section>
+            
+            <section id="service" class="row">
+              <div id="s1" class="serv col-md-4">
+                <img src="asset/img/servImg1.png" alt="logoS1">
+                <h2>Service 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              
+              <div id="s2" class="serv col-md-4">
+                <img src="asset/img/servImg2.png" alt="logoS2">
+                <h2>Service 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              
+              <div id="s3" class="serv col-md-4">
+                <img src="asset/img/servImg3.jpg" alt="logoS3">
+                <h2>Service 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </section>
+            
+            <section id="team" class="row">
+              <div id="t1" class="team col-md-4">
+                <img src="asset/img/teamImg1.png" alt="imgT1">
+                <h2>Team member 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              
+              <div id="t2" class="team col-md-4">
+                <img src="asset/img/teamImg2.png" alt="imgT2">
+                <h2>Team member 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              
+              <div id="t3" class="team col-md-4">
+                <img src="asset/img/teamImg3.png" alt="imgT3">
+                <h2>Team member 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </section>
+            
+            <section id="portfolio">
+              <div class="col-md-6 portfolio">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dui mauris, sagittis ut malesuada at, vestibulum sit amet est. Maecenas hendrerit aliquet ornare. Donec orci augue, aliquam ac feugiat vestibulum, ultrices non nunc. Suspendisse posuere bibendum elit. Nunc suscipit lacus a elit pulvinar, ac posuere est dapibus. Ut tincidunt nisl a enim consequat, eget auctor sapien ullamcorper. Donec varius fermentum nibh et fringilla. Mauris lacinia eu quam ac luctus.</p>
+              </div>
+              <div class="col-md-6 portfolio">
+                <img src="asset/img/portfolioImg1.jpg" alt="imgPortfolio">
+              </div>
+            </section>
+            
+            <section id="contact" class="row">
+              
+              <div id="maps" class="col-md-6">
+                <img src="asset/img/maps.png" alt="map">
+              </div>
+              
+              <div class="col-md-6">
+                <form id="contactForm" >
+                  <div class="form-floating">
+                    <label for="name">Name :</label>
+                      <input class="form-control" id="name" type="text" placeholder="ex:DarkMichel" data-sb-validations="required" />
+                      
+                  <div class="form-floating">
+                    <label for="email">Email address :</label>
+                      <input class="form-control" id="email" type="email" placeholder="ex:dark.michel@gmail.com" data-sb-validations="required,email" />
+                      
+                  <div class="form-floating">
+                    <label for="pwd">Password :</label>
+                      <input class="form-control" id="pwd" type="pwd" placeholder="entrez votre mot de passe" data-sb-validations="required" />
+                      
+                  <div class="form-floating">
+                    <label for="pwd">Password :</label>
+                    <input class="form-control" id="pwd" type="pwd" placeholder="verifiez votre mot de passe" data-sb-validations="required" />
+                  
+                  <br />               
+                  <button class="btn btn-primary text-uppercase disabled" id="submitButton" type="submit">Register</button>
+                </form>
+              </div>
+              </section>
+          </div>
+          </main>     
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© DWAPS Michael - 2021</p>
+    </footer>
+</body>
