@@ -27,37 +27,23 @@ a {
 .container {
   background: #b7b7b7;
   display: grid;
-  /* grid-template-columns: 200px 1fr 200px; */
-  /* grid-template-rows: 90px repeat(2, 1fr) 90px; */
   grid-template: 90px repeat(2, 1fr) 90px / 200px 1fr 200px;
+  grid-template-areas: "header header header"
+                       "nav sect1 aside"
+                       "nav sect2 aside"
+                       "footer footer footer";
   min-height: 100vh;
-  /* column-gap: 8px; */
-  /* row-gap: 4px; */
   gap: 4px 8px;
 }
   .container > :not(.main) {
     padding: 10px;
   }
-  nav {
-    grid-row: 2 / 4;
-  }
-  aside {
-    /* grid-row: 2 / 4; */
-    /* grid-column: 3 / 4; */
-    grid-area: 2 / 3 / span 1 / -1;
-  }
-  header, footer {
-    grid-column: 1 / 4;
-  }
-
-@media (max-width: 580px) {
-  /* .container {
-    grid-template-columns: 1fr;
-  }
-    nav {
-      grid-column: 1 / -1;
-    } */
-}
+  header { grid-area: header }
+  nav { grid-area: nav }
+  section:first-of-type { grid-area: sect1 }
+  section:last-of-type { grid-area: sect2 }
+  aside { grid-area: aside }
+  footer { grid-area: footer }
 
 header { background-color: blueviolet; }
 nav { background-color: crimson; }
