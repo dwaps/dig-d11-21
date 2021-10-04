@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+:root {
+  --table-odd-row: hsl(16, 100%, 60%);
+  --table-even-row: hsl(16, 100%, 80%);
+  --table-hover: hsl(16, 100%, 40%);
+}
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -10,6 +16,7 @@ body {
   color: white;
   text-align: center;
   min-height: 100vh;
+  min-width: 380px;
 }
 
 a {
@@ -17,30 +24,94 @@ a {
   text-decoration: none;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-flow: dense;
-  gap: 10px;
-  margin: 10px;
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
-  .container > * {
-    padding: 10px;
+  table caption {
+    font-size: 1.6rem;
+    padding: 16px;
   }
+  table tr {
+    cursor: pointer;
+  }
+  table tr:nth-child(odd) {
+    background-color: var(--table-odd-row);
+  }
+  table tr:nth-child(even) {
+    background-color: var(--table-even-row);
+  }
+  table tr:hover {
+    background-color: var(--table-hover);
+  }
+    table td, table th {
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    table th {
+      background-color: crimson;
+      text-shadow: 1px 1px 3px #444;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+    }
+    .t-actions {
+      word-spacing: 20px;
+    }
 
-[href$=".pdf"] {
-  background-color: cadetblue;
-  grid-column: 1;
+/* Medium Screen */
+@media (max-width: 992px) {
+  thead {
+    display: none;
+  }
+    tr {
+      display: grid;
+      grid-template-columns: 4em repeat(3, 1fr) 5em;
+      grid-template-areas:  "id name name   name actions"
+                            ".  job  job    job  ."
+                            ".  size weight qi   .";
+    }
+      tr > * {
+        text-align: left;
+      }
+      table td, table th {
+        border: none;
+      }
+      .t-id { grid-area: id }
+      .t-name { grid-area: name }
+      .t-actions { grid-area: actions }
+      .t-job { grid-area: job }
+      .t-size { grid-area: size }
+      .t-weight { grid-area: weight }
+      .t-qi { grid-area: qi }
+      .t-id, .t-name, .t-actions {
+        padding-top: 20px;
+      }
+      .t-name {
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-shadow: 1px 1px 3px #444;
+      }
+      .t-job {
+        position: relative;
+        top: -15px;
+      }
+      .t-job::before {
+        content: "(";
+      }
+      .t-job::after {
+        content: ")";
+      }
+      [data-label] {
+        font-size: 1.3rem;
+        padding-bottom: 20px;
+      }
+      [data-label]::before {
+        content: attr(data-label) ": ";
+      }
 }
-[href$=".doc"] {
-  background-color: coral;
-  grid-column: 2;
+
+/* Small Screen */
+@media (max-width: 768px) {
 }
-[href$=".xls"] {
-  background-color: cornflowerblue;
-  grid-column: 3;
-}
-[href$=".xml"] {
-  background-color: goldenrod;
-  grid-column: 4;
-}
+
