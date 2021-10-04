@@ -1,10 +1,8 @@
 * {
-  box-sizing: border;
+  box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  flex-flow: column nowrap;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
@@ -19,60 +17,23 @@ a {
   text-decoration: none;
 }
 
-header, footer, main > * {
-  padding: 10px;
-  margin: 4px;
-  border-radius: 4px;
+.container {
+  background: #b7b7b7;
 }
-
-header {
-  background-color: darkcyan;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-  nav {
-    background-color: deepskyblue;
-    text-transform: uppercase;
-    text-align: center;
-    order: 1;
-    display: flex;
-    flex-direction: column;
+  .container > * {
+    padding: 10px;
+    float: left;
+    width: calc(100% / 3);
   }
-    nav > * {
-      padding: 0.7rem 0;
-    }
-  section {
-    background-color: burlywood;
-  }
-  aside {
-    background-color: magenta;
+  .container::after {
+    display: block;
+    content: "";
+    clear: both;
   }
 
-footer {
-  background-color: indianred;
-}
-
-/* Medium Screen */
-@media (min-width: 768px) {
-  main {
-    flex-flow: row wrap;
-    flex: 1 0 auto;
-  }
-    nav {
-      width: calc(20vw - 8px);
-      order: -1;
-    }
-    section {
-      flex: 1;
-    }
-}
-
-/* Large Screen */
-@media (min-width: 992px) {
-  nav, aside {
-    width: 200px;
-  }
-}
+header { background-color: blueviolet; }
+nav { background-color: crimson; }
+section:first-of-type { background-color: cyan; }
+section:last-of-type { background-color: lightgoldenrodyellow; }
+aside { background-color: darkolivegreen; }
+footer { background-color: chocolate; }
