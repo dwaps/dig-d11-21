@@ -5,55 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.png" type="image/png">
     <title>Grid</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
-    <table>
-      <caption>Détails sur Coco</caption>
-      <thead>
-        <tr>
-          <th>Identifiant</th>
-          <th>Nom</th>
-          <th>Profession</th>
-          <th>Taille</th>
-          <th>Poids</th>
-          <th>QI</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="t-id">#001</td>
-          <td class="t-name">COCO Coco</td>
-          <td class="t-job">Magasinier</td>
-          <td class="t-size" data-label="Taille">188cm</td>
-          <td class="t-weight" data-label="Poids">100kg</td>
-          <td class="t-qi" data-label="QI">88</td>
-          <td class="t-actions">✎ ✕</td>
-        </tr>
-        <tr>
-          <td class="t-id">#002</td>
-          <td class="t-name">JACO Jaco</td>
-          <td class="t-job">Cuisinier</td>
-          <td class="t-size" data-label="Taille">162cm</td>
-          <td class="t-weight" data-label="Poids">79kg</td>
-          <td class="t-qi" data-label="QI">79</td>
-          <td class="t-actions">✎ ✕</td>
-        </tr>
-        <tr>
-          <td class="t-id">#003</td>
-          <td class="t-name">PEDRO Pedro</td>
-          <td class="t-job">Mécanicien</td>
-          <td class="t-size" data-label="Taille">191cm</td>
-          <td class="t-weight" data-label="Poids">103kg</td>
-          <td class="t-qi" data-label="QI">89</td>
-          <td class="t-actions">✎ ✕</td>
-        </tr>
-      </tbody>
-    </table>
-    
+    <div class="carousel-container">
+      <div id="carousel" class="carousel">
+        <div class="slide">
+          <h2>Fromages</h2>
+        </div>
+        <div class="slide">
+          <h2>Tartiflette</h2>
+        </div>
+        <div class="slide">
+          <h2>Marguaritta</h2>
+        </div>
+      </div>
+      <div class="controls">
+        <div onclick="nextSlide(-1)" class="prev">PREV</div>
+        <div onclick="nextSlide(1)" class="next">NEXT</div>
+      </div>
+    </div>
+
+      <script>
+        let pos = 0;
+        function nextSlide(dir) {
+          if (dir > 0) pos += 100;
+          else pos -= 100;
+          carousel.style.left = "-" + pos + "vw";
+        }
+      </script>
   </body>
 </html>

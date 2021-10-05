@@ -1,142 +1,25 @@
-* {
-  box-sizing: border-box;
+.carousel-container {
+  overflow: hidden;
 }
 
-:root {
-  --table-odd-row: hsl(16, 100%, 60%);
-  --table-even-row: hsl(16, 100%, 80%);
-  --table-hover: hsl(16, 100%, 40%);
+.carousel {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: left 0.7s;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #000;
-  color: white;
+.slide {
+  width: 100vw;
+  flex-shrink: 0;
+  height: 400px;
+  background: url(./bg-pizza.jpg) center no-repeat;
+}
+
+h2 {
   text-align: center;
-  min-height: 100vh;
-  min-width: 380px;
-}
-
-a {
   color: white;
-  text-decoration: none;
+  padding-top: 20px;
+  font-size: 2rem;
+  text-shadow: 0 0 3px black;
 }
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-  table caption {
-    font-size: 1.6rem;
-    padding: 16px;
-  }
-  table tr {
-    cursor: pointer;
-  }
-  table tr:nth-child(odd) {
-    background-color: var(--table-odd-row);
-  }
-  table tr:nth-child(even) {
-    background-color: var(--table-even-row);
-  }
-  table tr:hover {
-    background-color: var(--table-hover);
-  }
-    table td, table th {
-      border: 1px solid #ddd;
-      padding: 10px;
-    }
-    table th {
-      background-color: crimson;
-      text-shadow: 1px 1px 3px #444;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      text-align: left;
-    }
-    .t-actions {
-      word-spacing: 20px;
-    }
-
-/* Medium Screen */
-@media (max-width: 992px) {
-  thead {
-    display: none;
-  }
-    tr {
-      display: grid;
-      grid-template-columns: 4em repeat(3, 1fr) 5em;
-      grid-template-areas:  "id name name   name actions"
-                            ".  job  job    job  ."
-                            ".  size weight qi   .";
-    }
-      tr > * {
-        text-align: left;
-      }
-      table td, table th {
-        border: none;
-      }
-      .t-id { grid-area: id }
-      .t-name { grid-area: name }
-      .t-actions { grid-area: actions }
-      .t-job { grid-area: job }
-      .t-size { grid-area: size }
-      .t-weight { grid-area: weight }
-      .t-qi { grid-area: qi }
-      .t-id, .t-name, .t-actions {
-        padding-top: 20px;
-      }
-      .t-name {
-        font-weight: bold;
-        font-size: 1.5rem;
-        text-shadow: 1px 1px 3px #444;
-      }
-      .t-job {
-        position: relative;
-        top: -15px;
-      }
-      .t-job::before {
-        content: "(";
-      }
-      .t-job::after {
-        content: ")";
-      }
-      [data-label] {
-        font-size: 1.3rem;
-        padding-bottom: 20px;
-      }
-      [data-label]::before {
-        content: attr(data-label) ": ";
-      }
-}
-
-/* Small Screen */
-@media (max-width: 768px) {
-  table {
-    counter-reset: id;
-  }
-    tr {
-      display: flex;
-      flex-direction: column;
-      padding: 20px 50px;
-      font-size: 1.3rem;
-    }
-      .t-id {
-        display: none;
-      }
-      .t-name::after {
-        counter-increment: id;
-        content: " (#00" counter(id) ")";
-        font-size: 1.2rem;
-      }
-      .t-actions {
-        padding-left: 20px;
-        padding-bottom: 20px;
-      }
-      [data-label] {
-        padding: 2px 20px;
-        order: 1;
-      }
-}
-
