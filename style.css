@@ -113,5 +113,30 @@ table {
 
 /* Small Screen */
 @media (max-width: 768px) {
+  table {
+    counter-reset: id;
+  }
+    tr {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 50px;
+      font-size: 1.3rem;
+    }
+      .t-id {
+        display: none;
+      }
+      .t-name::after {
+        counter-increment: id;
+        content: " (#00" counter(id) ")";
+        font-size: 1.2rem;
+      }
+      .t-actions {
+        padding-left: 20px;
+        padding-bottom: 20px;
+      }
+      [data-label] {
+        padding: 2px 20px;
+        order: 1;
+      }
 }
 
