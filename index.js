@@ -1,35 +1,29 @@
-const coco = {
-  firstname: "Coco",
-  lastname: "COCO",
-  age: 56,
-  isMan: true,
-  friends: [ "Jaco", "Fernando", "Franco" ],
-  address: {
-    street: "Rue de la Liberté",
-    zip: "55555",
-    city: "Paris"
+/**
+ * CONSIGNE
+ * Extraire le nombre le plus grand d'une liste donnée.
+ * 
+ * 1- L'algorithme fera l'objet d'une fonction.
+ * 2- La liste devra être fournie par l'utilisateur.
+ * 3- Afficher le résultat sur la console du navigateur.
+ */
+
+const liste = prompt("Saisir une liste de nombres (séparés par un espace)").split(" ");
+
+function maxOf() {
+  let value = 0;
+  for (let listItem of liste) {
+    if (listItem > value) value = +listItem;
   }
-};
-
-// DRY --> Don't Repeat Yourself
-// KISS --> Keep It Simple Stupid
-
-function sayHello() {
-  console.log(arguments[0], arguments[1], " !");
+  return value;
 }
 
-function myLog() {
-  let str = "";
-  for (let arg of arguments) {
-    str += arg + " ";
-  }
-  console.log(str);
+const max = maxOf();
+if (max) {
+  result.hidden = false;
+  output.value = maxOf();
 }
 
-function userBuilder() {
-  console.log("User en cours de création...");
-  return "coco";
+button.onclick = reload;
+function reload() {
+  location.reload();
 }
-
-sayHello("Salut", "Coco");
-sayHello("Coucou", "Franco");
