@@ -1,4 +1,4 @@
-function createTodo() {
+function createTodo(txt) {
   // DECLARATION
   const todoDiv = document.createElement('div');
   const todoStateInput = document.createElement('input');
@@ -9,7 +9,7 @@ function createTodo() {
   todoDiv.className = 'todo';
   todoStateInput.type = 'checkbox';
   todoTxtPar.className = 'todo-txt';
-  todoTxtPar.innerText = "Lorem ipsum dolor sit amet consectetur.";
+  todoTxtPar.innerText = txt;
   deleteBt.className = 'bt-closed';
   deleteBt.innerHTML = '&times;';
   
@@ -25,6 +25,6 @@ function createTodo() {
 }
 
 
-createTodo();
-createTodo();
-createTodo();
+createTodo("Faire la vaisselle");
+createTodo("Faire le ménage");
+createTodo("Faire les courses");
