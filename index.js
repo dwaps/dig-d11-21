@@ -1,29 +1,22 @@
-/**
- * CONSIGNE
- * Extraire le nombre le plus grand d'une liste donnée.
- * 
- * 1- L'algorithme fera l'objet d'une fonction.
- * 2- La liste devra être fournie par l'utilisateur.
- * 3- Afficher le résultat sur la console du navigateur.
- */
-
-const liste = prompt("Saisir une liste de nombres (séparés par un espace)").split(" ");
-
-function maxOf() {
-  let value = 0;
-  for (let listItem of liste) {
-    if (listItem > value) value = +listItem;
+const coco = {
+  firstname: "Coco",
+  lastname: "COCO",
+  age: 56,
+  isMan: true,
+  friends: [ "Jaco", "Fernando", "Franco" ],
+  address: {
+    street: "Rue de la Liberté",
+    zip: "55555",
+    city: "Paris"
+  },
+  presentation() {
+    console.log("Je m'appelle " + this.firstname);
   }
-  return value;
-}
+};
 
-const max = maxOf();
-if (max) {
-  result.hidden = false;
-  output.value = maxOf();
-}
+coco.email = "coco@mail.fr";
 
-button.onclick = reload;
-function reload() {
-  location.reload();
-}
+const jaco = Object.create(coco);
+console.log(jaco);
+
+// coco.presentation();
