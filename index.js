@@ -12,6 +12,7 @@ function createTodo(txt) {
   todoTxtPar.innerText = txt;
   deleteBt.className = 'bt-closed';
   deleteBt.innerHTML = '&times;';
+  deleteBt.addEventListener('click', () => todoDiv.remove());
   
   // IMBRICATION
   todoDiv.appendChild(todoStateInput);
@@ -20,8 +21,8 @@ function createTodo(txt) {
   
   // INJECTION DANS LE DOM
   document
-  .querySelector('.todos')
-  .appendChild(todoDiv);
+    .querySelector('.todos')
+    .appendChild(todoDiv);
 }
 
 
