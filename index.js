@@ -13,11 +13,8 @@ function createTodo(txt) {
   deleteBt.className = 'bt-closed';
   deleteBt.innerHTML = '&times;';
   deleteBt.addEventListener('click', () => {
-    if (todoStateInput.checked) {
+    if (todoStateInput.checked || confirm("Veux-tu vraiment supprimer la tâche ?")) {
       todoDiv.remove();
-    } else {
-      const confirmed = confirm("Veux-tu vraiment supprimer la tâche ?");
-      if (confirmed) todoDiv.remove();
     }
   });
   
@@ -33,6 +30,14 @@ function createTodo(txt) {
 }
 
 
-createTodo("Faire la vaisselle");
-createTodo("Faire le ménage");
-createTodo("Faire les courses");
+const inputUserTag = document.querySelector('input');
+const btSubmitTag = document.querySelector('input + input');
+
+btSubmitTag.addEventListener('click', function() {
+  const userInput = inputUserTag.value;
+  if (userInput.length > 3) {
+    createTodo(userInput);
+    inputUserTag.value = '';
+    inputUserTag.focus();
+  }
+})
