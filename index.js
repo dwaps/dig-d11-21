@@ -12,7 +12,14 @@ function createTodo(txt) {
   todoTxtPar.innerText = txt;
   deleteBt.className = 'bt-closed';
   deleteBt.innerHTML = '&times;';
-  deleteBt.addEventListener('click', () => todoDiv.remove());
+  deleteBt.addEventListener('click', () => {
+    if (todoStateInput.checked) {
+      todoDiv.remove();
+    } else {
+      const confirmed = confirm("Veux-tu vraiment supprimer la tâche ?");
+      if (confirmed) todoDiv.remove();
+    }
+  });
   
   // IMBRICATION
   todoDiv.appendChild(todoStateInput);
