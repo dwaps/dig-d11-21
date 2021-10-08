@@ -1,3 +1,14 @@
+const TODOS_KEY = "todos";
+const todosStorage = localStorage.getItem(TODOS_KEY);
+let todos = [];
+
+if ("localStorage" in window && todosStorage && todosStorage.length) {
+  todos = JSON.parse(todosStorage);
+  for (let todo of todos) {
+    createTodo(todo);
+  }
+}
+
 function createTodo(txt) {
   // DECLARATION
   const todoDiv = document.createElement('div');
@@ -14,6 +25,8 @@ function createTodo(txt) {
   deleteBt.innerHTML = '&times;';
   deleteBt.addEventListener('click', () => {
     if (todoStateInput.checked || confirm("Veux-tu vraiment supprimer la tâche ?")) {
+      todos.splice(todos.indexOf(txt), 1);
+      localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
       todoDiv.remove();
     }
   });
@@ -37,6 +50,8 @@ btSubmitTag.addEventListener('click', function() {
   const userInput = inputUserTag.value;
   if (userInput.length > 3) {
     createTodo(userInput);
+    todos.push(userInput);
+    localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
     inputUserTag.value = '';
     inputUserTag.focus();
   }
