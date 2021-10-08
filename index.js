@@ -2,6 +2,13 @@ const TODOS_KEY = "todos";
 const todosStorage = localStorage.getItem(TODOS_KEY);
 let todos = [];
 
+class Todo {
+  constructor(txt) {
+    this.txt = txt;
+    this.done = false;
+  }
+}
+
 if ("localStorage" in window && todosStorage && todosStorage.length) {
   todos = JSON.parse(todosStorage);
   for (let todo of todos) {
@@ -9,7 +16,10 @@ if ("localStorage" in window && todosStorage && todosStorage.length) {
   }
 }
 
-function createTodo(txt) {
+/**
+ * @param {Todo} todo 
+ */
+function createTodo(todo) {
   // DECLARATION
   const todoDiv = document.createElement('div');
   const todoStateInput = document.createElement('input');
@@ -19,8 +29,13 @@ function createTodo(txt) {
   // CONFIGURATION
   todoDiv.className = 'todo';
   todoStateInput.type = 'checkbox';
+  todoStateInput.checked = todo.done;
+  todoStateInput.addEventListener('change', () => {
+    todos[todos.indexOf(todo)].done = todoStateInput.checked;
+    localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
+  });
   todoTxtPar.className = 'todo-txt';
-  todoTxtPar.innerText = txt;
+  todoTxtPar.innerText = todo.txt;
   deleteBt.className = 'bt-closed';
   deleteBt.innerHTML = '&times;';
   deleteBt.addEventListener('click', () => {
@@ -49,8 +64,9 @@ const btSubmitTag = document.querySelector('input + input');
 btSubmitTag.addEventListener('click', function() {
   const userInput = inputUserTag.value;
   if (userInput.length > 3) {
-    createTodo(userInput);
-    todos.push(userInput);
+    const todo = new Todo(userInput);
+    createTodo(todo);
+    todos.push(todo);
     localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
     inputUserTag.value = '';
     inputUserTag.focus();
