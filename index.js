@@ -30,18 +30,14 @@ function createTodo(todo) {
   todoDiv.className = 'todo';
   todoStateInput.type = 'checkbox';
   todoStateInput.checked = todo.done;
-  todoStateInput.addEventListener('change', () => updateTodoState(todo));
   todoTxtPar.className = 'todo-txt';
   todoTxtPar.innerText = todo.txt;
   deleteBt.className = 'bt-closed';
   deleteBt.innerHTML = '&times;';
-  deleteBt.addEventListener('click', () => {
-    if (todoStateInput.checked || confirm("Veux-tu vraiment supprimer la tâche ?")) {
-      todos.splice(todos.indexOf(todo), 1);
-      localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
-      todoDiv.remove();
-    }
-  });
+
+  // EVENTS
+  todoStateInput.addEventListener('change', updateTodoState.bind({}, todo));
+  deleteBt.addEventListener('click', () => updateTodos(todo, todoDiv));
   
   // IMBRICATION
   todoDiv.appendChild(todoStateInput);
@@ -57,6 +53,14 @@ function createTodo(todo) {
 function updateTodoState(todo) {
   todo.done = !todo.done;
   localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
+}
+
+function updateTodos(todo, el) {
+  if (todo.done || confirm("Veux-tu vraiment supprimer la tâche ?")) {
+    todos.splice(todos.indexOf(todo), 1);
+    localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
+    el.remove();
+  }
 }
 
 
