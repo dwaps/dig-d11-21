@@ -12,7 +12,27 @@ export class User {
   }
 
   save() {
+    if (!this.exists()) {
+      const users = User.findAll();
+      // Si l'email est déjà pris, on coupe court à la fonction !
+      // --> Pas de sauvegarde de l'utilisateur
+      if (this.email) {
+        for (let { email } of users) {
+          if (email == this.email) return;
+        }
+      }
+      // Sinon on peut sauvegarder
+      localStorage.setItem(User.STORAGE_KEY, JSON.stringify([ ...users, this ]));
+    } 
+  }
+
+  exists() {
     const users = User.findAll();
-    localStorage.setItem(User.STORAGE_KEY, JSON.stringify([ ...users, this ]));
+    if (users) {
+      return !!users.find(user => (
+        user.pseudo == this.pseudo && user.password == this.password
+      ));
+    }
+    return false;
   }
 }
