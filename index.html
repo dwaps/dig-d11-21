@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <title>TITLE</title>
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css' integrity='sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">INSCRIPTION</h4>
+              <div class="card-text">
+
+                <form name="connect-form">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="form-control"
+                      placeholder="Email"
+                      autocomplete="off">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      name="pseudo"
+                      id="pseudo"
+                      class="form-control"
+                      placeholder="Pseudo"
+                      maxlength="12"
+                      minlength="2"
+                      autocomplete="off">
+                    <label for="pseudo">Pseudo</label>
+                  </div>
+                  <div class="form-floating">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      class="form-control"
+                      placeholder="Mot de passe"
+                      maxlength="12"
+                      minlength="4"
+                      autocomplete="off">
+                    <label for="password">Mot de passe</label>
+                  </div>
+                  <a href="?signup" class="link-primary">S'inscrire</a>
+                  <a href="?login" class="link-primary">Se connecter</a>
+                  <button type="submit" class="btn btn-dark d-block m-auto fs-4">Go !</button>
+                </form>
+
+                <section id="home" hidden>
+                  <h1>Bienvenue sur mon site !</h1>
+                  <a href="?logout">Se déconnecter</a>
+                </section>
+
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
