@@ -7,6 +7,12 @@ export class User {
     this.email = email;
   }
 
+  static hashPassword(pwd) {
+    let hashed = [...pwd].map(v => v.charCodeAt(0)).join('');
+    while (hashed.length < 40) hashed += hashed;
+    return hashed;
+  }
+
   static findAll() {
     return JSON.parse(localStorage.getItem(User.STORAGE_KEY)) || [];
   }

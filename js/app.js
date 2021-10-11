@@ -3,6 +3,8 @@ import { User } from "./user.js";
 export class App {
   constructor() {
     const connectForm = document["connect-form"];
+    // TMP
+    setTimeout(() => document.querySelector('[type=submit]').click());
 
     connectForm.addEventListener('submit', e => {
       e.preventDefault();
@@ -13,6 +15,7 @@ export class App {
 
       if (pseudo && password && password.length > 3) {
         const user = new User(pseudo, password, email);
+        user.password = User.hashPassword(user.password);
         user.save();
       }
     });
