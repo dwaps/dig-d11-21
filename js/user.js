@@ -1,5 +1,5 @@
 export class User {
-  static STORAGE_KEY = "user";
+  static STORAGE_KEY = "users";
   
   constructor(pseudo, password, email) {
     this.pseudo = pseudo;
@@ -7,7 +7,12 @@ export class User {
     this.email = email;
   }
 
+  static findAll() {
+    return JSON.parse(localStorage.getItem(User.STORAGE_KEY)) || [];
+  }
+
   save() {
-    localStorage.setItem(User.STORAGE_KEY, JSON.stringify(this));
+    const users = User.findAll();
+    localStorage.setItem(User.STORAGE_KEY, JSON.stringify([ ...users, this ]));
   }
 }
