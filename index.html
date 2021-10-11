@@ -13,16 +13,16 @@
   <body>
 
     <div class="container-fluid">
-      <div class="row">
-        <div class="col">
+      <div class="row min-vh-100">
+        <div class="col-md-4 m-5 ms-auto">
 
-          <div class="card">
+          <div class="card shadow-lg">
             <div class="card-body">
-              <h4 class="card-title">INSCRIPTION</h4>
+              <h4 class="card-title text-center mb-4 mt-1">INSCRIPTION</h4>
               <div class="card-text">
 
                 <form name="connect-form">
-                  <div class="form-floating">
+                  <div class="form-floating mb-3">
                     <input
                       type="email"
                       name="email"
@@ -32,7 +32,7 @@
                       autocomplete="off">
                     <label for="email">Email</label>
                   </div>
-                  <div class="form-floating">
+                  <div class="form-floating mb-3">
                     <input
                       type="text"
                       name="pseudo"
@@ -44,7 +44,7 @@
                       autocomplete="off">
                     <label for="pseudo">Pseudo</label>
                   </div>
-                  <div class="form-floating">
+                  <div class="form-floating mb-3">
                     <input
                       type="password"
                       name="password"
@@ -58,10 +58,10 @@
                   </div>
                   <a href="?signup" class="link-primary">S'inscrire</a>
                   <a href="?login" class="link-primary">Se connecter</a>
-                  <button type="submit" class="btn btn-dark d-block m-auto fs-4">Go !</button>
+                  <button type="submit" class="btn btn-dark d-block m-auto fs-4 mt-3">Go !</button>
                 </form>
 
-                <section id="home" hidden>
+                <section id="home" class="text-center" hidden>
                   <h1>Bienvenue sur mon site !</h1>
                   <a href="?logout">Se déconnecter</a>
                 </section>
