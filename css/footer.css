@@ -1,0 +1,13 @@
+/* FOOTER */
+
+footer {
+	background-color: var(--bs-gray-700) !important;
+	color: var(--bs-gray-200);
+	display: flex;
+}
+
+.footer-item {
+	padding: 20px;
+	line-height: 2rem;
+	text-align: left;
+}

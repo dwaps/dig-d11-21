@@ -1,0 +1,30 @@
+/* OUR TEAM */
+.our-team::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: var(--blackBorderSize);
+	background-color: black;
+}
+
+.our-team::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: var(--blackBorderSize);
+	background-color: black;
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.card-team {
+	width: 30%;
+}
+
+.card-img-top {
+	object-fit: cover;
+	height: 280px;
+}

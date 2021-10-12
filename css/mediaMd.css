@@ -1,0 +1,51 @@
+@media (max-width: 768px) {
+	/* HERO */
+	.hero iframe {
+		width: 510px;
+		height: 280px;
+	}
+
+	.carousel-inner {
+		height: 280px;
+	}
+
+	/* OUR TEAM */
+	.card-img-top {
+		object-fit: cover;
+		height: 200px;
+	}
+
+	/* PORTFOLIO */
+	.portfolio-container {
+		flex-direction: column;
+	}
+
+	.portfolio-container > * {
+		width: 100%;
+	}
+
+	.portfolio-item img {
+		border-left: none;
+		border-top: solid var(--blackBorderSize) #000;
+		max-height: 280px;
+	}
+
+	/* CONTACT */
+	.contact-container {
+		flex-direction: column;
+	}
+
+	.contact-container > * {
+		width: 100%;
+	}
+
+	.contact-item iframe {
+		height: 280px;
+
+		border-bottom: solid var(--blackBorderSize) #000;
+	}
+
+	.contact-item-form {
+		border-left: none;
+	}
+}

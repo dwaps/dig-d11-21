@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>I love music</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+	<!-- Bootstrap CSS / JS async -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"
+		async></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<header>
+
+		<nav class="navbar top navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<h1><a class="navbar-brand" href="#">I love music</a></h1>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+					aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" href="#hero" onclick="affectActive(0)">Hero</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services" onclick="affectActive(1)">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#our-team" onclick="affectActive(2)">Our Team</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#portfolio" onclick="affectActive(3)">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact" onclick="affectActive(4)">Contact us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+	<main>
+
+		<section class="hero" id="hero">
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<iframe src="https://www.youtube.com/embed/ZN41d7Txcq0" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<div class="carousel-item">
+						<iframe src="https://www.youtube.com/embed/R0JKCYZ8hng" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+					<div class="carousel-item">
+						<iframe src="https://www.youtube.com/embed/7n0tNSFJQ34" title="YouTube video player" frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="service-container">
+				<img src="images/services/sol.png" alt="image d'une clé">
+				<h2>clé de sol</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa corporis aliquid laboriosam qui
+					voluptatibus ex. Fuga explicabo iste libero.</p>
+			</div>
+			<div class="service-container">
+				<img src="images/services/fa.png" alt="image d'une clé">
+				<h2>clé de fa</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa corporis aliquid laboriosam qui
+					voluptatibus ex. Fuga explicabo iste libero.</p>
+			</div>
+			<div class="service-container">
+				<img src="images/services/do.png" alt="image d'une clé">
+				<h2>clé de do</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa corporis aliquid laboriosam qui
+					voluptatibus ex. Fuga explicabo iste libero.</p>
+			</div>
+		</section>
+
+		<section class="our-team" id="our-team">
+			<div class="card-container">
+				<div class="card card-team">
+					<img src="images/ourTeam/beethoven.jpg" class="card-img-top" alt="tableau de beethoven">
+					<div class="card-body">
+						<h3 class="card-title h5">Beethoven</h3>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+							card's content.</p>
+					</div>
+				</div>
+
+				<div class="card card-team">
+					<img src="images/ourTeam/Francisco_Tarrega.jpg" class="card-img-top" alt="image de Tarrega">
+					<div class="card-body">
+						<h3 class="card-title h5">Tarrega</h3>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+							card's content.</p>
+					</div>
+				</div>
+
+				<div class="card card-team">
+					<img src="images/ourTeam/Chopin.png" class="card-img-top" alt="photo de Chopin">
+					<div class="card-body">
+						<h3 class="card-title h5">Chopin</h3>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+							card's content.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="portfolio" id="portfolio">
+			<div class="portfolio-container">
+				<div class="portfolio-item">
+					<h4>Portfolio</h4>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta iure inventore rem magnam suscipit nam
+						quibusdam qui, ullam ab officiis est nulla saepe aperiam illo dolore iste praesentium odio. Iusto.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum minus nulla sunt dolor similique optio
+						quia quis reprehenderit nemo, rem nisi, temporibus voluptas cum. Tenetur nobis excepturi nam similique
+						omnis?</p>
+				</div>
+				<div class="portfolio-item">
+					<img src="images/portfolio/125951748_o.png" alt="image de partitions">
+				</div>
+			</div>
+		</section>
+		<section class="contact" id="contact">
+			<div class="contact-container">
+				<div class="contact-item">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1668.8556872154838!2d3.8791305102657545!3d43.60838792515875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6afa717f8a303%3A0xc42699c7d1f7a82a!2sFontaine%20des%20Trois%20Gr%C3%A2ces!5e0!3m2!1sfr!2sfr!4v1633447490507!5m2!1sfr!2sfr"
+						allowfullscreen="" loading="lazy"></iframe>
+				</div>
+				<div class="contact-item contact-item-form">
+					<form>
+						<div class="mb-3 mt-3">
+							<label for="name" class="form-label">Name</label>
+							<input type="text" name="name" class="form-control" id="name" placeholder="name">
+						</div>
+						<div class="mb-3">
+							<label for="message" class="form-label">Message</label>
+							<textarea class="form-control" id="message" rows="3" placeholder="Message"
+								name="message"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-item">
+			<h4 class="h5">titre</h4>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, repellat laudantium. Beatae labore adipisci
+				dignissimos!</p>
+		</div>
+		<div class="footer-item">
+			<h4 class="h5">titre</h4>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, repellat laudantium. Beatae labore adipisci
+				dignissimos!</p>
+		</div>
+		<div class="footer-item">
+			<h4 class="h5">titre</h4>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, repellat laudantium. Beatae labore adipisci
+				dignissimos!</p>
+		</div>
+	</footer>
+</body>
+
+<!-- Gestion des liens active ou non -->
+<script>
+	function affectActive(index) {
+		const lienActive = document.getElementsByClassName("nav-link active");
+		lienActive[0].classList.remove("active");
+		const liens = document.getElementsByClassName("nav-link");
+		liens[index].classList.add("active")
+	}
+</script>
+
+</html>

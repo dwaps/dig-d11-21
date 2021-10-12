@@ -1,0 +1,27 @@
+/* CONTACT */
+.contact-container {
+	display: flex;
+}
+
+.contact-item {
+	width: 50%;
+}
+
+.contact-item iframe {
+	margin: 0;
+	width: 100%;
+	height: 400px;
+}
+
+.contact-item-form {
+	padding: 20px;
+	border-left: solid var(--blackBorderSize) #000;
+}
+
+.contact::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: var(--blackBorderSize);
+	background-color: black;
+}

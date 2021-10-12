@@ -1,0 +1,23 @@
+/* SERVICES */
+.services {
+	display: flex;
+	width: 100%;
+	margin-top: 25px;
+	padding: 5px;
+}
+
+.service-container img {
+	border: 1px solid rgb(131, 131, 131);
+	border-radius: 50px;
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	margin-bottom: 15px;
+	background-color: #fff;
+}
+
+.service-container p {
+	text-align: center;
+	padding: 5px;
+	width: 95%;
+}

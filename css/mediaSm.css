@@ -1,0 +1,30 @@
+@media (max-width: 576px) {
+	/* HERO */
+	.hero iframe {
+		width: 375px;
+		height: 210px;
+	}
+
+	.carousel-inner {
+		height: 210px;
+	}
+
+	/* OUR TEAM */
+	.card-container {
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.card-container > * {
+		width: 100%;
+	}
+
+	/* SERVICES */
+	.services {
+		flex-direction: column;
+	}
+
+	footer {
+		flex-direction: column;
+	}
+}

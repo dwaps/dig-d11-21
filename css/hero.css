@@ -1,0 +1,21 @@
+/* HERO */
+.hero {
+	background-color: var(--bs-gray-700) !important;
+}
+
+.hero::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: var(--blackBorderSize);
+	background-color: black;
+}
+
+.hero iframe {
+	width: 680px;
+	height: 400px;
+}
+
+.carousel-inner {
+	height: 400px;
+}

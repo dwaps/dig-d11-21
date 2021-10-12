@@ -1,0 +1,22 @@
+/* SIMPLE RESET OVER BOOTSTRAP RESET*/
+
+body {
+	font-family: sans-serif;
+	text-align: center;
+	background-color: rgb(240, 240, 240);
+}
+
+/* START CSS */
+:root {
+	scroll-behavior: smooth;
+	--blackBorderSize: 1px;
+}
+
+h1 a {
+	padding: 0px !important;
+}
+h1 {
+	position: relative;
+	top: -8px;
+	margin: 0;
+}
