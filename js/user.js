@@ -9,8 +9,9 @@ export class User {
 
   static hashPassword(pwd) {
     let hashed = [...pwd].map(v => v.charCodeAt(0)).join('');
-    while (hashed.length < 40) hashed += hashed;
-    return hashed;
+    hashed = hashed.repeat(20).split('');
+    hashed.length = 40;
+    return hashed.join('');
   }
 
   static findAll() {
