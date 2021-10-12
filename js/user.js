@@ -1,5 +1,6 @@
 export class User {
   static STORAGE_KEY = "users";
+  static SESSION_KEY = "connectedUser";
   
   constructor(pseudo, password, email) {
     this.pseudo = pseudo;
@@ -21,16 +22,21 @@ export class User {
   save() {
     if (!this.exists()) {
       const users = User.findAll();
-      // Si l'email est déjà pris, on coupe court à la fonction !
-      // --> Pas de sauvegarde de l'utilisateur
       if (this.email) {
         for (let { email } of users) {
           if (email == this.email) return;
         }
       }
-      // Sinon on peut sauvegarder
       localStorage.setItem(User.STORAGE_KEY, JSON.stringify([ ...users, this ]));
     } 
+  }
+
+  login() {
+    if (this.exists()) {
+      sessionStorage.setItem(User.SESSION_KEY, JSON.stringify(this));
+      return true;
+    }
+    return false;
   }
 
   exists() {
