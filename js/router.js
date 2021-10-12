@@ -1,3 +1,5 @@
+import { User } from "./user.js";
+
 export class Router {
   static currentRoute = "";
 
@@ -20,18 +22,39 @@ export class Router {
         Router.loadView('CONNEXION');
         break;
       case Router.Route.LOGOUT:
+        User.logout();
+        // location.reload();
+        location.href = "/";
         break;
       default:
-        Router.currentRoute = this.Route.HOME;
-        Router.loadView('HOME');
+        if (User.isConnected()) {
+          Router.currentRoute = this.Route.HOME;
+          Router.loadView('HOME');
+        }
+        else {
+          location.href = "/";
+        }
         break;
     }
   }
 
   static loadView(name = 'INSCRIPTION') {
+    const container = document.querySelector('.container-fluid');
+    const connectForm = document['connect-form'];
+    const loginLink = document.querySelector('[href$=login]');
+    const signupLink = document.querySelector('[href$=signup]');
+    const homeSection = document.querySelector('#home');
     const isSignupPage = name.includes('INS');
-    document['connect-form'].className = isSignupPage
-      ? 'signup-form'
-      : 'login-form';
+
+    container.className = "container-fluid " + Router.currentRoute + "-page";
+    
+    if (Router.currentRoute == "home") {
+      connectForm.hidden = true;
+      homeSection.hidden = false;
+      return;
+    }
+
+    signupLink.hidden = isSignupPage;
+    loginLink.hidden = !isSignupPage;
   }
 }

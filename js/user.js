@@ -15,8 +15,16 @@ export class User {
     return hashed.join('');
   }
 
+  static logout() {
+    sessionStorage.removeItem(User.SESSION_KEY);
+  }
+
   static findAll() {
     return JSON.parse(localStorage.getItem(User.STORAGE_KEY)) || [];
+  }
+
+  static isConnected() {
+    return !!sessionStorage.getItem(User.SESSION_KEY);
   }
 
   save() {

@@ -4,11 +4,24 @@ body {
   min-height: 100vh;
   overflow: hidden;
 }
-
 .bg-blur {
   backdrop-filter: blur(20px);
 }
 
-.login-form [type="email"] {
+/* HOME PAGE */
+.home-page .card-title {
+  display: none;
+}
+
+/* SIGNUP PAGE */
+.signup-page .card-title::before {
+  content: 'INSCRIPTION';
+}
+
+/* LOGIN PAGE */
+.login-page .card-title::before {
+  content: 'CONNEXION';
+}
+.login-page [type="email"] {
   display: none;
 }
