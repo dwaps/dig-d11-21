@@ -25,18 +25,6 @@
       "available": false
     },
     {
-      "id": "0139aa76-9b0f-4bd3-93a1-6c31ad2abaed",
-      "title": "Manuel du bricolage",
-      "category": "bricolage",
-      "price": 12.50,
-      "author": {
-        "firstname": "Robert",
-        "lastname": "DELANOIX",
-        "birthyear": 2003
-      },
-      "available": true
-    },
-    {
       "id": "7a06230d-8b25-4ec2-b9f1-8e74aeb30be9",
       "title": "Manger serein",
       "category": "cuisine",
@@ -52,7 +40,7 @@
       "id": "49fd7e88-6593-43a7-8a8d-3abe59d06b4f",
       "title": "Vive le vent",
       "category": "aventure",
-      "price": 10.20,
+      "price": 10.2,
       "author": {
         "firstname": "Fernando",
         "lastname": "CAMELLO",

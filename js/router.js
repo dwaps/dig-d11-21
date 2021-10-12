@@ -1,3 +1,4 @@
+import { HomePage } from "./home-page.js";
 import { User } from "./user.js";
 
 export class Router {
@@ -51,6 +52,7 @@ export class Router {
     if (Router.currentRoute == "home") {
       connectForm.hidden = true;
       homeSection.hidden = false;
+      new HomePage();
       return;
     }
 
