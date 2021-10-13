@@ -1,0 +1,30 @@
+#hero{
+    height: 500px;
+    width: 100%;
+    background:#010101 ;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("https://www.differenttruths.com/wp-content/uploads/2018/03/wp2099403-1440x1080.jpg");
+    height: 100%;
+    width: 50%;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .icons-hero{
+      display: none;
+  }
+
+  #hero:hover .icons-hero{
+    padding: 20px;
+    color: #fff;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -160px;
+  }

@@ -1,0 +1,37 @@
+.team {
+    padding: 50px 50px;
+    background: #000;
+    color: #fff;
+}
+
+.team-members {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.dumbledore{
+    background-image: url(https://www.wallpapertip.com/wmimgs/42-423994_image-result-for-dumbledore-harry-potter-dumbledore.jpg);
+}
+
+.gandalf{
+    background-image: url(http://cdn30.us1.fansshare.com/image/ianmckellen/ian-mckellen-gandalf-wallpaper-high-definition-quality-gandalf-wallpaper-hd-free-the-hobbit-iphone-grey-white-balrog-wallpaper-1294550505.jpg);
+}
+
+.aslan{
+    background-image: url(https://www.wallpapertip.com/wmimgs/40-400678_aslan-narnia.jpg);
+}
+
+.dumbledore, .gandalf, .aslan {
+    background-position: center top 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.text-member {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 0 auto;
+}

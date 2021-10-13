@@ -1,0 +1,27 @@
+header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.logo-header {
+    margin-top: -50px;
+    font-family: 'Ephesis', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #167ac7;
+}
+
+#nav-bar ul {
+    display: flex;
+}
+
+#nav-bar li {
+    margin: 20px;
+    font-size: 1.1rem;
+}
+
+#nav-bar a {
+    color:#fff;
+}
