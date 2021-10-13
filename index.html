@@ -1,80 +1,193 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png" type="image/png">
-    <title>TITLE</title>
+    <link rel="stylesheet" href="style.css">
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css' integrity='sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==' crossorigin='anonymous'/>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Maquette TP</title>
+</head>
 
-  <body>
+<body>
 
-    <div class="container-fluid">
-      <div class="row min-vh-100">
-        <div class="col-md-4 m-5 ms-auto">
+    <header class="container-fluid d-flex justify-content-between">
+        <a class="navbar-brand" href="#"><img src="asset/images/logo.svg"></a>
+        <nav class="nav nav-pills text-white">
+            <a class="nav-link link-dark active" href="#">Hero</a>
+            <a class="nav-link link-dark text-white" href="#services">Services</a>
+            <a class="nav-link link-dark text-white" href="#ourTeam">Our team</a>
+            <a class="nav-link link-dark text-white" href="#portofolio">Portofolio</a>
+            <a class="nav-link link-dark text-white" href="#contact">Contact us</a>
+        </nav>
+    </header>
 
-          <div class="card shadow-lg">
-            <div class="card-body">
-              <h4 class="card-title text-center mb-4 mt-1"></h4>
-              <div class="card-text">
-
-                <form name="connect-form">
-                  <div class="form-floating mb-3">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      placeholder="Email"
-                      autocomplete="off">
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      name="pseudo"
-                      id="pseudo"
-                      class="form-control"
-                      placeholder="Pseudo"
-                      maxlength="12"
-                      minlength="2"
-                      autocomplete="off">
-                    <label for="pseudo">Pseudo</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      class="form-control"
-                      placeholder="Mot de passe"
-                      maxlength="12"
-                      minlength="4"
-                      autocomplete="off">
-                    <label for="password">Mot de passe</label>
-                  </div>
-                  <a href="?signup" class="link-primary">S'inscrire</a>
-                  <a href="?login" class="link-primary">Se connecter</a>
-                  <button type="submit" class="btn btn-dark d-block m-auto fs-4 mt-3">Go !</button>
-                </form>
-
-                <section id="home" class="text-center" hidden>
-                  <h1>Bienvenue sur mon site !</h1>
-                  <div class="content"></div>
-                  <a href="?logout">Se déconnecter</a>
-                </section>
-
-              </div>
+    <main class="container-fluid">
+        <!-- Carousel -->
+        <section id="hero" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="asset/slides/slide1.jpg" class="d-block w-100" alt="carousel slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/slides/slide2.jpg" class="d-block w-100" alt="carousel slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/slides/slide3.jpg" class="d-block w-100" alt="carousel slide 3">
+                </div>
             </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
 
-    <script type="module" src="js/index.js"></script>
-  </body>
+        <!-- section SERVICES -->
+        <section id="services" class="row">
+            <h2 class="pb-2 mt-3 border-top border-dark">Services</h2>
+            <aside class="col text-center">
+                <img src="asset/icons/service1.png" alt="engineering"
+                    class="image-fluid border border-3 border-dark rounded-circle text-center">
+                <h3>Engineering</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
+                    totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
+                    provident error odio!</p>
+                <a href="#" class="icon-link">En savoir plus</a>
+            </aside>
+            <aside class="col text-center">
+                <img src="asset/icons/service2.png" alt="maintenance"
+                    class="image-fluid border border-3 border-dark rounded-circle">
+                <h3>Maintenance</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
+                    totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
+                    provident error odio!</p>
+                <a href="#" class="icon-link">En savoir plus</a>
+            </aside>
+            <aside class="col text-center">
+                <img src="asset/icons/service3.png" alt="formation"
+                    class="image-fluid border border-3 border-dark rounded-circle">
+                <h3>Formation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
+                    totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
+                    provident error odio!</p>
+                <a href="#" class="icon-link">En savoir plus</a>
+            </aside>
+        </section>
+
+        <!-- section OUT TEAM -->
+        <section id="ourTeam" class="row">
+            <h2 class="pb-2 mt-3 border-top border-dark">Our Team</h2>
+            <aside class="col text-center">
+                <img src="asset/avatars/avatar1.png" class="image-fluid" alt="avatar 1">
+                <article class="border-top">
+                    <h3>JACO Coco</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum excepturi obcaecati magni
+                        eaque
+                        facilis, veritatis sit architecto assumenda porro sunt temporibus quam nam non quaerat omnis
+                        praesentium
+                        a debitis!</p>
+                </article>
+            </aside>
+            <aside class="col text-center">
+                <img src="asset/avatars/avatar2.png" class="image-fluid" alt="avatar 2">
+
+                <article class="border-top">
+                    <h3>JEAN Charles</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam beatae quidem
+                        voluptatem sequi consectetur qui, sit officiis facere eligendi illo adipisci porro architecto
+                        nostrum! Commodi voluptate modi labore illo?</p>
+                </article>
+            </aside>
+            <aside class="col text-center">
+                <img src="asset/avatars/avatar3.png" class="image-fluid" alt="avatar 3">
+                <article class="border-top">
+                    <h3>RENE Danielle</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ab voluptates reprehenderit
+                        eligendi consequatur id iste error voluptatibus. Molestias dicta nobis impedit illo recusandae.
+                        Ab
+                        magnam aspernatur odit eius repellendus.</p>
+                </article>
+            </aside>
+        </section>
+
+        <!-- section PORTOFOLIO -->
+        <section id="portofolio" class="row">
+ 
+            <div class="col border border-dark">
+                <h2 class="pb-2 mt-3 ">Portofolio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum excepturi obcaecati magni eaque
+                    facilis, veritatis sit architecto assumenda porro sunt temporibus quam nam non quaerat omnis
+                    praesentium
+                    a debitis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt tenetur expedita
+                    similique quis ab excepturi eveniet. Sapiente quod iure animi! Eaque animi odio fuga nihil dicta
+                    officiis eveniet deserunt!</p>
+            </div>
+            <div class="col text-center border border-dark">
+                <img src="asset/images/portofolio.jpg" alt="portofolio" class="image-fluid" id="portofolio-image">
+            </div>
+        </section>
+
+        <!-- section CONTACT -->
+        <section id="contact" class="row">
+            <div class="col">
+                <img src="asset/images/maps.JPG" alt="maps">
+            </div>
+
+            <form class="col m-3">
+                <input class="form-control mb-3" type="text" placeholder="Name">
+                <textarea class="form-control mb-3" name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <button class="btn btn-success mb-3" type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div>
+            <h5>Section 1</h5>
+            <ul class="nav flex-column">
+                <a href="#" class="nav-link link-dark text-white">Home</a>
+                <a href="#" class="nav-link link-dark text-white">Features</a>
+                <a href="#" class="nav-link link-dark text-white">Product</a>
+                <a href="#" class="nav-link link-dark text-white">FAQ</a>
+                <a href="#" class="nav-link link-dark text-white">About</a>
+            </ul>
+        </div>
+        <div>
+            <h5>Section 2</h5>
+            <ul class ="nav flex-column">
+                <a href="#" class="nav-link link-dark text-white">Home</a>
+                <a href="#" class="nav-link link-dark text-white">Features</a>
+                <a href="#" class="nav-link link-dark text-white">Product</a>
+                <a href="#" class="nav-link link-dark text-white">FAQ</a>
+                <a href="#" class="nav-link link-dark text-white">About</a>
+            </ul>
+        </div>
+        <div>
+            <h5>Section 3</h5>
+            <ul class ="nav flex-column">
+                <a href="#" class="nav-link link-dark text-white">Home</a>
+                <a href="#" class="nav-link link-dark text-white">Features</a>
+                <a href="#" class="nav-link link-dark text-white">Product</a>
+                <a href="#" class="nav-link link-dark text-white">FAQ</a>
+                <a href="#" class="nav-link link-dark text-white">About</a>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
