@@ -1,0 +1,159 @@
+/* TODO :
+- commentaires
+- mobile first !
+- responsive tablette & smartphone avec breakpoint
+- largeur parfaite
+- menu fixé avec réduction du logo
+- optimiser css Dry&Kiss
+- plusieurs fichiers CSS ?
+- Flexbox sur services
+- GridLayout pour la Team
+- parralax
+
+*/
+
+
+/* COMMON */
+/*
+:root{
+    --first-color:#D0C149;
+    --first-color-bis:#d0c049da;
+    --second-color:#ea2326;
+    --third-color:#18161A;
+    --third-color-bis:#18161aee;
+
+    --even-bg: var(--first-color-bis);
+    --even-txtColor :var(--third-color-bis);
+
+    --odd-bg: var(--third-color-bis);
+    --odd-txtColor :var(--first-color-bis);
+
+    --decalageVertical: 20px;
+}
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bgAlternate{
+    padding: 3rem;
+}
+
+.bgAlternate:nth-child(even)
+{
+    background: linear-gradient(var(--odd-bg), var(--even-bg) var(--decalageVertical));
+    color: var(--even-txtColor);
+} 
+.bgAlternate:nth-child(odd)
+{
+    background: linear-gradient(var(--even-bg), var(--odd-bg) var(--decalageVertical));
+    color: var(--odd-txtColor);
+}
+
+.nav-link,
+.nav-link:visited,
+footer a{
+    color: var(--first-color);
+    text-decoration: none;
+    text-shadow: 2px 2px 4px var(--second-color);
+    font-size:1.4rem;
+    font-weight: bold;
+    opacity: .8;
+}
+
+.nav-link:hover,
+footer a:hover
+{
+    color: var(--first-color);
+    transition: 1s;
+    text-shadow: 4px 4px 8px var(--second-color), 0 0 2em var(--third-color), 0 0 2em var(--first-color);
+    opacity: 1;
+}
+
+footer h2{
+    color: var(--first-color);
+    font-size:1.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px var(--second-color), 0 0 1em var(--third-color);
+    opacity: 1;
+}
+*/
+
+/********************************************************************************************/
+
+/* HEADER */
+
+/* #sServices *{
+    color: var(--first-color);
+} */
+
+/* #sTeam *{
+    background: var(--fourth-color);
+    color: var(--third-color);
+} */
+/* header{
+    background: linear-gradient(var(--third-color), var(--fourth-color));
+    background: var(--third-color);
+} */
+
+/* MAIN */
+
+/* FOOTER */
+/* footer{
+    background: linear-gradient(var(--fourth-color), var(--third-color));
+} */
+.fas, .fab{
+    padding:5px;
+    font-size:1.5rem;
+}
+
+    /*
+.row{
+    height: 100vh;
+}
+
+
+
+section{
+    height: 100vh;
+}
+.nav-link{
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.nav-link,
+.carousel-caption > p,
+section > h2{
+    color: var(--first-color);
+    font-size:1.4rem;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.nav-link:hover,
+.nav-link:visited,
+.carousel-caption > h5{
+    color: var(--first-color);
+    text-shadow: 1px 1px 2px var(--second-color), 0 0 1em var(--third-color), 0 0 0.5em var(--third-color);
+    opacity: 1;
+}
+
+.carousel-caption > h5,
+section > h2{
+    font-size: 2rem;
+    font-weight: bold; 
+}
+
+#sServices img{
+    width: 30vh; 
+}
+
+
+
+footer{
+    background: linear-gradient(white, var(--third-color));
+}
+*/
