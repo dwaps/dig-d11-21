@@ -1,0 +1,100 @@
+{
+  "books": [
+    {
+      "id": "6e5dc28e-0e82-430a-855c-47ecc98ef96e",
+      "title": "Il était une fois",
+      "category": "aventure",
+      "price": 12,
+      "author": {
+        "firstname": "Emile",
+        "lastname": "DUPONT",
+        "birthyear": 1999
+      },
+      "available": true
+    },
+    {
+      "id": "99cd5c04-83f0-49dd-bfbf-a1838bbf7f3b",
+      "title": "Les meilleures recettes",
+      "category": "cuisine",
+      "price": 2.29,
+      "author": {
+        "firstname": "Stéphanie",
+        "lastname": "HAMARLA",
+        "birthyear": 1987
+      },
+      "available": false
+    },
+    {
+      "id": "7a06230d-8b25-4ec2-b9f1-8e74aeb30be9",
+      "title": "Manger serein",
+      "category": "cuisine",
+      "price": 33,
+      "author": {
+        "firstname": "Marie",
+        "lastname": "KORAL",
+        "birthyear": 1998
+      },
+      "available": true
+    },
+    {
+      "id": "49fd7e88-6593-43a7-8a8d-3abe59d06b4f",
+      "title": "Vive le vent",
+      "category": "aventure",
+      "price": 10.2,
+      "author": {
+        "firstname": "Fernando",
+        "lastname": "CAMELLO",
+        "birthyear": 1813
+      },
+      "available": false
+    },
+    {
+      "id": "a33ae539-beb2-41bc-bfae-e0d0469966c3",
+      "title": "Au gré de la tomate",
+      "category": "cuisine",
+      "price": 42,
+      "author": {
+        "firstname": "Emile",
+        "lastname": "FORAGEAU",
+        "birthyear": 2009
+      },
+      "available": false
+    },
+    {
+      "id": "e1d4396c-0fb5-4379-b831-9a71169b33fa",
+      "title": "Des clous !",
+      "category": "bricolage",
+      "price": 13,
+      "author": {
+        "firstname": "Aurélie",
+        "lastname": "LAFONDO",
+        "birthyear": 1996
+      },
+      "available": false
+    },
+    {
+      "id": "8541e2f7-8a97-4d7c-9e45-b4f298437dd5",
+      "title": "Biographie d'un oublié",
+      "category": "histoire",
+      "price": 32.77,
+      "author": {
+        "firstname": "Franco",
+        "lastname": "SINATRO",
+        "birthyear": 1924
+      },
+      "available": true
+    },
+    {
+      "id": "75153c37-0b19-44aa-9613-99d1b4fa79bb",
+      "title": "Sur la route des mangues",
+      "category": "aventure",
+      "price": 7.59,
+      "author": {
+        "firstname": "Simon",
+        "lastname": "QUILLIN",
+        "birthyear": 2004
+      },
+      "available": false
+    }
+  ]
+}
