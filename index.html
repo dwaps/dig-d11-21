@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="container-fluid d-flex justify-content-between">
+    <header class="container-fluid d-flex justify-content-between sticky-md-top">
         <a class="navbar-brand" href="#"><img src="asset/images/logo.svg"></a>
         <nav class="nav nav-pills text-white">
             <a class="nav-link link-dark active" href="#">Hero</a>
@@ -53,7 +53,7 @@
         <!-- section SERVICES -->
         <section id="services" class="row">
             <h2 class="pb-2 mt-3 border-top border-dark">Services</h2>
-            <aside class="col text-center">
+            <aside class="col-lg text-center">
                 <img src="asset/icons/service1.png" alt="engineering"
                     class="image-fluid border border-3 border-dark rounded-circle text-center">
                 <h3>Engineering</h3>
@@ -62,7 +62,7 @@
                     provident error odio!</p>
                 <a href="#" class="icon-link">En savoir plus</a>
             </aside>
-            <aside class="col text-center">
+            <aside class="col-lg text-center">
                 <img src="asset/icons/service2.png" alt="maintenance"
                     class="image-fluid border border-3 border-dark rounded-circle">
                 <h3>Maintenance</h3>
@@ -71,7 +71,7 @@
                     provident error odio!</p>
                 <a href="#" class="icon-link">En savoir plus</a>
             </aside>
-            <aside class="col text-center">
+            <aside class="col-lg text-center">
                 <img src="asset/icons/service3.png" alt="formation"
                     class="image-fluid border border-3 border-dark rounded-circle">
                 <h3>Formation</h3>
@@ -85,7 +85,7 @@
         <!-- section OUT TEAM -->
         <section id="ourTeam" class="row">
             <h2 class="pb-2 mt-3 border-top border-dark">Our Team</h2>
-            <aside class="col text-center">
+            <aside class="col-lg text-center">
                 <img src="asset/avatars/avatar1.png" class="image-fluid" alt="avatar 1">
                 <article class="border-top">
                     <h3>JACO Coco</h3>
@@ -96,7 +96,7 @@
                         a debitis!</p>
                 </article>
             </aside>
-            <aside class="col text-center">
+            <aside class="col-lg text-center">
                 <img src="asset/avatars/avatar2.png" class="image-fluid" alt="avatar 2">
 
                 <article class="border-top">
@@ -106,7 +106,7 @@
                         nostrum! Commodi voluptate modi labore illo?</p>
                 </article>
             </aside>
-            <aside class="col text-center">
+            <aside class="col-lg text-center">
                 <img src="asset/avatars/avatar3.png" class="image-fluid" alt="avatar 3">
                 <article class="border-top">
                     <h3>RENE Danielle</h3>
@@ -119,9 +119,9 @@
         </section>
 
         <!-- section PORTOFOLIO -->
-        <section id="portofolio" class="row">
+        <section id="portofolio" class="row border border-dark">
  
-            <div class="col border border-dark">
+            <div class="col-lg border-end border-dark">
                 <h2 class="pb-2 mt-3 ">Portofolio</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum excepturi obcaecati magni eaque
                     facilis, veritatis sit architecto assumenda porro sunt temporibus quam nam non quaerat omnis
@@ -131,21 +131,23 @@
                     similique quis ab excepturi eveniet. Sapiente quod iure animi! Eaque animi odio fuga nihil dicta
                     officiis eveniet deserunt</p>
             </div>
-            <div class="col text-center border border-dark">
-                <img src="asset/images/portofolio.jpg" alt="portofolio" class="image-fluid" id="portofolio-image">
+            <div class="col-lg text-center ">
+                <img src="asset/images/portofolio.jpg" alt="portofolio" class="image-fluid w-100" id="portofolio-image">
             </div>
         </section>
 
         <!-- section CONTACT -->
         <section id="contact" class="row">
-            <div class="col">
-                <img src="asset/images/maps.JPG" alt="maps">
+            <div class="col-lg border-end border-dark">
+                <img src="asset/images/maps.JPG" class="image-fluid w-100" alt="maps">
             </div>
 
-            <form class="col m-3">
-                <input class="form-control mb-3" type="text" placeholder="Name">
-                <textarea class="form-control mb-3" name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
-                <button class="btn btn-success mb-3" type="submit">Submit</button>
+            <form class="col-lg">
+                <input class="d-grid col-9 mx-auto mb-3" type="text" placeholder="Name" id="input">
+                <textarea class="d-grid col-9 mx-auto mb-3" name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <div class="d-grid col-2 mx-auto">
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </div>
             </form>
         </section>
 
@@ -159,16 +161,12 @@
                 <a href="#" class="nav-link link-dark text-white">Home</a>
                 <a href="#" class="nav-link link-dark text-white">Features</a>
                 <a href="#" class="nav-link link-dark text-white">Product</a>
-                <a href="#" class="nav-link link-dark text-white">FAQ</a>
-                <a href="#" class="nav-link link-dark text-white">About</a>
+
             </ul>
         </div>
         <div>
             <h5>Section 2</h5>
             <ul class ="nav flex-column">
-                <a href="#" class="nav-link link-dark text-white">Home</a>
-                <a href="#" class="nav-link link-dark text-white">Features</a>
-                <a href="#" class="nav-link link-dark text-white">Product</a>
                 <a href="#" class="nav-link link-dark text-white">FAQ</a>
                 <a href="#" class="nav-link link-dark text-white">About</a>
             </ul>
@@ -176,18 +174,21 @@
         <div>
             <h5>Section 3</h5>
             <ul class ="nav flex-column">
-                <a href="#" class="nav-link link-dark text-white">Home</a>
-                <a href="#" class="nav-link link-dark text-white">Features</a>
-                <a href="#" class="nav-link link-dark text-white">Product</a>
-                <a href="#" class="nav-link link-dark text-white">FAQ</a>
-                <a href="#" class="nav-link link-dark text-white">About</a>
+                <a href="#" class="nav-link link-dark text-white">Carrer</a>
+                <a href="#" class="nav-link link-dark text-white">Partners</a>
+                <a href="#" class="nav-link link-dark text-white">Support</a>
             </ul>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous">
+
+    </script>
+
+
+
 </body>
 
 </html>

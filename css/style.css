@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+:root{
+    scroll-behavior: smooth;
+}
 
 body{
     display: flex;
@@ -25,6 +28,16 @@ body{
             width:40px;
         }
 
+        .nav-pills .nav-link.link-dark.active{
+            background-color: rgba(0, 0, 0, 0.377);
+        }
+
+        /* a:hover,
+        a:focus,
+        a:active{
+            background-color: rgba(0, 0, 0, 0.377);
+        } */
+
  /* MAIN */
     main {
         display: flex;
@@ -40,10 +53,6 @@ body{
     }
 
 
-    #portofolio-image{
-        height: 300px;
-    }
-
 
         #contact{
             border: 2px solid black;
@@ -58,3 +67,16 @@ body{
         justify-content: space-around;
         background-color: grey;
     }
+
+@media (max-width : 992px) {
+    #hero, #portofolio-image{
+        display: none;
+    }
+    #input, .btn {
+        margin: 30px;
+    }
+
+    #contact div:first-child{
+        border-bottom: 1px solid black;
+    }
+}
