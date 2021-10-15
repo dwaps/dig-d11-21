@@ -13,11 +13,18 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
-.navigation{
+#home, #services, #map, #franchise{
+    scroll-margin-top: 105px;
+}
+#titre-section {
+    scroll-margin-top: 67px;
+}
+
+.navbar{
     display: flex;
     box-shadow: 0px 10px 10px rgba(45,55,68,0.30);
     width: 100%;
-    background-color: #f7a022;
+    background-color: #A12B31;
 }
 
 nav {
@@ -39,7 +46,7 @@ ul {
     display: flex;
     list-style-type: none;
     padding-top: 20px;
-    padding-right: 150px;
+    padding-right: 10px;
     align-items: center;
 }
 li {
@@ -51,7 +58,7 @@ li {
 }
 
 li:hover {
-    background-color: #a12b31;
+    background-color: #f7a022;
     border-radius: 50px;
     color: whitesmoke;
 }
@@ -61,7 +68,10 @@ a {
 }
 a:hover{
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.911);
+    color: whitesmoke;
+}
+#btnTog{
+    color: whitesmoke;
 }
 
 .carousel-inner{
