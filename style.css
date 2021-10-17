@@ -13,6 +13,8 @@ body {
     font-family: 'Heebo', sans-serif;
 }
 
+
+
 #home, #services, #map, #franchise{
     scroll-margin-top: 105px;
 }
@@ -24,8 +26,8 @@ body {
     display: flex;
     box-shadow: 0px 10px 10px rgba(45,55,68,0.30);
     width: 100%;
-    background-color: #A12B31;
-}
+    background-color: transparent;
+} 
 
 nav {
     display: flex;
@@ -176,11 +178,6 @@ h2 {
     font-size: 6rem;
 }
 
-/* .logoHeat img {
-    width: 100%;
-    
-} */
-
 .franchise-description {
     text-align: justify;
     font-weight: bold;
@@ -230,9 +227,14 @@ footer {
 footer h4 {
     padding-bottom: 20px;   
 }
+.navFooterr {
+    padding-left: 60px;
+
+}
 .sign {
     width: 20%;
     margin: 0 auto;
+    
 }
 
 @media screen and (max-width: 1455px) {
@@ -272,7 +274,7 @@ footer h4 {
         width: 100%;
         height: auto;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .ourteam{
         display: grid;
@@ -289,15 +291,73 @@ footer h4 {
         width: 100%;
         background-color: #f7a022;
         text-align: justify;
-        padding-top: 50px;
-        padding-left: 80px;
-        padding-bottom: 50px;
+        
+        height: auto;
     }
+    #logo-heat{
+        
+        width: 100%;
+        height: auto;
+    }
+    #planFTXarena{
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+}
     
-@media screen and (max-width: 1015px) {
-    .franchise-description{
-        padding-bottom: 30px;
+@media screen and (max-width: 905px) {
+    .carousel-item img{
+        padding-top: 13%;
     }
 }
 
+@media screen and (max-width: 705px) {
+    footer{
+       display: flex;
+       flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ourteam{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.911);
+        text-align: center;
+        color: #FFF;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navFooter {
+        order: 3;
+        padding-right: 50px;
+    }    
+    .coordonnees {
+        order: 2;
+        width: 40%;
+    }
+    .logoSteeve {
+        padding-left: 50px;
+        order: 4;
+    }
+    .carousel-item img{
+        padding-top: 17%;
+    }
     
+}
+
+@media screen and (max-width: 361px) {
+    .carousel-item img{
+        padding-top: 29%;
+    }
+}
+
+
