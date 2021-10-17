@@ -7,12 +7,12 @@
 
 
 
-const navLinks = document.querySelectorAll('.nav-item')
-const menuToggle = document.getElementById('offcanvasNavbar')
-const bsCollapse = new bootstrap.Collapse(menuToggle)
-navLinks.forEach((l) => {
-    l.addEventListener('click', () => { bsCollapse.toggle() })
-})
+// const navLinks = document.querySelectorAll('.nav-item')
+// const menuToggle = document.getElementById('offcanvasNavbar')
+// const bsCollapse = new bootstrap.Collapse(menuToggle)
+// navLinks.forEach((l) => {
+//     l.addEventListener('click', () => { bsCollapse.toggle() })
+// })
 
 
 

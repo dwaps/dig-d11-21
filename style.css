@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
 
+
 html {
     scroll-behavior: smooth;
     margin: 0;
@@ -12,7 +13,6 @@ html {
 body {
     font-family: 'Heebo', sans-serif;
 }
-
 
 
 #home, #services, #map, #franchise{
@@ -26,7 +26,7 @@ body {
     display: flex;
     box-shadow: 0px 10px 10px rgba(45,55,68,0.30);
     width: 100%;
-    background-color: transparent;
+    background-color: #A12B31;
 } 
 
 nav {
@@ -34,7 +34,6 @@ nav {
     position: relative;
     width: 100%;
     justify-content: end;
-    
 }
 .navigation img {
     width: 90px;
@@ -44,37 +43,27 @@ nav {
     padding-top: 10px;
     margin-bottom: 10px;
 }
-ul {
-    display: flex;
-    list-style-type: none;
-    padding-top: 20px;
-    padding-right: 10px;
-    align-items: center;
+.btn-group {
+    padding-right: 10%;   
 }
-li {
-    display: inline;
-    padding: 5px 25px;
+#btnGroupDrop1{
+    padding: 30px 30px;
+    background-color: #f7a022;
+    border: none;
+    color: black;
+    border-radius: 50%;
+}
+.nav-item{
+    padding: 10px;
     font-size: 1.4rem;
-    cursor: pointer;
-    font-weight: bold;
+}
+ul {
+   list-style-type: none;
+}
+.nav-item:hover {
+    color: #A12B31;
 }
 
-li:hover {
-    background-color: #f7a022;
-    border-radius: 50px;
-    color: whitesmoke;
-}
-a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.911);
-}
-a:hover{
-    text-decoration: none;
-    color: whitesmoke;
-}
-#btnTog{
-    color: whitesmoke;
-}
 
 .carousel-inner{
     height: auto;
@@ -308,16 +297,10 @@ footer h4 {
     
 @media screen and (max-width: 905px) {
     .carousel-item img{
-        padding-top: 13%;
+        padding-top: 11%;
     }
 }
 
-@media screen and (max-width: 705px) {
-    footer{
-       display: flex;
-       flex-wrap: wrap;
-    }
-}
 
 @media screen and (max-width: 800px) {
     .ourteam{
@@ -351,7 +334,15 @@ footer h4 {
     .carousel-item img{
         padding-top: 17%;
     }
-    
+    #btnGroupDrop1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navbar-toggler{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 361px) {

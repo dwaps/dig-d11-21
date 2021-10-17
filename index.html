@@ -6,32 +6,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="favicon-logo-heat.png" />
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-       
+        <link rel="stylesheet" href="style.css">
         <title>Miami Heat</title>
     </head>
 
     <body>
 
-
         <div class="navigation" id="navigation">
 
 
-
-
-            <nav class="navbar navbar-light bg-yellow fixed-top">
+            <nav class="navbar navbar-light  fixed-top">
                 <div class="container-fluid">
                     <a href="#navigation"><img src="./images/logo-heat.png" alt="logo Miami Heat" href="#navigation"></a>
                     
-                  <button   class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"  data-toggle="modal" data-target="#myModal" data-backdrop="false">
+                  <!-- <button   class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"  data-toggle="modal" data-target="#myModal" data-backdrop="false">
                     <span id="btnTog" class="navbar-toggler-icon bg-white"></span>
                   </button>
-                  
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                   -->
+                  <!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> -->
+
+                    <div class="btn-group" role="group">
+                      <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                      </button>
+                      <ul class="dropdown-menu p-3 mb-2 bg-warning text-dark" aria-labelledby="btnGroupDrop1">
+                        <li class="nav-item ">
+                          <a class="nav-link active p-3 mb-2 bg-warning text-dark" aria-current="page" href="#home">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active p-3 mb-2 bg-warning text-dark" href="#services">Nos cadres</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active p-3 mb-2 bg-warning text-dark" aria-current="page" href="#titre-section">Nos services</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active p-3 mb-2 bg-warning text-dark" href="#franchise">Le club</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active p-3 mb-2 bg-warning text-dark" href="#map">Nous contacter</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                    
-                    <div class="offcanvas-body" id="offcanvas-body">
+                    <!-- <div class="offcanvas-body" id="offcanvas-body">
                       <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                           <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
@@ -52,7 +73,7 @@
                       </ul>
                       
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </nav>
 
@@ -236,12 +257,21 @@
             </div>
 
             <div class="navFooter">
-                <h4>NAVIGATION</h4>
-                <p class="navFooterr">Accueil<br>
-                Nos cadres<br>
-                Nos services<br>
-                Le club<br></p>
-            </div>
+                <h4>PARTNERS</h4>
+                
+                <ul class="footer__general-nav list--inline site-footer__social-icons social-icons site-footer__subwrapper">
+                  <li>
+                    <img src="//cdn.shopify.com/s/files/1/1368/0393/files/nike_1024x1024.png?v=1547268273">
+                  </li>
+                  <br>
+                  <li>
+                    <img src="//cdn.shopify.com/s/files/1/1368/0393/files/47_1024x1024.png?v=1547268302">
+                  </li>
+                  <br>
+                  <li>
+                    <img src="//cdn.shopify.com/s/files/1/1368/0393/files/new-era_1024x1024.png?v=1547268321">
+                  </li> 
+                </ul>
 
         </footer>
 
@@ -249,12 +279,11 @@
             <p>&copy; Site web créé par DOMBALD Steeve - 2021</p>
         </div>
 
-        
-
+       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
         <script src="index.js"></script>
         
-
+        
         
     </body>
 
