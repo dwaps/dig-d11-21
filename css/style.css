@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+/* HEADER */
+    header{
+        background-color: rgba(128, 128, 128, 0.973);
+        color: white;
+
+    }
+
+        header img{
+            width:40px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+       li a{
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+       li a:hover,
+       li a:focus,
+       li a:active{
+            background-color: rgba(19, 17, 17, 0.377);
+            color: white
+        }
+
+
+ /* MAIN */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+        #services p, #ourTeam p{
+            text-align: justify;
+        }
+
+    aside > img{
+        height: 150px;
+    }
+
+
+
+        #contact{
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            
+        }
+
+/* FOOTER */
+    footer{
+        display: flex;
+        justify-content: space-around;
+        background-color: grey;
+    }
+
+@media (max-width : 992px) {
+    #hero, #portofolio-image{
+        display: none;
+    }
+    #input, .btn {
+        margin: 30px;
+    }
+
+    #contact div:first-child{
+        border-bottom: 1px solid black;
+    }
+
+}

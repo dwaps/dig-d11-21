@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>SPA HTML</title>
+</head>
+
+<body>
+
+    <header class="container-fluid d-flex justify-content-between sticky-md-top">
+        <a class="navbar-brand" href="#"><img src="asset/images/logo.svg"></a>
+        <nav class="nav">
+            <li><a class=""  href="#">Hero</a></li>
+            <li><a class=""  href="#services">Services</a></li>
+            <li><a class=""  href="#ourTeam">Our team</a></li>
+            <li><a class=""  href="#portofolio">Portofolio</a></li>
+            <li><a class=""  href="#contact">Contact us</a></li>           
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+        <!-- Carousel -->
+        <section id="hero" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="asset/slides/slide1.jpg" class="d-block w-100" alt="carousel slide 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/slides/slide2.jpg" class="d-block w-100" alt="carousel slide 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="asset/slides/slide3.jpg" class="d-block w-100" alt="carousel slide 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <!-- section SERVICES -->
+        <section id="services" class="row">
+            <h2 class="pb-2 mt-3 border-top border-dark">Services</h2>
+            <aside class="col-lg text-center">
+                <img src="asset/icons/service1.png" alt="engineering"
+                    class="image-fluid border border-1 border-dark rounded-circle text-center">
+                <h3>Engineering</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
+                    totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
+                    provident error odio!</p>
+                <a href="#" class="icon-link">En savoir plus</a>
+            </aside>
+            <aside class="col-lg text-center">
+                <img src="asset/icons/service2.png" alt="maintenance"
+                    class="image-fluid border border-1 border-dark rounded-circle">
+                <h3>Maintenance</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
+                    totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
+                    provident error odio!</p>
+                <a href="#" class="icon-link">En savoir plus</a>
+            </aside>
+            <aside class="col-lg text-center">
+                <img src="asset/icons/service3.png" alt="formation"
+                    class="image-fluid border border-1 border-dark rounded-circle">
+                <h3>Formation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
+                    totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
+                    provident error odio!</p>
+                <a href="#" class="icon-link">En savoir plus</a>
+            </aside>
+        </section>
+
+        <!-- section OUT TEAM -->
+        <section id="ourTeam" class="row">
+            <h2 class="pb-2 mt-3 border-top border-dark">Our Team</h2>
+            <aside class="col-lg text-center">
+                <img src="asset/avatars/avatar1.png" class="image-fluid" alt="avatar 1">
+                <article class="border-top">
+                    <h3>LAURENT Frédéric</h3>
+                    <h5>(President)</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum excepturi obcaecati magni
+                        eaque
+                        facilis, veritatis sit architecto assumenda porro sunt temporibus quam nam non quaerat omnis
+                        praesentium
+                        a debitis!</p>
+                </article>
+            </aside>
+            <aside class="col-lg text-center">
+                <img src="asset/avatars/avatar2.png" class="image-fluid" alt="avatar 2">
+
+                <article class="border-top">
+                    <h3>JEAN Charles</h3>
+                    <h5>(Lead designer)</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit aperiam beatae quidem
+                        voluptatem sequi consectetur qui, sit officiis facere eligendi illo adipisci porro architecto
+                        nostrum! Commodi voluptate modi labore illo?</p>
+                </article>
+            </aside>
+            <aside class="col-lg text-center">
+                <img src="asset/avatars/avatar3.png" class="image-fluid" alt="avatar 3">
+                <article class="border-top">
+                    <h3>DUPONT Danielle</h3>
+                    <h5>(Resp. Marketing)</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ab voluptates reprehenderit
+                        eligendi consequatur id iste error voluptatibus. Molestias dicta nobis impedit illo recusandae.
+                        Ab
+                        magnam aspernatur odit eius repellendus.</p>
+                </article>
+            </aside>
+        </section>
+
+        <!-- section PORTOFOLIO -->
+        <section id="portofolio" class="row border border-dark">
+ 
+            <div class="col-lg border-end border-dark">
+                <h2 class="pb-2 mt-3 ">Portofolio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum excepturi obcaecati magni eaque
+                    facilis, veritatis sit architecto assumenda porro sunt temporibus quam nam non quaerat omnis
+                    praesentium
+                    a debitis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt tenetur expedita
+                    similique quis ab excepturi eveniet. Sapiente quod iure animi! Eaque animi odio fuga nihil dicta
+                    officiis eveniet deserunt</p>
+            </div>
+            <div class="col-lg text-center ">
+                <img src="asset/images/portofolio.jpg" alt="portofolio" class="image-fluid w-100" id="portofolio-image">
+            </div>
+        </section>
+
+        <!-- section CONTACT -->
+        <section id="contact" class="row">
+            <div class="col-lg border-end border-dark">
+                <img src="asset/images/maps.JPG" class="image-fluid w-100" alt="maps">
+            </div>
+
+            <form class="col-lg" name="connect-form">
+                <div class="d-grid col-9 mx-auto mb-3">
+                    <label for="email" class="form-label">Adresse email</label>
+                    <input class="form-control" type="email" placeholder="email@email.com" id="email">
+                </div>
+                <div class="d-grid col-9 mx-auto mb-3">
+                    <label for="pseudo" class="form-label">Pseudo</label>
+                    <input class="form-control" type="text" placeholder="votre pseudo" id="pseudo">
+                </div>
+                <div class="d-grid col-9 mx-auto mb-3">
+                    <label for="password">Mot de passe</label>
+                    <input class="form-control" type="password" name="password" id="password" placeholder="password">
+                </div>
+                <div class="d-grid col-2 mx-auto">
+                    <button class="btn btn-success" type="submit">Connect</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="container-fluid d-flex flex-column">
+        <section class="d-flex justify-content-around">
+            <div>
+                <h5>More details</h5>
+                <ul class="nav flex-column">
+                    <a href="#" class="nav-link link-dark text-white">Home</a>
+                    <a href="#" class="nav-link link-dark text-white">Features</a>
+                    <a href="#" class="nav-link link-dark text-white">Product</a>
+                    
+                </ul>
+            </div>
+            <div>
+                <h5>Help center</h5>
+                <ul class ="nav flex-column">
+                    <a href="#" class="nav-link link-dark text-white">FAQ</a>
+                    <a href="#" class="nav-link link-dark text-white">Forums</a>
+                    <a href="#" class="nav-link link-dark text-white">Support</a>
+                </ul>
+            </div>
+            <div>
+                <h5>Join us</h5>
+                <ul class ="nav flex-column">
+                    <a href="#" class="nav-link link-dark text-white">Carrer</a>
+                    <a href="#" class="nav-link link-dark text-white">Partners</a>
+                    <a href="#" class="nav-link link-dark text-white">Our implantation</a>
+                </ul>
+            </div>
+        </section>
+        <hr>
+            <div class="d-flex justify-content-center">	&copy; Christian INGOLD - 2021</div>
+        </footer>
+    <!-- scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- scripts JS -->
+    <script type="module" src="js/index.js"></script>
+
+</body>
+
+</html>
