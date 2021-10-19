@@ -1,0 +1,112 @@
+
+export class Router {
+	static currentRoute = "";
+
+	constructor() {
+
+	}
+
+	static Route = class {
+		static PAGE1 = "page1"
+		static PAGE2 = "page2"
+		static PAGE3 = "page3"
+		static PAGE4 = "page4"
+	}
+
+	static run() {
+		console.log('location.search.substring(1) is :', location.search.substring(1))
+		switch (location.search.substring(1)) {
+			case "":
+			case Router.Route.PAGE1:
+				Router.currentRoute = Router.Route.PAGE1;
+				this.loadView(Router.currentRoute)
+				break
+
+			case Router.Route.PAGE2:
+				Router.currentRoute = Router.Route.PAGE2;
+				this.loadView(Router.currentRoute)
+				break;
+
+			case Router.Route.PAGE3:
+				Router.currentRoute = Router.Route.PAGE3;
+				this.loadView(Router.currentRoute)
+				break;
+
+			case Router.Route.PAGE4:
+				Router.currentRoute = Router.Route.PAGE4;
+				this.loadView(Router.currentRoute)
+				break;
+
+			default:
+				location.href = "/";
+				break;
+		}
+	}
+
+	static loadView(view = Router.Route.PAGE1) {
+		const divP1 = document.querySelector('.page-1')
+		const divP2 = document.querySelector('.page-2')
+		const divP3 = document.querySelector('.page-3')
+		const divP4 = document.querySelector('.page-4')
+
+		switch (view) {
+			case Router.Route.PAGE1:
+				divP2.classList.add('view-disable')
+				divP3.classList.add('view-disable')
+				divP4.classList.add('view-disable')
+
+				const prevBtn = document.getElementById('prev')
+				prevBtn.classList.add('disabled')
+
+				break;
+
+			case Router.Route.PAGE2:
+				divP1.classList.add('view-disable')
+				divP3.classList.add('view-disable')
+				divP4.classList.add('view-disable')
+				break;
+
+			case Router.Route.PAGE3:
+				divP1.classList.add('view-disable')
+				divP2.classList.add('view-disable')
+				divP4.classList.add('view-disable')
+				break;
+
+			case Router.Route.PAGE4:
+				divP1.classList.add('view-disable')
+				divP2.classList.add('view-disable')
+				divP3.classList.add('view-disable')
+
+				const nextBtn = document.getElementById('next')
+				nextBtn.classList.add('disabled')
+				break;
+
+			default:
+				break;
+		}
+	}
+
+	static loadProgressBar() {
+		switch (Router.currentRoute) {
+			case Router.Route.PAGE1:
+
+				break;
+
+			case Router.Route.PAGE2:
+
+				break;
+
+			case Router.Route.PAGE3:
+
+				break;
+
+			case Router.Route.PAGE4:
+
+
+				break;
+
+			default:
+				break;
+		}
+	}
+}

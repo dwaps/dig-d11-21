@@ -1,0 +1,90 @@
+/* RESET DE BOOTSTRAP */
+ul {
+	all: unset;
+}
+
+li {
+	all: unset;
+}
+
+body {
+	--progress-bar-grey: #999;
+	--progress-bar-blue: rgb(0, 32, 212);
+}
+
+/* CSS */
+.btns {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.view-disable {
+	display: none;
+}
+
+/* PROGRESS-BAR */
+ul {
+	display: flex;
+	justify-content: center;
+}
+
+ul li {
+	color: var(--progress-bar-grey);
+}
+
+/* les ronds */
+ul > li::after {
+	content: "";
+	display: block;
+	position: relative;
+	z-index: -9;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	bottom: 24px;
+	right: 8px;
+	border: 3px solid var(--progress-bar-grey);
+}
+
+/* les traits */
+ul > li::before {
+	content: "";
+	display: block;
+	position: relative;
+	background-color: var(--progress-bar-grey);
+	width: 65px;
+	height: 3px;
+	top: 14px;
+	margin-left: 17px;
+	margin-right: 7px;
+	z-index: -99;
+}
+
+
+.progess-bar-anim-next {
+	animation-name: slidenext;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+ul > li:last-child::before {
+	display: none;
+}
+
+ul > li:last-child {
+	position: relative;
+	top: 2px;
+	/* Cette propiété permet de corriger un décalage de 2px -> due au "display: none;" du selecteur: ul > li:last-child::before ~ligne 77 */
+}
+
+/* animation */
+/* TODO Revoir l'animation */
+@keyframes slidenext {
+	from {
+		background-color: var(--progress-bar-grey);
+	}
+	to {
+		background-color: var(--progress-bar-blue);
+	}
+}
