@@ -23,8 +23,42 @@ body {
 	display: none;
 }
 
-.page-1, .page-2, .page-3, .page-4 {
+.page-1,
+.page-2,
+.page-3,
+.page-4 {
 	height: 300px;
+}
+
+/* PAGE 2 */
+
+.checkbox {
+	display: none;
+}
+
+label img {
+	scale: 1;
+}
+
+label {
+	position: relative;
+}
+
+label::before {
+	content: "✓";
+	position: absolute;
+	left: 95px;
+	top: 20px;
+	color: green;
+	display: none;
+}
+
+:checked + label img {
+	transform: scale(0.8);
+}
+
+:checked + label::before {
+	display: block;
 }
 
 /* PROGRESS-BAR */

@@ -53,7 +53,4 @@ export class App {
 		})
 	}
 
-	static controlForm1() {
-		//TODO control de formulaire
-	}
 }

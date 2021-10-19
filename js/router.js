@@ -53,6 +53,8 @@ export class Router {
 		const divP2 = document.querySelector('.page-2')
 		const divP3 = document.querySelector('.page-3')
 		const divP4 = document.querySelector('.page-4')
+		const h2 = document.querySelector('h2')
+		console.log('h2 is :', h2)
 
 		switch (view) {
 			case Router.Route.PAGE1:
@@ -69,12 +71,16 @@ export class Router {
 				divP1.classList.add('view-disable')
 				divP3.classList.add('view-disable')
 				divP4.classList.add('view-disable')
+
+				h2.innerText = "Catégories préférées"
 				break;
 
 			case Router.Route.PAGE3:
 				divP1.classList.add('view-disable')
 				divP2.classList.add('view-disable')
 				divP4.classList.add('view-disable')
+
+				h2.innerText = "Adresse de livraison"
 				break;
 
 			case Router.Route.PAGE4:
@@ -84,6 +90,8 @@ export class Router {
 
 				const nextBtn = document.getElementById('next')
 				nextBtn.classList.add('disabled')
+
+				h2.innerText = "Confirmation"
 				break;
 
 			default:
