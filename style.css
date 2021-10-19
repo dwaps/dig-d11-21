@@ -23,6 +23,10 @@ body {
 	display: none;
 }
 
+.page-1, .page-2, .page-3, .page-4 {
+	height: 300px;
+}
+
 /* PROGRESS-BAR */
 ul {
 	display: flex;
@@ -31,6 +35,11 @@ ul {
 
 ul li {
 	color: var(--progress-bar-grey);
+}
+
+.page-2 img {
+	width: 100px;
+	height: 100px;
 }
 
 /* les ronds */
@@ -61,13 +70,6 @@ ul > li::before {
 	z-index: -99;
 }
 
-
-.progess-bar-anim-next {
-	animation-name: slidenext;
-	animation-duration: 0.5s;
-	animation-fill-mode: forwards;
-}
-
 ul > li:last-child::before {
 	display: none;
 }
@@ -75,16 +77,14 @@ ul > li:last-child::before {
 ul > li:last-child {
 	position: relative;
 	top: 2px;
-	/* Cette propiété permet de corriger un décalage de 2px -> due au "display: none;" du selecteur: ul > li:last-child::before ~ligne 77 */
+	/* Cette propiété permet de corriger un décalage de 2px -> due au "display: none;" du selecteur: ul > li:last-child::before */
 }
 
-/* animation */
-/* TODO Revoir l'animation */
-@keyframes slidenext {
-	from {
-		background-color: var(--progress-bar-grey);
-	}
-	to {
-		background-color: var(--progress-bar-blue);
-	}
+/* Ces propriété permette de modifier les speudos-éléments before et after en js */
+.li-after-modifier::after {
+	border-color: var(--bs-blue);
+}
+
+.li-before-modifier::before {
+	background-color: var(--bs-blue);
 }

@@ -20,21 +20,26 @@ export class Router {
 			case Router.Route.PAGE1:
 				Router.currentRoute = Router.Route.PAGE1;
 				this.loadView(Router.currentRoute)
+				this.loadProgressBar()
 				break
 
 			case Router.Route.PAGE2:
 				Router.currentRoute = Router.Route.PAGE2;
 				this.loadView(Router.currentRoute)
+				this.loadProgressBar()
 				break;
 
 			case Router.Route.PAGE3:
 				Router.currentRoute = Router.Route.PAGE3;
 				this.loadView(Router.currentRoute)
+				this.loadProgressBar()
+
 				break;
 
 			case Router.Route.PAGE4:
 				Router.currentRoute = Router.Route.PAGE4;
 				this.loadView(Router.currentRoute)
+				this.loadProgressBar()
 				break;
 
 			default:
@@ -87,21 +92,35 @@ export class Router {
 	}
 
 	static loadProgressBar() {
+		console.log('Router.currentRoute is :', Router.currentRoute)
+		const li1 = document.querySelector('ul > li:first-child')
+		const li2 = document.querySelector('ul > li:nth-child(2)')
+		const li3 = document.querySelector('ul > li:nth-child(3)')
+		const li4 = document.querySelector('ul > li:last-child')
 		switch (Router.currentRoute) {
 			case Router.Route.PAGE1:
-
+				// nothing to do
 				break;
 
 			case Router.Route.PAGE2:
-
+				li1.classList.add('li-before-modifier')
+				li2.classList.add('li-after-modifier')
 				break;
 
 			case Router.Route.PAGE3:
-
+				li1.classList.add('li-before-modifier')
+				li2.classList.add('li-after-modifier')
+				li2.classList.add('li-before-modifier')
+				li3.classList.add('li-after-modifier')
 				break;
 
 			case Router.Route.PAGE4:
-
+				li1.classList.add('li-before-modifier')
+				li2.classList.add('li-after-modifier')
+				li2.classList.add('li-before-modifier')
+				li3.classList.add('li-after-modifier')
+				li3.classList.add('li-before-modifier')
+				li4.classList.add('li-after-modifier')
 
 				break;
 
