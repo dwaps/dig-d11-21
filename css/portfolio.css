@@ -1,5 +1,5 @@
 .portfolio {
-    padding: 100px 100px;
+    padding: 100px 5%;
 }
 
 .portfolio-content {
@@ -8,7 +8,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.portfolio-text{
+.portfolio-text {
     font-size: 1.4rem;
     line-height: 35px;
 }
@@ -20,4 +20,14 @@
     background-size: cover;
     height: 500px;
     width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .portfolio-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio-text {
+        order: 1;
+    }
 }
