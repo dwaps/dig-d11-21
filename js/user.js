@@ -8,22 +8,42 @@ export class User {
     }
     // End of constructor
 
+    /**
+     * Fonction qui renvoie vraie si l'utilisateur est connecté
+     * @returns boolean
+     */
     static isConnected() {
+        console.log(!!sessionStorage.getItem(User.SESSION_KEY));
         return !!sessionStorage.getItem(User.SESSION_KEY);
     }
 
-    //TODO: Connecter le logout
+    /**
+     * Fonction qui enlève les données dans la sessionStorage
+     */
     static logout(){
         sessionStorage.removeItem(User.SESSION_KEY);
     }
 
+    /**
+     * fonction qui enregistre les données de la sessionStorage (clé, valeur)
+     * @returns boolean
+     */
     login(){
         sessionStorage.setItem(User.SESSION_KEY, JSON.stringify(this));
-        console.log(sessionStorage.setItem(User.SESSION_KEY, JSON.stringify(this)));
         return true;
     }
 
-    //TODO: Hash le mot de passe et utliser la méthode dans le app.js
-
+    /**
+     * fonction qui crypte le mot de passe entré dans le formulaire
+     * @param {} pwd 
+     * @returns pwd hashé
+     */
+    static hashPassword(pwd){
+        let hashed = [...pwd].map(v => v.charCodeAt(0)).join(''); 
+        while(hashed.length < 40){
+            hashed += hashed;
+        }
+        return hashed;
+    }
 
 }

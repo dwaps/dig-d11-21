@@ -18,11 +18,11 @@
     <header class="container-fluid d-flex justify-content-between sticky-md-top">
         <a class="navbar-brand" href="#"><img src="asset/images/logo.svg"></a>
         <nav class="nav">
-            <li><a class=""  href="#">Hero</a></li>
-            <li><a class=""  href="#services">Services</a></li>
-            <li><a class=""  href="#ourTeam">Our team</a></li>
-            <li><a class=""  href="#portofolio">Portofolio</a></li>
-            <li><a class=""  href="#contact">Contact us</a></li>           
+            <li><a class="" href="#">Hero</a></li>
+            <li><a class="" href="#services">Services</a></li>
+            <li><a class="" href="#ourTeam">Our team</a></li>
+            <li><a class="" href="#portofolio">Portofolio</a></li>
+            <li><a class="" href="#contact">Contact us</a></li>
         </nav>
     </header>
 
@@ -123,7 +123,7 @@
 
         <!-- section PORTOFOLIO -->
         <section id="portofolio" class="row border border-dark">
- 
+
             <div class="col-lg border-end border-dark">
                 <h2 class="pb-2 mt-3 ">Portofolio</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum excepturi obcaecati magni eaque
@@ -144,25 +144,36 @@
             <div class="col-lg border-end border-dark">
                 <img src="asset/images/maps.JPG" class="image-fluid w-100" alt="maps">
             </div>
+            <div class="col-lg">
+                <form class="col-lg" name="connect-form">
+                    <div class="d-grid col-9 mx-auto mb-3">
+                        <label for="email" class="form-label">Adresse email</label>
+                        <input class="form-control" type="email" placeholder="email@email.com" id="email" name="email"
+                            value="gogo@yahoo.fr">
+                    </div>
+                    <div class="d-grid col-9 mx-auto mb-3">
+                        <label for="pseudo" class="form-label">Pseudo</label>
+                        <input class="form-control" type="text" placeholder="votre pseudo" id="pseudo" name="pseudo"
+                            value="Gogo78">
+                    </div>
+                    <div class="d-grid col-9 mx-auto mb-3">
+                        <label for="password">Mot de passe</label>
+                        <input class="form-control" type="password" name="password" id="password" placeholder="password"
+                            value="1234">
+                    </div>
+                    <div class="d-grid col-2 mx-auto">
+                        <button class="btn btn-success" type="submit">Connect</button>
+                    </div>
+                </form>
+            <!-- Gestion de la connexion -->
+                <section id="home" class="text-center" hidden>
+                    <div id="textPerso"></div>
+                    <a href="?logout">Se déconnecter</a>
+                </section>
+            </div>
 
-            <form class="col-lg" name="connect-form">
-                <div class="d-grid col-9 mx-auto mb-3">
-                    <label for="email" class="form-label">Adresse email</label>
-                    <input class="form-control" type="email" placeholder="email@email.com" id="email" name="email" value="gogo@yahoo.fr">
-                </div>
-                <div class="d-grid col-9 mx-auto mb-3">
-                    <label for="pseudo" class="form-label">Pseudo</label>
-                    <input class="form-control" type="text" placeholder="votre pseudo" id="pseudo" name="pseudo" value="Gogo78">
-                </div>
-                <div class="d-grid col-9 mx-auto mb-3">
-                    <label for="password">Mot de passe</label>
-                    <input class="form-control" type="password" name="password" id="password" placeholder="password" value="1234">
-                </div>
-                <div class="d-grid col-2 mx-auto">
-                    <button class="btn btn-success" type="submit">Connect</button>
-                </div>
-            </form>
         </section>
+
 
     </main>
 
@@ -175,12 +186,12 @@
                     <a href="#" class="nav-link link-dark text-white">Home</a>
                     <a href="#" class="nav-link link-dark text-white">Features</a>
                     <a href="#" class="nav-link link-dark text-white">Product</a>
-                    
+
                 </ul>
             </div>
             <div>
                 <h5>Help center</h5>
-                <ul class ="nav flex-column">
+                <ul class="nav flex-column">
                     <a href="#" class="nav-link link-dark text-white">FAQ</a>
                     <a href="#" class="nav-link link-dark text-white">Forums</a>
                     <a href="#" class="nav-link link-dark text-white">Support</a>
@@ -188,7 +199,7 @@
             </div>
             <div>
                 <h5>Join us</h5>
-                <ul class ="nav flex-column">
+                <ul class="nav flex-column">
                     <a href="#" class="nav-link link-dark text-white">Carrer</a>
                     <a href="#" class="nav-link link-dark text-white">Partners</a>
                     <a href="#" class="nav-link link-dark text-white">Our implantation</a>
@@ -196,8 +207,8 @@
             </div>
         </section>
         <hr>
-            <div class="d-flex justify-content-center">	&copy; Christian INGOLD - 2021</div>
-        </footer>
+        <div class="d-flex justify-content-center"> &copy; Christian INGOLD - 2021</div>
+    </footer>
     <!-- scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- scripts JS -->

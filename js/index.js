@@ -1,5 +1,7 @@
 import { App } from './app.js';
+import { Router} from './router.js';
 
 new App();
+Router.run();
 
-// TODO : importer et appeler le router.
+// TODO implémenter l'API sur la carte

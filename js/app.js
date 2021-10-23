@@ -13,12 +13,13 @@ export class App {
             console.log(pseudo, password, email);
 
             if (pseudo && password && password.length > 3) {
-                const user = new User(pseudo,password,email);
+                const user = new User(pseudo, password, email);
+                user.password = User.hashPassword(user.password);
 
-                user.login();
-            } 
-
-            //TODO: créer les routes et gérer le renvoi connexion/déconnexion + affichage message personnalisé
+                if (user.login()) {
+                    location.search = "home";
+                }
+            }
         });
     }
 }

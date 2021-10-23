@@ -16,6 +16,12 @@ body{
     text-align: center;
     min-height: 100vh;
 }
+
+span {
+    font-weight: bold;
+    color: darkgreen;
+    font-style: italic;
+}
 /* HEADER */
     header{
         background-color: rgba(128, 128, 128, 0.973);
