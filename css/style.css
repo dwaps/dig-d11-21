@@ -77,6 +77,11 @@ span {
             
         }
 
+    #carte {
+        height: 40rem;
+        /* height: 800px; */
+    }
+
 /* FOOTER */
     footer{
         display: flex;
