@@ -3,6 +3,9 @@
 }
 :root{
     scroll-behavior: smooth;
+    --bgc-color: #785E2F;
+    --bgc-color-secondary : #785f2fd2;
+
 }
 
 body{
@@ -18,13 +21,21 @@ body{
 }
 /* HEADER */
     header{
-        background-color: rgba(128, 128, 128, 0.973);
+        background-color: var(--bgc-color);
         color: white;
-
+        transition: 700ms ease-in-out;
     }
 
+
+    body.scrolled header {
+        background-color: var(--bgc-color-secondary);
+      }
+
+      body.scrolled header #logo {
+        width: 40px;
+      }
         header img{
-            width:40px;
+            width:60px;
         }
 
         nav {
@@ -47,7 +58,6 @@ body{
             color: white
         }
 
-
  /* MAIN */
     main {
         display: flex;
@@ -62,20 +72,23 @@ body{
         height: 150px;
     }
 
+    #hero,#services, #portofolio, #ourTeam {
+        scroll-margin-top:80px;
+    }
+    
 
-
-        #contact{
+    #contact{
             border: 2px solid black;
             display: flex;
             align-items: center;
-            
+            scroll-margin-top:200px;
         }
 
 /* FOOTER */
     footer{
         display: flex;
         justify-content: space-around;
-        background-color: grey;
+        background-color: var(--bgc-color);
     }
 
 @media (max-width : 992px) {
@@ -89,5 +102,10 @@ body{
     #contact div:first-child{
         border-bottom: 1px solid black;
     }
-
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        background-color: var(--bgc-color);
+        /* border:1px solid black */
+    }
 }

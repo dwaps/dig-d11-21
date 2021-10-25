@@ -13,16 +13,16 @@
     <title>SPA HTML</title>
 </head>
 
-<body>
+<body id="body" onscroll=pageScrolled()>
 
-    <header class="container-fluid d-flex justify-content-between sticky-md-top">
-        <a class="navbar-brand" href="#"><img src="asset/images/logo.svg"></a>
+    <header class="container-fluid d-flex justify-content-between sticky-md-top shadow-lg p-3 mb-5">
+        <a class="navbar-brand" href="#"><img id="logo" src="asset/images/logo.svg"></a>
         <nav class="nav">
-            <li><a class=""  href="#">Hero</a></li>
-            <li><a class=""  href="#services">Services</a></li>
-            <li><a class=""  href="#ourTeam">Our team</a></li>
-            <li><a class=""  href="#portofolio">Portofolio</a></li>
-            <li><a class=""  href="#contact">Contact us</a></li>           
+            <li><a class="rounded"  href="#">Hero</a></li>
+            <li><a class="rounded"  href="#services">Services</a></li>
+            <li><a class="rounded"  href="#ourTeam">Our team</a></li>
+            <li><a class="rounded"  href="#portofolio">Portofolio</a></li>
+            <li><a class="rounded"  href="#contact">Contact us</a></li>           
         </nav>
     </header>
 
@@ -51,29 +51,29 @@
         </section>
 
         <!-- section SERVICES -->
-        <section id="services" class="row">
-            <h2 class="pb-2 mt-3 border-top border-dark">Services</h2>
-            <aside class="col-lg text-center">
+        <section id="services" class="row text-center">
+            <h2 class="pb-2 mt-3 border-top border-dark ">Services</h2>
+            <aside class="col-lg">
                 <img src="asset/icons/service1.png" alt="engineering"
-                    class="image-fluid border border-1 border-dark rounded-circle text-center">
+                    class="image-fluid">
                 <h3>Engineering</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
                     totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
                     provident error odio!</p>
                 <a href="#" class="icon-link">En savoir plus</a>
             </aside>
-            <aside class="col-lg text-center">
+            <aside class="col-lg">
                 <img src="asset/icons/service2.png" alt="maintenance"
-                    class="image-fluid border border-1 border-dark rounded-circle">
+                    class="image-fluid ">
                 <h3>Maintenance</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
                     totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
                     provident error odio!</p>
                 <a href="#" class="icon-link">En savoir plus</a>
             </aside>
-            <aside class="col-lg text-center">
+            <aside class="col-lg">
                 <img src="asset/icons/service3.png" alt="formation"
-                    class="image-fluid border border-1 border-dark rounded-circle">
+                    class="image-fluid">
                 <h3>Formation</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo, recusandae hic? Tenetur, iusto culpa
                     totam voluptatem iure sint nesciunt. Alias rem quae distinctio sed quidem doloremque quaerat
@@ -83,8 +83,8 @@
         </section>
 
         <!-- section OUT TEAM -->
-        <section id="ourTeam" class="row">
-            <h2 class="pb-2 mt-3 border-top border-dark">Our Team</h2>
+        <section id="ourTeam" class="row text-center">
+            <h2 class="pb-2 mt-3 border-top border-dark text-center">Our Team</h2>
             <aside class="col-lg text-center">
                 <img src="asset/avatars/avatar1.png" class="image-fluid" alt="avatar 1">
                 <article class="border-top">
@@ -125,7 +125,7 @@
         <section id="portofolio" class="row border border-dark">
  
             <div class="col-lg border-end border-dark">
-                <h2 class="pb-2 mt-3 ">Portofolio</h2>
+                <h2 class="pb-2 mt-3 text-center">Portofolio</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi earum excepturi obcaecati magni eaque
                     facilis, veritatis sit architecto assumenda porro sunt temporibus quam nam non quaerat omnis
                     praesentium
@@ -133,6 +133,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis incidunt tenetur expedita
                     similique quis ab excepturi eveniet. Sapiente quod iure animi! Eaque animi odio fuga nihil dicta
                     officiis eveniet deserunt</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quas vel cum harum aliquam numquam eius recusandae deleniti. Minus culpa placeat libero pariatur. Voluptas rerum omnis nostrum, quos sequi dolore.</p>
             </div>
             <div class="col-lg text-center ">
                 <img src="asset/images/portofolio.jpg" alt="portofolio" class="image-fluid w-100" id="portofolio-image">
@@ -142,11 +143,11 @@
         <!-- section CONTACT -->
         <section id="contact" class="row">
             <div class="col-lg border-end border-dark">
-                <!-- <img src="asset/images/maps.JPG" class="image-fluid w-100" alt="maps"> -->
                 <iframe class="image-fluid w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.169934060469!2d2.228441315854412!3d48.89309850621599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664fc1761b74d%3A0xf03db63ac1e18082!2sM2i%20Formation!5e0!3m2!1sfr!2sfr!4v1635153580341!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <form class="col-lg">
+                <h2 class="pb-2 mt-3 text-center">Contact</h2>
                 <input class="d-grid col-9 mx-auto mb-3" type="text" placeholder="Name" id="input">
                 <textarea class="d-grid col-9 mx-auto mb-3" name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
                 <div class="d-grid col-2 mx-auto">
@@ -192,7 +193,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
     crossorigin="anonymous">
+    </script>
 
+    <script>
+        function pageScrolled() {
+        if (window.scrollY > 60) body.classList.add('scrolled');
+        else body.classList.remove('scrolled');
+      }
     </script>
 
 
