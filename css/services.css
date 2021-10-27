@@ -1,0 +1,65 @@
+.backgroundServices {
+    background-image: repeating-linear-gradient(284deg, transparent 0px, transparent 1px, rgb(251, 251, 251) 1px, rgb(251, 251, 251) 3px), repeating-linear-gradient(14deg, transparent 0px, transparent 1px, rgb(251, 251, 251) 1px, rgb(251, 251, 251) 3px), linear-gradient(90deg, rgb(222, 222, 222), rgb(222, 222, 222));
+    width: 100%;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px 200px;
+}
+
+.container-service {
+
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    width: 300px;
+    font-size: 1.2rem;
+}
+
+.container-service :nth-child(2) {
+    font-size: 2rem;
+    color: var(--third--color);
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.container-service img {
+    margin-bottom: 30px;
+    width: 68%;
+}
+
+/* ***************MEDIA QUERIES************** */
+
+
+@media screen and (max-width: 800px) {
+
+    .services {
+        gap: 0;
+    }
+
+    .container-service {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+
+    .services {
+        gap: 0;
+    }
+    .container-service {
+        font-size: 1rem;
+    }
+
+    .container-service img {
+        width: 45%;
+    }
+
+    .container-service :nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+}

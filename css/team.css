@@ -1,0 +1,68 @@
+.backgroundTeam {
+    background-image: url("/assets//images/bgTeam.jpg");
+    width: 100%;
+    background-attachment: fixed;
+    background-position: right 10% bottom 70%;
+
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    background: rgba(7, 7, 7, 0.678);
+    gap: 50px;
+}
+
+.team h2 {
+    color: var(--main--color);
+}
+
+.container-team {
+    width: 350px;
+    height: 650px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    background-color: white;
+    padding: 10px;
+    line-height: 1.5;
+
+}
+
+.container-team :nth-child(2) {
+    font-size: 2rem;
+    color: var(--third--color);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.container-team :nth-child(3) {
+    padding: 0 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.container-team img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 330px) {
+
+   
+    .container-team {
+        width: 200px;
+
+    }
+
+    .container-team :nth-child(2) {
+        font-size: 1.5rem;
+    }
+
+    .container-team :nth-child(3) {
+        font-size: 0.8rem;
+    }
+}

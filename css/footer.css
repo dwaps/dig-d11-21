@@ -1,0 +1,157 @@
+.backgroundFooter {
+    background-image: url('/assets//images/bgFooter.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+footer {
+    width: 100%;
+    background: #070707d8;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/* ***********************ABOUT US******************** */
+
+.aboutUse {
+    align-self: center;
+    letter-spacing: 1px;
+    width: 25%;
+    padding: 5% 0;
+}
+
+.aboutUse p:first-child {
+    font-size: 1.5rem;
+    color: white;
+  
+}
+
+.aboutUse p:hover {
+    color: white;
+}
+
+/* ***********************COMPANY CONTACT******************** */
+
+.contactFooter {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    column-gap: 30px;
+    width: 30%;
+}
+
+.contactFooter img {
+    width: 30px;
+    align-self: center;
+    justify-self: end;
+}
+
+.contactFooter p {
+    align-self: center;
+}
+
+.contactFooter p:hover {
+    color: white;
+}
+
+
+/* ***********************NAVIGATION FOOTER******************** */
+
+.navFooter {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navFooter img {
+    width: 100px;
+}
+
+.navFooter p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.linkMenuFooter {
+    display: flex;
+    padding: 0;
+}
+
+.linkMenuFooter li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0.2em;
+}
+
+.linkMenuFooter li:not(:last-child):after {
+    content: ' ||';
+    color: var(--second--color);
+    font-weight: bold;
+}
+
+
+.linkMenuFooter a {
+    text-decoration: none;
+}
+
+.linkMenuFooter a:hover {
+    color: white;
+}
+
+.footerBottom {
+    height: 100%;
+    background-color: var(--fourth--color);
+}
+
+.footerBottom p {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+/*****************MEDIA QUERIES************** */
+
+
+@media (max-width: 1000px) {
+
+.aboutUse {
+    flex: 1 100%;
+    padding: 30px;
+}
+
+.contactFooter {
+    flex: 1;
+    grid-template-columns: 1fr;
+    padding: 30px;
+}
+
+.contactFooter img {
+    width: 20px;
+    justify-self: start;
+}
+
+.navFooter {
+    flex: 1;
+    padding: 30px;
+}
+
+.linkMenuFooter li:not(:last-child):after {
+    content: "";
+}
+
+}
+
+@media (max-width: 400px) {
+
+    .navFooter {
+        display: none;
+    }
+    
+    }

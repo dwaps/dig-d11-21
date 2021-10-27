@@ -1,0 +1,197 @@
+@import url(medialSocial.css);
+
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "title title"
+        "map map"
+        "address form";
+}
+
+.contact h2 {
+    grid-area: title;
+}
+
+.map {
+    grid-area: map;
+}
+
+/* *************Section FORM******************* */
+
+.container-form {
+
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60vh;
+    height: 600px;
+    background-color: var(--fourth--color);
+    position: relative;
+    top: -60px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+
+}
+
+
+.contactForm input[type=text] {
+    border: none;
+    background-color: rgba(61, 58, 58, 0.719);
+    border-bottom: 4px solid var(--third--color);
+    height: 50px;
+    color: white;
+}
+
+
+.contactForm textarea {
+    background-color: rgba(61, 58, 58, 0.719);
+    border: none;
+    border-bottom: 4px solid var(--third--color);
+    color: white;
+}
+
+.contactForm input::placeholder,
+.contactForm textarea::placeholder {
+    padding: 10px;
+    letter-spacing: 2px;
+
+}
+
+.container-form p {
+
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+}
+
+.button-form {
+
+    color: black;
+    width: 80%;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #EE8E16;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    letter-spacing: 2px;
+    margin: 50px auto 0;
+}
+
+.button-form:hover {
+    background: #AF4531;
+}
+
+/* *************Section ADDRESS******************* */
+
+
+.container-adress {
+    grid-area: address;
+    margin: 25px auto;
+}
+
+.container-adress p:first-child {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--third--color);
+}
+
+.elementAdress {
+    display: flex;
+    text-align: center;
+    margin: 90px 0;
+    font-size: 1rem;
+}
+
+.elementAdress img {
+    width: 20%;
+}
+
+.location {
+    border-left: 2px solid var(--third--color);
+    border-right: 2px solid var(--third--color);
+}
+
+
+/* ***************MEDIA QUERIES************** */
+
+@media (max-width: 1000px) {
+
+    .contact {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "title title"
+            "map map"
+            "address address"
+            "form form";
+    }
+
+    .container-form {
+        top: 0;
+        margin: 50px auto;
+    }
+
+    .container-adress {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .elementAdress {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .container-form {
+        width: 100%;
+    }
+
+    .elementAdress {
+        font-size: 1rem;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .elementAdress img {
+        width: 10%;
+    }
+
+    .location {
+        border: none;
+    }
+
+}
+
+
+@media screen and (max-width: 300px) {
+
+    .container-form p {
+
+        font-size: 1.5em;
+        color: white;
+        margin-bottom: 80px;
+        letter-spacing: 2px;
+    }
+
+    .button-form {
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+}

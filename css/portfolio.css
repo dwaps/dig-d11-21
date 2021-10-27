@@ -1,0 +1,64 @@
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+ 
+    background-image: linear-gradient(148deg, rgba(15, 15, 15, 0.199) 0%, rgba(15, 15, 15, 0.04) 35%, rgba(113, 113, 113, 0.04) 35%, rgba(113, 113, 113, 0.04) 42%, rgba(210, 210, 210, 0.04) 42%, rgba(210, 210, 210, 0.04) 100%), linear-gradient(70deg, rgba(15, 15, 15, 0.04) 0%, rgba(15, 15, 15, 0.04) 25%, rgba(113, 113, 113, 0.04) 25%, rgba(113, 113, 113, 0.04) 30%, rgba(210, 210, 210, 0.04) 30%, rgba(210, 210, 210, 0.04) 100%), linear-gradient(65deg, rgba(15, 15, 15, 0.04) 0%, rgba(15, 15, 15, 0.04) 13%, rgba(113, 113, 113, 0.04) 13%, rgba(113, 113, 113, 0.04) 27%, rgba(210, 210, 210, 0.04) 27%, rgba(210, 210, 210, 0.04) 100%), linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 0));
+    gap: 100px;
+}
+
+.portfolio img {
+    width: 50%;
+}
+
+.text-portfolio {
+    width: 500px;
+    justify-self: end;
+    align-self: center;
+    border-left: solid var(--second--color);
+    border-top: solid var(--second--color);
+    padding-left: 100px;
+}
+
+.text-portfolio :nth-child(1) {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 30px 0;
+}
+
+.portfolio p {
+    color: white;
+}
+
+
+/* ***************MEDIA QUERIES************** */
+
+@media (max-width: 1000px) {
+
+    .portfolio {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .text-portfolio {
+        justify-self: center;
+    }    
+}
+
+@media screen and (max-width: 850px) {
+
+    .text-portfolio {
+        width: 100%;
+        justify-self: normal;
+        align-self: start;
+        border-left: none;
+        border-top: none;
+        padding: 50px;
+    }
+
+    .text-portfolio :nth-child(1) {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+  }
+
+
+ 
