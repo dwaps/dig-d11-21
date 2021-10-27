@@ -15,16 +15,33 @@
 
 <body id="body" onscroll=pageScrolled()>
 
-    <header class="container-fluid d-flex justify-content-between sticky-md-top shadow-lg p-3 mb-5">
-        <a class="navbar-brand" href="#"><img id="logo" src="asset/images/logo.svg"></a>
-        <nav class="nav">
-            <li><a class="rounded"  href="#">Hero</a></li>
-            <li><a class="rounded"  href="#services">Services</a></li>
-            <li><a class="rounded"  href="#ourTeam">Our team</a></li>
-            <li><a class="rounded"  href="#portofolio">Portofolio</a></li>
-            <li><a class="rounded"  href="#contact">Contact us</a></li>           
-        </nav>
-    </header>
+
+<!-- TEST NAV BAR -->
+<!-- <header class="container-fluid d-flex justify-content-between sticky-md-top shadow-lg p-3 mb-5"> -->
+    <nav class="navbar navbar-expand-md navbar-dark sticky-md-top" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="#"><img id="logo" src="asset/images/logo.svg"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Menu
+                <i class="fas fa-bars"></i> -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-lg- py-3 py-lg-4 rounded" href="#">Hero</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 rounded" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 rounded" href="#ourTeam">Our team</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 rounded" href="#portofolio">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4 rounded" href="#contact">Contact us</a></li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- </header> -->
+
+
+
 
     <main class="container-fluid">
         <!-- Carousel -->
@@ -142,14 +159,15 @@
 
         <!-- section CONTACT -->
         <section id="contact" class="row">
-            <div class="col-lg border-end border-dark">
+            <h2 class="pb-2 mt-3 text-center">Contact</h2>
+            <div class="col-lg border-end border-dark mb-3">
                 <iframe class="image-fluid w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.169934060469!2d2.228441315854412!3d48.89309850621599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664fc1761b74d%3A0xf03db63ac1e18082!2sM2i%20Formation!5e0!3m2!1sfr!2sfr!4v1635153580341!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <form class="col-lg">
-                <h2 class="pb-2 mt-3 text-center">Contact</h2>
+                
                 <input class="d-grid col-9 mx-auto mb-3" type="text" placeholder="Name" id="input">
-                <textarea class="d-grid col-9 mx-auto mb-3" name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                <textarea class="d-grid col-9 mx-auto mb-3" name="message" placeholder="Message" id="" cols="30" rows="10"></textarea>
                 <div class="d-grid col-2 mx-auto">
                     <button class="btn btn-success" type="submit">Submit</button>
                 </div>
@@ -160,7 +178,7 @@
 
     <!-- FOOTER -->
     <footer class="container-fluid d-flex flex-column">
-        <section class="d-flex justify-content-around">
+        <section class="d-flex justify-content-around mt-3">
             <div>
                 <h5>More details</h5>
                 <ul class="nav flex-column">
@@ -187,7 +205,7 @@
                 </ul>
             </div>
         </section>
-            <div class="d-flex justify-content-center">	&copy; Christian INGOLD - 2021</div>
+            <div class="d-flex justify-content-center mt-2">	&copy; Christian INGOLD - 2021</div>
         </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
