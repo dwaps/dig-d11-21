@@ -1,0 +1,17 @@
+.container-stars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.select-star {
+
+    border: solid green 3px;
+}
+
+.action-button a {
+    text-decoration: none;
+    color: white;
+}

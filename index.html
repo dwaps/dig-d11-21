@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achat étoiles</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-10 col-md-10 col-lg-6 col-xl-5 text-center mb-2">
+                <div class=" px-0 pt-4 pb-0 mt-3 mb-3">
+                    <h1 id="heading">Collection étoiles</h2>
+                        <p>Merci de compléter tout les champs</p>
+                        <form id="msform">
+                            <!-- progressbar -->
+                            <ul id="progressbar">
+                                <li class="active" id="account"><strong>Général</strong></li>
+                                <li id="personal"><strong>Achat étoiles</strong></li>
+                                <li id="payment"><strong>Livraison</strong></li>
+                                <li id="confirm"><strong>Confirmation</strong></li>
+                            </ul>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div> <br> <!-- fieldsets -->
+                            <fieldset>
+
+
+                                <div class="form-card form-info">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Informations personnelles</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">Etapes 1 - 4</h2>
+                                        </div>
+                                    </div>
+
+                                    <label class="fieldlabels">Nom: </label>
+                                    <input type="text" name="lastname" required />
+
+                                    <label class="fieldlabels">Prénom: </label>
+                                    <input type="text" name="firstname" required />
+
+                                    <label class="fieldlabels">Adresse e-mail: </label>
+                                    <input type="email" name="email" required />
+
+                                    <label class="fieldlabels">Mot de passe: </label>
+                                    <input type="password" name="pwd" required/>
+
+                                    <label class="fieldlabels">Confirmez le mot de passe: </label>
+                                    <input type="password" name="cpwd" required />
+
+                                    <label class="fieldlabels">Téléphone: </label>
+                                    <input type="number" name="phoneNumber" required />
+
+                                </div>
+
+                                <input id="submitInfoPerso" type="button" name="next" class="next action-button"
+                                    value="suivant" />
+
+                            </fieldset>
+                            <fieldset>
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Choissez vos étoiles</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">Etapes 2 - 4</h2>
+                                        </div>
+                                    </div>
+                                    <div id="container-stars" class="container-stars">
+                                        <img src="/img/star1.png" alt="étoile noire">
+                                        <img src="/img/star2.png" alt="étoile jaune">
+                                        <img src="/img/star3.png" alt="étoile rose">
+                                        <img src="/img/star4.png" alt="étoile bleu">
+                                        <img src="/img/star5.png" alt="étoile vert">
+                                        <img src="/img/star6.png" alt="etoile rouge">
+                                    </div>
+                                </div>
+
+                                <input id="submitStars" type="button" name="next" class="next action-button"
+                                    value="Suivant" />
+                                <input type="button" name="previous" class="previous action-button-previous"
+                                    value="Précedent" />
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Adresse de livraison</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">Etapes 3 - 4</h2>
+                                        </div>
+                                    </div>
+                                    <label class="fieldlabels">Numero de rue </label>
+                                    <input type="number" name="numberStreet" required/>
+
+                                    <label class="fieldlabels">Nom de rue: </label>
+                                    <input type="text" name="nameStreet" required />
+
+                                    <label class="fieldlabels">Code postal: </label>
+                                    <input type="number" name="postalCode" />
+
+                                    <label class="fieldlabels">Ville: </label>
+                                    <input type="text" name="city" required />
+                                </div>
+                                <input id="submitAddress" type="button" name="next" class="next action-button"
+                                    value="Valider" />
+                                <input type="button" name="previous" class="previous action-button-previous"
+                                    value="precedent" />
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="form-card">
+                                    <div class="row">
+                                        <div class="col-7">
+                                            <h2 class="fs-title">Confirmation</h2>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="steps">Etapes 4 - 4</h2>
+                                        </div>
+                                    </div> <br><br>
+                                    <div id="confirmation" class="mb-5"></div>
+                                </div>
+                                <button id="submitOrder" class="action-button">Confirmer</button>
+                                <input type="button" name="previous" class="previous action-button-previous"
+                                value="Modifier" />
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/js/form.js"></script>
+    <script type="module" src="/js/infoPersonal.js"></script>
+    <script type="module" src="/js/storestars.js"></script>
+    <script type="module" src="/js/delivery.js"></script>
+    <script type="module" src="/js/confirmation.js"></script>
+
+</body>
+
+</html>
