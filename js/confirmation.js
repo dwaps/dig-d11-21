@@ -12,7 +12,7 @@ export function displayInformation() {
 <p>Nom : ${customers[0].lastname}</p>
 <p>Prénom : ${customers[0].firstname}</p>
 <p>Email : ${customers[0].email}</p>
-<p>Telephone : ${customers[0].phone}</p>
+<p>Téléphone : ${customers[0].phone}</p>
 
 <p>Adresse : ${address[0].numStreet} ${address[0].nameStreet} ${address[0].zipCode} ${address[0].city}</p>
 
