@@ -1,117 +1,142 @@
-*{
-    box-sizing: border-box;
-}
-:root{
-    scroll-behavior: smooth;
-    --bgc-color: #785E2F;
-    --bgc-color-secondary : #785f2fd2;
-    --txt-color-primary : #000;
-    --txt-color-secondary : #fff;
-
-}
-
-body{
-    display: flex;
-    flex-flow: column nowrap;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--txt-color-secondary);
-    text-align: center;
-    min-height: 100vh;
-}
- 
-/* TEST NAV BAR BURGER */
-        nav img{
-            width:60px;
-        }
-
-       li a{
+    * {
+        box-sizing: border-box;
+    }
+    
+     :root {
+        scroll-behavior: smooth;
+        --bgc-color: #785E2F;
+        --bgc-color-secondary: #785f2fd2;
+        --txt-color-primary: #000;
+        --txt-color-secondary: #fff;
+    }
+    
+    body {
+        display: flex;
+        flex-flow: column nowrap;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
         color: var(--txt-color-secondary);
-            text-decoration: none;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-       li a:hover,
-       li a:focus,
-       li a:active{
-            background-color: rgba(19, 17, 17, 0.377);
-            color: var(--txt-color-secondary);
-        }
-
-nav{
+        text-align: center;
+        min-height: 100vh;
+    }
+    /* Barre de navigation */
+    
+    nav img {
+        width: 60px;
+    }
+    
+    li a {
+        color: var(--txt-color-secondary);
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    
+    li a:hover,
+    li a:focus,
+    li a:active {
+        background-color: rgba(19, 17, 17, 0.377);
+        color: var(--txt-color-secondary);
+    }
+    
+    nav {
         background-color: var(--bgc-color);
         color: var(--txt-color-secondary);
         transition: 700ms ease-in-out;
-    } 
-
-
-body.scrolled nav {
+    }
+    
+    body.scrolled nav {
         background-color: var(--bgc-color-secondary);
         height: 70px;
-      }
-
-      body.scrolled nav #logo {
+    }
+    
+    body.scrolled nav #logo {
         width: 40px;
-      }
-
- /* MAIN */
+    }
+    /* MAIN */
+    
     main {
         display: flex;
         flex-direction: column;
     }
-    h2{
+    
+    h2 {
         text-align: center;
         text-transform: uppercase;
-
-    }
-
-        #services p, #ourTeam p{
-            text-align: justify;
-        }
-
-    aside > img{
-        height: 150px;
-    }
-
-    #hero,#services, #portofolio, #ourTeam {
-        scroll-margin-top:80px;
     }
     
-
-    #contact{
-            display: flex;
-            align-items: center;
-            scroll-margin-top:200px;
-        }
-
-/* FOOTER */
-    footer{
+    #services p,
+    #ourTeam p {
+        text-align: justify;
+    }
+    
+    aside>img {
+        height: 150px;
+    }
+    
+    #contact {
+        display: flex;
+        align-items: center;
+        scroll-margin-top: 200px;
+    }
+    /* Gestion des scrolls */
+    
+    #hero,
+    #services,
+    #portofolio,
+    #ourTeam {
+        scroll-margin-top: 80px;
+    }
+    /* FOOTER */
+    
+    footer {
         display: flex;
         justify-content: space-around;
         background-color: var(--bgc-color);
         text-align: center;
     }
-
-@media (max-width : 992px) {
-    #hero, #portofolio-image{
-        display: none;
-    }
-    #input, .btn {
-        margin: 30px;
-    }
     
-    aside>img {
-        margin-top: 40px;
+    @media (max-width: 992px) {
+        /*gestion de la barre de navigation*/
+        nav {
+            background-color: var(--bgc-color);
+            color: var(--txt-color-secondary);
+            transition: 700ms ease-in-out;
+        }
+        /* Gestion des scrolls */
+        body.scrolled nav {
+            background-color: var(--bgc-color-secondary);
+            height: 70px;
+        }
+        body.scrolled nav #logo {
+            width: 0px;
+        }
+        #portofolio {
+            scroll-margin-top: 295px;
+        }
+        #services,
+        #ourTeam {
+            scroll-margin-top: 280px;
+        }
+        #contact {
+            scroll-margin-top: 300px;
+        }
+        /* Gestion des particularités d'affichage */
+        #portofolio-image {
+            display: none;
+        }
+        #input,
+        .btn {
+            margin: 30px;
+        }
+        aside>img {
+            margin-top: 40px;
+        }
+        #contact>div {
+            border-right: 2px solid var(--txt-color-secondary)!important;
+        }
+        #portofolio>div {
+            border-right: 2px solid var(--txt-color-secondary)!important;
+        }
     }
-
-    #contact div:first-child{
-        border-bottom: 1px solid black;
-    }
-    h2{
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-}
