@@ -14,7 +14,6 @@ export class Router {
 	}
 
 	static run() {
-		console.log('location.search.substring(1) is :', location.search.substring(1))
 		switch (location.search.substring(1)) {
 			case "":
 			case Router.Route.PAGE1:
@@ -54,7 +53,6 @@ export class Router {
 		const divP3 = document.querySelector('.page-3')
 		const divP4 = document.querySelector('.page-4')
 		const h2 = document.querySelector('h2')
-		console.log('h2 is :', h2)
 
 		switch (view) {
 			case Router.Route.PAGE1:
@@ -100,7 +98,6 @@ export class Router {
 	}
 
 	static loadProgressBar() {
-		console.log('Router.currentRoute is :', Router.currentRoute)
 		const li1 = document.querySelector('ul > li:first-child')
 		const li2 = document.querySelector('ul > li:nth-child(2)')
 		const li3 = document.querySelector('ul > li:nth-child(3)')
