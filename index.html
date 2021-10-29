@@ -1,80 +1,171 @@
 <!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png" type="image/png">
-    <title>TITLE</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="p-3 border-bottom bg-dark" >
+      <div >
+        <div class="row">
+          <div class="col-lg-2 text-center">
+              <img src="/assets/img/logo-bg.png"  alt="Logo">
+          </div>
+          <div class="col-lg-5"></div>
+          <nav class="col-lg-5 ">
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link" href="#ourTeam">Notre équipe</a></li>
+              <li class="nav-item"><a class="nav-link" href="#portfolio">Produits</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section id="carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./assets/img/1.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/img/2.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="./assets/img/3.jpg" alt="">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+    <div class="container">
 
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css' integrity='sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==' crossorigin='anonymous'/>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+      <section id="services" class="row h-auto align-items-center">
+          <div class="col-md-4 text-center">
+            <img src="https://cdn2.iconfinder.com/data/icons/work-from-home-117/512/calendar-planning-time_management-work_schedule-256.png" alt="Service">
+            <h2>Service 1</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis deserunt, rem, aspernatur aperiam numquam quod nihil dicta laboriosam molestias earum ad, amet corporis enim ea esse sequi adipisci blanditiis laborum.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://cdn2.iconfinder.com/data/icons/work-from-home-117/512/time_management-working_hours-work_process-productive-256.png" alt="Service">
+            <h2>Service 2</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis deserunt, rem, aspernatur aperiam numquam quod nihil dicta laboriosam molestias earum ad, amet corporis enim ea esse sequi adipisci blanditiis laborum.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="https://cdn2.iconfinder.com/data/icons/work-from-home-117/512/group-chat-online_meeting-team_conference-256.png" alt="Service">
+            <h2>Service 3</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis deserunt, rem, aspernatur aperiam numquam quod nihil dicta laboriosam molestias earum ad, amet corporis enim ea esse sequi adipisci blanditiis laborum.</p>
+          </div>
+      </section>
 
-  <body>
+      <hr class="mt-2 mb-3"/>
 
-    <div class="container-fluid">
-      <div class="row min-vh-100">
-        <div class="col-md-4 m-5 ms-auto">
-
-          <div class="card shadow-lg">
-            <div class="card-body">
-              <h4 class="card-title text-center mb-4 mt-1"></h4>
-              <div class="card-text">
-
-                <form name="connect-form">
-                  <div class="form-floating mb-3">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      class="form-control"
-                      placeholder="Email"
-                      autocomplete="off">
-                    <label for="email">Email</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="text"
-                      name="pseudo"
-                      id="pseudo"
-                      class="form-control"
-                      placeholder="Pseudo"
-                      maxlength="12"
-                      minlength="2"
-                      autocomplete="off">
-                    <label for="pseudo">Pseudo</label>
-                  </div>
-                  <div class="form-floating mb-3">
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      class="form-control"
-                      placeholder="Mot de passe"
-                      maxlength="12"
-                      minlength="4"
-                      autocomplete="off">
-                    <label for="password">Mot de passe</label>
-                  </div>
-                  <a href="?signup" class="link-primary">S'inscrire</a>
-                  <a href="?login" class="link-primary">Se connecter</a>
-                  <button type="submit" class="btn btn-dark d-block m-auto fs-4 mt-3">Go !</button>
-                </form>
-
-                <section id="home" class="text-center" hidden>
-                  <h1>Bienvenue sur mon site !</h1>
-                  <div class="content"></div>
-                  <a href="?logout">Se déconnecter</a>
-                </section>
-
+      <section id="ourTeam" class="row h-auto align-items-center">
+          <div class="col-md-4 text-center">
+            <div class="row">
+              <div class="col-12">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatar-47/64/person-avatar-male-man-2-256.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h2>Jean Michel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="row">
+              <div class="col-12">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatar-47/64/user-woman-girl-people-2-256.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h2>Michelle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam.</p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="row">
+              <div class="col-12">
+                <img src="https://cdn3.iconfinder.com/data/icons/avatar-47/64/user-male-people-man-256.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h2>Jean Mario</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, aliquam.</p>
               </div>
             </div>
           </div>
-          
-        </div>
-      </div>
+      </section>
+
+      <hr class="mt-2 mb-3"/>
+
+      <section id="portfolio" class="row h-auto align-items-center">
+          <div class="col-md-6 text-center">
+            <p class="fs-2 text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem consectetur optio minus debitis repellendus ratione, a, cupiditate corporis perferendis, nulla facere? Nostrum magni reiciendis optio sit, praesentium ea perferendis. Veniam.</p>
+          </div>
+          <div class="col-md-6">
+            <img class="mx-auto d-block" src="https://cdn0.iconfinder.com/data/icons/movie-47/512/Home_tv_movie-Popcorn-Drink-Entertainment-256.png" alt="">
+          </div>
+      </section>
+
+      <hr class="mt-2 mb-3"/>
+
+      <section id="contact" class="row h-auto align-items-center">
+          <div class="col-md-6">
+            <img class="img-fluid" src="./assets/img/mapping.jpg" alt="">
+          </div>
+          <div class="col-md-6 text-center">
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" placeholder="Votre message"></textarea>
+              </div>
+              <button class="btn btn-primary">Envoyer</button>
+            </form>
+          </div>
+      </section>
+
     </div>
 
-    <script type="module" src="js/index.js"></script>
-  </body>
+    <footer class="row h-auto align-items-center p-3 border-bottom bg-secondary">
+      <div class="col-md-4 text-center">
+        <h3>Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Sint, voluptatem?</h3>
+      </div>
+      <div class="col-md-4 text-center">
+        <h3>Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Sint, voluptatem?</h3>
+      </div>
+      <div class="col-md-4 text-center">
+        <h3>Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur adipisicing elit. Sint, voluptatem?</h3>
+      </div>
+    </footer> 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</body>
 </html>

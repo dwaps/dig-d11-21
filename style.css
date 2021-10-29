@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+section, footer {
+    height: 50vh;
+}
+
+header img {
+    height: 100px;
+}
+
+div.container section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#carousel img {
+    height: 50vh;
+}
+
+#services img {
+    height: 200px;
+}
+
+#ourTeam img {
+    height: 150px;
+}
+
+#contact img {
+    height: 100%;
+}
+
+footer {
+    margin-top: 50px;
+}
