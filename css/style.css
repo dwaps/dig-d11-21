@@ -1,20 +1,92 @@
-*{
+* {
     box-sizing: border-box;
 }
-:root{
+
+ :root {
     scroll-behavior: smooth;
+    --bgc-color: #785E2F;
+    --bgc-color-secondary: #785f2fd2;
+    --txt-color-primary: #000;
+    --txt-color-secondary: #fff;
 }
 
-body{
+body {
     display: flex;
     flex-flow: column nowrap;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background: #000;
-    color: white;
+    color: var(--txt-color-secondary);
     text-align: center;
     min-height: 100vh;
+}
+
+
+/* Barre de navigation */
+
+nav img {
+    width: 60px;
+}
+
+li a {
+    color: var(--txt-color-secondary);
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+li a:hover,
+li a:focus,
+li a:active {
+    background-color: #583f10c4;
+    color: var(--txt-color-secondary);
+}
+
+nav {
+    background-color: var(--bgc-color);
+    color: var(--txt-color-secondary);
+    transition: 700ms ease-in-out;
+}
+
+body.scrolled nav {
+    background-color: var(--bgc-color-secondary);
+    height: 70px;
+}
+
+body.scrolled nav #logo {
+    width: 40px;
+}
+
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#services p,
+#ourTeam p {
+    text-align: justify;
+}
+
+aside>img {
+    height: 150px;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+#carte {
+    height: 40rem;
+    /* height: 800px; */
 }
 
 span {
@@ -22,83 +94,72 @@ span {
     color: darkgreen;
     font-style: italic;
 }
-/* HEADER */
-    header{
-        background-color: rgba(128, 128, 128, 0.973);
-        color: white;
-
-    }
-
-        header img{
-            width:40px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-       li a{
-            color: white;
-            text-decoration: none;
-            padding: 10px 20px;
-            text-align: center;
-        }
-
-       li a:hover,
-       li a:focus,
-       li a:active{
-            background-color: rgba(19, 17, 17, 0.377);
-            color: white
-        }
 
 
- /* MAIN */
-    main {
-        display: flex;
-        flex-direction: column;
-    }
+/* Gestion des scrolls */
 
-        #services p, #ourTeam p{
-            text-align: justify;
-        }
+#services,
+#ourTeam {
+    scroll-margin-top: 69px;
+}
 
-    aside > img{
-        height: 150px;
-    }
+#portofolio {
+    scroll-margin-top: 85px;
+}
 
-
-
-        #contact{
-            border: 2px solid black;
-            display: flex;
-            align-items: center;
-            
-        }
-
-    #carte {
-        height: 40rem;
-        /* height: 800px; */
-    }
 
 /* FOOTER */
-    footer{
-        display: flex;
-        justify-content: space-around;
-        background-color: grey;
-    }
 
-@media (max-width : 992px) {
-    #hero, #portofolio-image{
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--bgc-color);
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    /*gestion de la barre de navigation*/
+    nav {
+        background-color: var(--bgc-color);
+        color: var(--txt-color-secondary);
+        transition: 700ms ease-in-out;
+    }
+    /* Gestion des scrolls */
+    body.scrolled nav {
+        background-color: var(--bgc-color-secondary);
+        height: 70px;
+    }
+    body.scrolled nav #logo {
+        width: 0px;
+    }
+    #portofolio {
+        scroll-margin-top: 295px;
+    }
+    #services,
+    #ourTeam {
+        scroll-margin-top: 280px;
+    }
+    #contact {
+        scroll-margin-top: 300px;
+    }
+    #carte {
+        height: 30rem;
+    }
+    /* Gestion des particularités d'affichage */
+    #portofolio-image {
         display: none;
     }
-    #input, .btn {
+    #input,
+    .btn {
         margin: 30px;
     }
-
-    #contact div:first-child{
-        border-bottom: 1px solid black;
+    aside>img {
+        margin-top: 40px;
     }
-
+    #contact>div {
+        border-right: 2px solid var(--txt-color-secondary)!important;
+    }
+    #portofolio>div {
+        border-right: 2px solid var(--txt-color-secondary)!important;
+    }
 }
