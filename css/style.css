@@ -36,7 +36,7 @@
     li a:hover,
     li a:focus,
     li a:active {
-        background-color: rgba(19, 17, 17, 0.377);
+        background-color: #583f10c4;
         color: var(--txt-color-secondary);
     }
     
@@ -78,15 +78,16 @@
     #contact {
         display: flex;
         align-items: center;
-        scroll-margin-top: 200px;
     }
     /* Gestion des scrolls */
     
-    #hero,
     #services,
-    #portofolio,
     #ourTeam {
-        scroll-margin-top: 80px;
+        scroll-margin-top: 69px;
+    }
+    
+    #portofolio {
+        scroll-margin-top: 85px;
     }
     /* FOOTER */
     
