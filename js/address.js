@@ -1,4 +1,6 @@
 export class Address {
+	static SESSION_KEY = "address"
+
 	constructor(lastName, firstName, telephone, roadNumber, address, city, zip) {
 		this.lastName = lastName
 		this.firstName = firstName
@@ -9,5 +11,9 @@ export class Address {
 		this.zip = zip
 	}
 
-	
+	save() {
+		console.log('address saved in sessionStorage! ');
+		sessionStorage.setItem(Address.SESSION_KEY, JSON.stringify(this))
+		console.log('this is :', this)
+	}
 }

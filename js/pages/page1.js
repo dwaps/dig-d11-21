@@ -18,16 +18,16 @@ export class Page1 {
 		let telephone = form[5].value
 		telephone = telephone.split(' ').join('')
 
-		const regexSpecialCaractere = /^[^@&"'`~^#{}<>_=\[\]()!:;,?./§$£€*\+]+$/
-		const regexSpecialCaractereForEmail = /^[^&"'`~^#{}<>_=\[\]()!:;,?/§$£€*\+]+$/
+		const regexSpecialCaractere = /[@&"'`~^#{}<>_=\[\]()!:;,?./§$£€*\+]+/
+		const regexSpecialCaractereForEmail = /[&"'`~^#{}<>_=\[\]()!:;,?/§$£€*\+]+/
 		const regexNumber = /^[0-9]+$/
 
 		let isOk = true
 
-		if (!regexSpecialCaractere.test(lastName) || !regexSpecialCaractere.test(firstName)) isOk = false
-		if (!regexSpecialCaractereForEmail.test(email)) isOk = false
+		if (regexSpecialCaractere.test(lastName) || regexSpecialCaractere.test(firstName)) isOk = false
+		if (regexSpecialCaractereForEmail.test(email)) isOk = false
 		if (email.split('@').length != 2 || email.split('@')[1].split('.').length != 2) isOk = false
-		if (!regexSpecialCaractere.test(password) && !regexSpecialCaractere.test(validPassword)) isOk = false
+		if (regexSpecialCaractere.test(password) && regexSpecialCaractere.test(validPassword)) isOk = false
 		if (password != validPassword) isOk = false
 		if (!regexNumber.test(telephone)) isOk = false
 		if (telephone.length < 10 || telephone.length > 11) isOk = false
@@ -37,4 +37,5 @@ export class Page1 {
 
 		return isOk
 	}
+	
 }

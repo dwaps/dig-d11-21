@@ -13,6 +13,10 @@ export class User {
 		return JSON.parse(localStorage.getItem(User.STORAGE_KEY)) || []
 	}
 
+	/**
+	 * This function check the existance or not of the user in the database
+	 * @returns {boolean}
+	 */
 	exists() {
 		const users = User.findAll()
 		if (users) {
@@ -29,7 +33,7 @@ export class User {
 	save() {
 		if (!this.exists()) {
 			const users = User.findAll()
-			if (this.email) {
+			if (this.email) {//TODO check the necessity of this if; it's already check on exist
 				for (let { email } of users) {
 					if (email == this.email) {
 						console.log("Email déjà utilisé !");
