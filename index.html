@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- 12-10 - insersion de bootstrap pour compatibilité carousel - /!\ Vérifier l'affichage des autres éléments /!\ -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css' integrity='sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="style.css">
+
+        <script type="module" crossorigin src="./dist/assets/index.map.js"></script>
+        <link rel="modulepreload" href="./dist/assets/vendor.map.js">
+        <link rel="stylesheet" href="./dist/assets/index.leaflet.css">
+
+
+
+    <title>HCB-TP-AxelDULON</title>
+</head>
+
+
+<body>
+    
+    <!-- Header -->
+    <header id="header">
+        
+        <div id="corpoName">CorpoX</div>
+        
+        <nav id="navHeader">
+            <a href="#hero">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+    </header>
+    
+    <main>
+
+        <!-- Carousel Bootstrap -->
+        <section id="hero" class="heroSection">
+            <div id="carouselCorpoX" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-keyboard="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/car1.jpg" class="d-block w-100" alt="Hero1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/car2.jpg" class="d-block w-100" alt="Hero2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/car3.jpg" class="d-block w-100" alt="Hero3">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/car4.jpg" class="d-block w-100" alt="Hero4">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCorpoX" data-bs-slide="prev">
+                  <span aria-hidden="true"></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="teal" class="bi bi-caret-left" viewBox="0 0 16 16">
+                    <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
+                  </svg>
+                  <span class="carButtonText">Précédent</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselCorpoX" data-bs-slide="next">
+                    <span class="carButtonText">Suivant</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="teal" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                      </svg>
+                    <span aria-hidden="true"></span>
+                </button>
+              </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" class="servicesSection">
+            
+            <div class="servicesItem">
+                <img src="./assets/img/tech.jpeg" alt="service#">
+                <h4>Service #</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sed mollitia est. Aut ratione non adipisci aliquid sint voluptatibus, fugit quisquam, eum dolorem odio magnam necessitatibus distinctio id delectus quaerat.</p>
+            </div>
+            
+            <div class="servicesItem">
+                <img src="./assets/img/tech.jpeg" alt="service#">
+                <h4>Service #</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sed mollitia est. Aut ratione non adipisci aliquid sint voluptatibus, fugit quisquam, eum dolorem odio magnam necessitatibus distinctio id delectus quaerat.</p>
+            </div>
+            
+            <div class="servicesItem">
+                <img src="./assets/img/tech.jpeg" alt="service#">
+                <h4>Service #</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores sed mollitia est. Aut ratione non adipisci aliquid sint voluptatibus, fugit quisquam, eum dolorem odio magnam necessitatibus distinctio id delectus quaerat.</p>
+            </div>
+
+        </section>
+        
+        <!-- Team Section -->
+        <section id="team" class="teamSection">
+            
+            <div class="teamItem">
+                <div class="teamImg">
+                    <img src="./assets/img/portraitF.jpeg" alt="team-member#">
+                </div>
+                <div class="teamText">
+                    <h4>Team Member #</h4>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias laboriosam animi natus sequi voluptatibus. Veniam odio unde repudiandae aliquam similique minus voluptates, pariatur quos deleniti autem quis vitae fugiat. Rem?</p>
+                </div>
+            </div>
+            
+            <div class="teamItem">
+                <div class="teamImg">
+                    <img src="./assets/img/portraitM.jpeg" alt="team-member#">
+                </div>
+                <div class="teamText">
+                    <h4>Team Member #</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio a aperiam? Voluptatibus suscipit iusto impedit odit debitis? Quae numquam consequatur sed voluptatibus dolor beatae rem iusto, officia animi eius.</p>
+                </div>
+            </div>
+
+            <div class="teamItem">
+                <div class="teamImg">
+                    <img src="./assets/img/portraitF.jpeg" alt="team-member#">
+                </div>
+                <div class="teamText">
+                    <h4>Team Member #</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odio a aperiam? Voluptatibus suscipit iusto impedit odit debitis? Quae numquam consequatur sed voluptatibus dolor beatae rem iusto, officia animi eius.</p>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolioSection">
+
+            <div class="portfolioPCont">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste commodi assumenda omnis, ipsum quis minus, veniam quam saepe veritatis sit vero. Dolore earum placeat at nisi ipsum harum impedit quisquam provident! Suscipit quibusdam voluptates consequatur mollitia assumenda facilis minus amet delectus omnis nobis recusandae laborum illo quae sequi ut, eius fugit tempore. Reiciendis facilis ipsum voluptate magni eos qui temporibus, quaerat modi ex consequuntur, est, rerum nisi? Nulla possimus saepe consectetur sunt quas provident? Vitae laboriosam quisquam vero aliquid maiores repudiandae totam itaque est saepe amet! Vero nobis id debitis. Soluta asperiores perferendis reiciendis natus omnis est nemo praesentium illo!<br><br>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae harum assumenda inventore ex atque porro exercitationem ut perferendis omnis, non consectetur cumque repudiandae, illum ullam accusantium quia quod cum ducimus hic. Amet in at ipsam tenetur inventore fugit officia, sit soluta cum earum, asperiores laborum! Hic odit soluta aspernatur natus vitae voluptatum? In omnis adipisci ipsum iste praesentium. Ullam sit dolorem similique, eaque laborum iusto doloribus culpa eum nemo repudiandae ducimus quas esse! Beatae, ratione! Tempore, sed maxime harum velit ad cum quaerat temporibus necessitatibus voluptatibus quasi iste. Quae consectetur error quaerat nihil atque tenetur. Esse enim perferendis eveniet culpa, quae earum modi quod dicta nulla iure quis iusto.
+                </p>
+            </div>
+            <div class="portfolioImgCont image" style="background-image:url(./assets/img/magie.jpg)"> </div>
+
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contactSection">
+            
+                <div id="app" class="contactItem">
+                    <div id="mapid"></div>
+                </div>
+                
+            <div class="contactItem">
+                <form id="contactForm" action="contact" method="get">
+                    <input id="formName" type="text" placeholder="Name">
+                    <textarea name="Message" id="formMess" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer id="footer">
+        
+        <div>
+            <h5>Mentions légales</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque repellendus fuga deleniti quisquam aspernatur quae voluptate doloribus natus minus.</p>
+            
+        </div>
+        <div>
+            <h5>Mentions légales</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque repellendus fuga deleniti quisquam aspernatur quae voluptate doloribus natus minus.</p>
+            
+        </div>
+        <div class="footerRightDiv">
+            <h5>Mentions légales</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eaque repellendus fuga deleniti quisquam aspernatur quae voluptate doloribus natus minus.</p>
+            
+        </div>
+        
+    </footer>
+
+    <div class="goUpPage" >
+        <a class="goUpPageLink" href="#header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+            </svg>
+            <p>Haut</p>
+        </a>
+    </div>
+
+<!-- 12-10 - insersion Bootstrap.js pour compatibilité carousel  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js' integrity='sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ==' crossorigin='anonymous'></script>
+</body>
+
+</html>

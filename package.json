@@ -1,0 +1,28 @@
+{
+  "name": "hcb-js_axel-dulon",
+  "version": "1.0.0",
+  "description": "TP-Projet JS (JS+HCB) - Intégration carte interactive au site en JS.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwaps/dig-d11-21.git"
+  },
+  "author": "Axel Dulon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dwaps/dig-d11-21/issues"
+  },
+  "homepage": "https://github.com/dwaps/dig-d11-21#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  },
+  "devDependencies": {
+    "vite": "^2.6.11"
+  }
+}
