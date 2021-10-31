@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+
+#home, #services, #map, #franchise{
+    scroll-margin-top: 105px;
+}
+#titre-section {
+    scroll-margin-top: 67px;
+}
+
+.navbar{
+    display: flex;
+    box-shadow: 0px 10px 10px rgba(45,55,68,0.30);
+    width: 100%;
+    background-color: #A12B31;
+} 
+
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: end;
+}
+.navigation img {
+    width: 90px;
+    height: 80px;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-group {
+    padding-right: 10%;   
+}
+#btnGroupDrop1{
+    padding: 30px 30px;
+    background-color: #f7a022;
+    border: none;
+    color: black;
+    border-radius: 50%;
+}
+.nav-item{
+    padding: 10px;
+    font-size: 1.4rem;
+}
+ul {
+   list-style-type: none;
+}
+.nav-item:hover {
+    color: #A12B31;
+}
+
+
+.carousel-inner{
+    height: auto;
+    width: 100%;
+}
+.carousel-item img{
+    padding-top: 5%;
+}
+
+.services {
+    background-color: #A12B31;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.portrait{
+    padding-top: 30px;
+}
+.img-portrait {
+    width: 300px;
+    height: 200px;
+    border: 3px solid #FFF;
+    border-radius: 50%;
+    background: #f7a022; 
+    margin: auto;
+    padding: 15px 25px;
+}
+.img-portrait-rond{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+h3 {
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 2rem;
+}
+h4 {
+    text-decoration: underline;
+    padding: 50px 0px 0px 30px;
+
+}
+.titre-section {
+    background-color: rgba(0, 0, 0, 0.911);
+    color: #FFF;
+    
+}
+.portrait-description{
+    text-align: justify;
+    font-size: 1.2rem;
+    padding: 30px;
+}
+.ourteam{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.911);
+    text-align: center;
+    color: #FFF;
+    height: auto;
+}
+.work{
+    padding: 50px;
+    
+}
+.ourteam-description{
+    text-align: justify;
+    padding-top: 20px;
+}
+.titre-section{
+    display: flex;
+    width: 100%;
+}
+h2 {
+    padding-top: 50px;
+    margin: 0 auto;
+    font-size: 2.2rem;
+    
+}
+
+.franchise {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    background-color: #f7a022;
+    text-align: justify;
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    
+}
+
+.miami {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 6rem;
+}
+
+.franchise-description {
+    text-align: justify;
+    font-weight: bold;
+}
+
+#logo-heat {
+    width: 900px;
+    height: 600px;
+    padding-top: 70px;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    background-color: #A12B31;
+    height: 100vh;
+}
+
+#planFTXarena {
+    width: 900px;
+    height: 700px;
+    padding: 150px 50px;
+}
+
+.connect-form {
+    padding: 50px;
+    padding-top: 20%;
+}
+.form-control {
+    resize: none;
+}
+.btn {
+    margin-top: 20px;
+    margin-left: 40%;
+    padding: 5px 40px;
+}
+#plan {
+    
+    width: 800px;
+    height: 600px;
+}
+.placementPlan{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    padding: 30px 50px;
+    align-items: center;
+    justify-items: center;
+}
+footer h4 {
+    padding-bottom: 20px;   
+}
+.navFooterr {
+    padding-left: 60px;
+
+}
+.sign {
+    width: 20%;
+    margin: 0 auto;
+    
+}
+
+@media screen and (max-width: 1455px) {
+    .franchise {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        background-color: #f7a022;
+        text-align: justify;
+        padding: 50px;  
+    }
+    .logoHeat {
+        margin: 0 auto;
+    }
+    .map {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        background-color: #A12B31;
+        height: auto;
+        padding-bottom: 50px;
+    }
+    .plan{
+        margin: 0 auto;
+        height: auto;
+    }
+    .form {
+        width: 70%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .services {
+        background-color: #A12B31;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .ourteam{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.911);
+        text-align: center;
+        color: #FFF;
+        height: auto;
+    }
+    .franchise {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        background-color: #f7a022;
+        text-align: justify;
+        
+        height: auto;
+    }
+    #logo-heat{
+        
+        width: 100%;
+        height: auto;
+    }
+    #planFTXarena{
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    #plan {
+        width: 600px;
+        height: 400px;
+    }
+    .placementPlan{
+        padding: 10%;
+    }
+}
+    
+@media screen and (max-width: 905px) {
+    .carousel-item img{
+        padding-top: 11%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .ourteam{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.911);
+        text-align: center;
+        color: #FFF;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navFooter {
+        order: 3;
+        padding-right: 50px;
+    }    
+    .coordonnees {
+        order: 2;
+        width: 40%;
+    }
+    .logoSteeve {
+        padding-left: 50px;
+        order: 4;
+    }
+    .carousel-item img{
+        padding-top: 17%;
+    }
+    #btnGroupDrop1 {
+        display: none;
+    }
+    #plan {
+        width: 500px;
+        height: 300px;
+    }
+    .placementPlan{
+        padding: 10%;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .navbar-toggler{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #plan {
+        width: 400px;
+        height: 250px;
+    }
+    .placementPlan{
+        padding: 10%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #plan {
+        width: 350px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 400px) {
+    #plan {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .carousel-item img{
+        padding-top: 29%;
+    }
+}
+
+
