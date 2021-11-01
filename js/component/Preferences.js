@@ -25,7 +25,7 @@ class Preferences
         <div class="col d-flex justify-content-center">
             <div class="row justify-content-center" >
                 <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    // <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Sheep-Animal-Zoo-Wild_Life-256.png"/>
+                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Sheep-Animal-Zoo-Wild_Life-256.png"/>
                 </div>
                 <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
                     <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Cow-Animal-Zoo-Wild_Life-256.png"/>
@@ -33,7 +33,6 @@ class Preferences
                 <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
                     <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Pig-Animal-Zoo-Wild_Life-256.png"/>
                 </div>
-            
                 <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
                     <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Swan-Animal-Zoo-Wild_Life-256.png"/>
                 </div>
@@ -43,8 +42,6 @@ class Preferences
                 <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
                     <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Panda-Animal-Zoo-Wild_Life-256.png"/>
                 </div>
-            
-            
                 <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
                     <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Octopus-Animal-Zoo-Wild_Life-256.png"/>
                 </div>
@@ -58,13 +55,14 @@ class Preferences
             </div>
         </div>
         `
-        // const cards = document.getElementsByClassName('cardVP')
-        // Array.from(cards).forEach(el =>{
-        //     el.addEventListener('click', (e) => {
-        //         const card = el
-        //         console.log(card);
-        //     })
-        // })
+        const cards = document.getElementsByClassName('cardVP')
+        const src = localStorage.getItem('stepTwoItemSelected')
+        Array.from(cards).forEach(el =>{
+            const currentSrc = el.childNodes[1].currentSrc
+            if (currentSrc === src) {
+                el.classList.add('activated')
+            }
+        })
     }
 
     static #animation = () =>
