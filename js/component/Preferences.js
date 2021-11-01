@@ -1,3 +1,5 @@
+import preferences from './PreferencesData.js'
+
 class Preferences
 {
     constructor()
@@ -21,48 +23,19 @@ class Preferences
 
     static #injectHTML = () =>
     {
+        const src = localStorage.getItem('stepTwoItemSelected')
         Preferences.#root.innerHTML = `
         <div class="col d-flex justify-content-center">
-            <div class="row justify-content-center" >
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Sheep-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Cow-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Pig-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Swan-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Turtle-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Panda-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Octopus-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Lion-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <div class="col-6 col-md-4 d-flex justify-content-center cardVP" >
-                    <img class="" src="https://cdn3.iconfinder.com/data/icons/animal-58/512/Monkey-Animal-Zoo-Wild_Life-256.png"/>
-                </div>
-                <style class="hover"></style>
-            </div>
-        </div>
-        `
-        const cards = document.getElementsByClassName('cardVP')
-        const src = localStorage.getItem('stepTwoItemSelected')
-        Array.from(cards).forEach(el =>{
-            const currentSrc = el.childNodes[1].currentSrc
-            if (currentSrc === src) {
-                el.classList.add('activated')
-            }
+            <div class="row justify-content-center" ></div>
+        </div>`
+        const preferencesDiv = document.querySelector('.row.justify-content-center')
+        preferences.forEach(preference => {
+            preferencesDiv.innerHTML += `
+                <div class="col-6 col-md-4 d-flex justify-content-center cardVP ${preference === src?'activated':''}" >
+                    <img class="" src="${preference}"/>
+                </div>`
         })
+        preferencesDiv.innerHTML += '<style class="hover"></style>'
     }
 
     static #animation = () =>

@@ -41,7 +41,7 @@ class Router
                 break
             case 2 :
                 const root = document.querySelector('#main')
-                root.innerHTML = 'oui'
+                root.innerHTML = 'adresse de livraison'
         }
     }
 }
