@@ -1,55 +1,74 @@
-// initilaise les groupes de marqeurs
-markerClusters = L.markerClusterGroup();
-// intégrer un tableau des longitudes et des latitudes
-var villes = {
-    "Paris": {
-        "lat": 48.852969,
-        "lon": 2.349903
-    },
-    "Brest": {
-        "lat": 48.383,
-        "lon": -4.500
-    },
-    "Quimper": {
-        "lat": 48.000,
-        "lon": -4.100
-    },
-    "Bayonne": {
-        "lat": 43.500,
-        "lon": -1.467
+// Initialisation de la latitude et de la longitude
+const lat = 48.852969;
+const lon = 2.349903;
+
+initMap();
+
+function initMap() {
+    // initilaisation tableau des marqueurs
+    var markers = [];
+
+    // Personnalisation des marqueurs
+    var myIcon = L.icon({
+        iconUrl: './asset/icons/electric-point.png',
+        iconSize: [50, 50],
+        iconAnchor: [25,50],
+        popupAnchor: [-1, -25]
+    });
+
+
+    // initialisation de la carte sur les coordonnées de paris
+    var carte = L.map('carte').setView([lat, lon], 13);
+    // initialisaition les groupes de marqeurs
+    markerClusters = L.markerClusterGroup();
+
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        minZoom: 6,
+        maxZoom: 18,
+        tileSize: 512,
+        zoomOffset: -1,
+    }).addTo(carte);
+
+    // ****** INTEGRATION FICHIER GEOJSON A/P DATABASE ******
+
+    function onEachFeature(feature, bornes) {
+        if (feature.properties && bornes.feature.properties.ad_station) {
+            var popupContent = "<p>Point de charge</p>" + "<p>Adresse: " + bornes.feature.properties.ad_station + "</p>" + "<p>Status: " + bornes.feature.properties.statut_pdc + "</p>"
+            bornes.bindPopup(popupContent);
+        }
     }
-};
-// initilaisation tableau des marqueurs
-var markers = [];
-// initialisation de la carte sur les coordonnées de paris
-var carte = L.map('carte').setView([48.852969, 2.349903], 13);
 
-L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    minZoom: 6,
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'your.mapbox.access.token'
-}).addTo(carte);
+    var bornes_lyr = L.geoJSON(bornes, {
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, { icon: myIcon });
+        },
+        onEachFeature: onEachFeature
+    });
 
-// possibilité de personnaliser les marqeurs
+    // Regroupement des marqueurs dans un groupe leaftlet
+    markerClusters.addLayer(bornes_lyr);
+    markers.push(bornes_lyr);
+    var group = new L.featureGroup(markers);
 
-// TODO : Création du marqeur et attribution d'un popup possibilité de récupérer en JSON
-for (ville in villes) {
-    var marker = L.marker([villes[ville].lat, villes[ville].lon]) //.addTo(carte);
+    // **** END OF INTEGRATION FICHIER GEOJSON A/P DATABASE ******
 
-    marker.bindPopup("<p>" + ville + "</p>")
-        // ajoute le marqueur au groupe
-    markerClusters.addLayer(marker);
+    // Test avec fetch NON OPERATIONNEL
+    // const url = "https://opendata.paris.fr/api/records/1.0/search/?dataset=belib-points-de-recharge-pour-vehicules-electriques-disponibilite-temps-reel&q=&facet=statut_pdc&facet=postal_code&facet=last_updated&refine.postal_code=75010" 
 
-    // ajout du marqueur au tableau
-    markers.push(marker);
+    // const url = "../database/recharge-vehicules.json";
+
+    //  async function getDatas(){
+
+    //      const datas = await fetch(url).then(res => res.json());
+    //      console.log(datas);
+    //      return datas;
+    //     }
+    // getDatas();
+
+    // var bornesFetch_lyr = L.geoJSON(data).addTo(carte);
+
+    carte.fitBounds(group.getBounds().pad(0.5));
+    carte.addLayer(markerClusters);
+
 }
-
-// regroupement des marqueurs dans un groupe leaftlet
-var group = new L.featureGroup(markers);
-
-carte.fitBounds(group.getBounds().pad(0.5));
-carte.addLayer(markerClusters);

@@ -11,7 +11,7 @@ export class Router {
     static run() {
         switch (location.search.substring(1)) {
             case "":
-                Router.loadView('INSCRIPTION');
+                Router.loadView();
                 break;
 
             case Router.Route.LOGOUT:
