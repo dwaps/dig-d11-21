@@ -1,0 +1,35 @@
+@import './cardVP.css' ;
+
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#main {
+    flex-grow: 1;
+    border: 1px black solid;
+}
+    #main>div.col>div.row {
+      width: 45rem;
+    }
+    @media (max-width : 767px) {
+        #main img.cardVP {
+            height: 10vh;
+        }
+        #main div.row {
+          width: 100vw;
+        }
+    }
+    
+
+#steps {
+    border: 1px black solid;
+    min-height: 20vh;
+}
+
+#controls {
+    border: 1px black solid;
+    min-height: 20vh;
+}
+
