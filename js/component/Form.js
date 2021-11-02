@@ -2,19 +2,31 @@ class Form
 {
     static required = false
 
-    static render()
+    static render(option)
     {
         const root = document.querySelector('#main')
         root.innerHTML = `<form class='needs-validation' novalidate>`
         const form = document.querySelector('.needs-validation')
-        form.innerHTML += Form.#addNameInput()
-        form.innerHTML += Form.#addEmailInput()
-        form.innerHTML += Form.#addPasswordInput()
-        form.innerHTML += Form.#addTelInput()
+        if (!option)
+        {
+            form.innerHTML += Form.#default()
+        }
+        else if (option === 1)
+        {
+            form.innerHTML += Form.#addNameInput()
+            form.innerHTML += Form.#addEmailInput()
+            form.innerHTML += Form.#addPasswordInput()
+            form.innerHTML += Form.#addTelInput()
+        }
+        else if (option === 2)
+        {
+            form.innerHTML += Form.#addAddressInputs()
+        }
+        
         form.innerHTML += `<div id='errorsForm'></div>`
     }
 
-    static #addNameInput()
+    static #addNameInput = () =>
     {
         const row = `
         <div class="row">
@@ -40,7 +52,7 @@ class Form
         return row
     }
 
-    static #addEmailInput()
+    static #addEmailInput = () =>
     {
         const row = `
         <div class="row">
@@ -57,7 +69,7 @@ class Form
         return row
     }
 
-    static #addPasswordInput()
+    static #addPasswordInput = () =>
     {
         const row = `
         <div class="row">
@@ -83,7 +95,7 @@ class Form
         return row
     }
 
-    static #addTelInput()
+    static #addTelInput = () =>
     {
         const row = `
         <div class="row">
@@ -99,6 +111,77 @@ class Form
 			</div>`
         return row
     }
+
+    static #addAddressInputs = () =>
+    {
+        const row = `
+        <div class="row">
+            <div class="col-5 col-md-3">
+                <label for="streetNumber">Numéro de rue</label>
+                <div class="input-group has-validation">
+                    <input id='streetNumber' class='form-control' type="number" required=${Form.required}>
+                    <div class="invalid-feedback">
+                        Veuillez renseigner votre numéro de rue
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 col-md-">
+                <label for="streetName">Nom de Rue</label>
+                <div class="input-group has-validation">
+                    <input id='streetName' class='form-control' type="text" required=${Form.required}>
+                    <div class="invalid-feedback">
+                        Veuillez renseigner votre nom de rue
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+                <label for="streetZipcode">Code Postal</label>
+                <div class="input-group has-validation">
+                    <input autocomplete="postal-code" id='streetZipcode' class='form-control' type="number" required=${Form.required}>
+                    <div class="invalid-feedback">
+                        Sample Text
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="streetCity">Ville</label>
+                <div class="input-group has-validation">
+                    <input id='streetCity' class='form-control' type="text" required=${Form.required}>
+                    <div class="invalid-feedback">
+                        Sample Text
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        `
+        return row
+    }
+    
+
+    static #default = () =>
+    {
+        const row = `
+        <div class="row">
+				<div class="col">
+					<label for="default">Default</label>
+                    <div class="input-group has-validation">
+                        <input id='telInput' class='form-control' type="text" required=${Form.required}>
+                        <div class="invalid-feedback">
+                            Sample Text
+                        </div>
+                    </div>
+				</div>
+			</div>`
+        return row
+    }
+
+
 
     static verify()
     {
