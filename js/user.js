@@ -52,14 +52,14 @@ export class User {
 
 	}
 
-	  /**
-   * //TODO
-   * return the user with the right email in the session storage
-   * @param {String} email 
-   * @returns new User(....)
-   */
-		static findOne() {
-			return
-		 }
+	/**
+	 * //TODO
+	 * return the user with the right email in the session storage
+	 * @param {String} email 
+	 * @returns new User(....)
+	 */
+	static findOne() {
+		return
+	}
 
 }

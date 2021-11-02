@@ -12,8 +12,7 @@ export class Address {
 	}
 
 	save() {
-		console.log('address saved in sessionStorage! ');
+		console.log('Address saved in sessionStorage !')
 		sessionStorage.setItem(Address.SESSION_KEY, JSON.stringify(this))
-		console.log('this is :', this)
 	}
 }

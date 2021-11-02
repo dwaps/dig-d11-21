@@ -30,6 +30,11 @@ body {
 	height: 300px;
 }
 
+p,
+span {
+	margin: 24px;
+}
+
 /* PAGE 2 */
 
 .checkbox {
@@ -61,6 +66,22 @@ label::before {
 	display: block;
 }
 
+.page-2 img {
+	width: 100px;
+	height: 100px;
+}
+
+/* PAGE 4 */
+.categories span {
+margin: 0;
+}
+
+
+.categories span::after {
+	content: "\A";
+	white-space: pre;
+}/* This pseudo element is here to add <br> withtout the balise itself */
+
 /* PROGRESS-BAR */
 ul {
 	display: flex;
@@ -69,11 +90,6 @@ ul {
 
 ul li {
 	color: var(--progress-bar-grey);
-}
-
-.page-2 img {
-	width: 100px;
-	height: 100px;
 }
 
 /* les ronds */
@@ -114,7 +130,7 @@ ul > li:last-child {
 	/* Cette propiété permet de corriger un décalage de 2px -> due au "display: none;" du selecteur: ul > li:last-child::before */
 }
 
-/* Ces propriété permette de modifier les speudos-éléments before et after en js */
+/* Ces propriétés permettent de modifier les speudos-éléments before et after en js */
 .li-after-modifier::after {
 	border-color: var(--bs-blue);
 }

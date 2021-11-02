@@ -1,6 +1,6 @@
 
 export class Router {
-	static currentRoute = "";
+	static currentRoute = ""
 
 	constructor() {
 
@@ -17,33 +17,34 @@ export class Router {
 		switch (location.search.substring(1)) {
 			case "":
 			case Router.Route.PAGE1:
-				Router.currentRoute = Router.Route.PAGE1;
+				Router.currentRoute = Router.Route.PAGE1
 				this.loadView(Router.currentRoute)
 				this.loadProgressBar()
 				break
 
 			case Router.Route.PAGE2:
-				Router.currentRoute = Router.Route.PAGE2;
+				Router.currentRoute = Router.Route.PAGE2
 				this.loadView(Router.currentRoute)
 				this.loadProgressBar()
-				break;
+				break
 
 			case Router.Route.PAGE3:
-				Router.currentRoute = Router.Route.PAGE3;
+				Router.currentRoute = Router.Route.PAGE3
 				this.loadView(Router.currentRoute)
 				this.loadProgressBar()
 
-				break;
+				break
 
 			case Router.Route.PAGE4:
-				Router.currentRoute = Router.Route.PAGE4;
+				Router.currentRoute = Router.Route.PAGE4
+
 				this.loadView(Router.currentRoute)
 				this.loadProgressBar()
-				break;
+				break
 
 			default:
-				location.href = "/";
-				break;
+				location.href = "/"
+				break
 		}
 	}
 
@@ -63,7 +64,7 @@ export class Router {
 				const prevBtn = document.getElementById('prev')
 				prevBtn.classList.add('disabled')
 
-				break;
+				break
 
 			case Router.Route.PAGE2:
 				divP1.classList.add('view-disable')
@@ -71,7 +72,7 @@ export class Router {
 				divP4.classList.add('view-disable')
 
 				h2.innerText = "Catégories préférées"
-				break;
+				break
 
 			case Router.Route.PAGE3:
 				divP1.classList.add('view-disable')
@@ -79,7 +80,7 @@ export class Router {
 				divP4.classList.add('view-disable')
 
 				h2.innerText = "Adresse de livraison"
-				break;
+				break
 
 			case Router.Route.PAGE4:
 				divP1.classList.add('view-disable')
@@ -90,10 +91,10 @@ export class Router {
 				nextBtn.classList.add('disabled')
 
 				h2.innerText = "Confirmation"
-				break;
+				break
 
 			default:
-				break;
+				break
 		}
 	}
 
@@ -105,19 +106,19 @@ export class Router {
 		switch (Router.currentRoute) {
 			case Router.Route.PAGE1:
 				// nothing to do
-				break;
+				break
 
 			case Router.Route.PAGE2:
 				li1.classList.add('li-before-modifier')
 				li2.classList.add('li-after-modifier')
-				break;
+				break
 
 			case Router.Route.PAGE3:
 				li1.classList.add('li-before-modifier')
 				li2.classList.add('li-after-modifier')
 				li2.classList.add('li-before-modifier')
 				li3.classList.add('li-after-modifier')
-				break;
+				break
 
 			case Router.Route.PAGE4:
 				li1.classList.add('li-before-modifier')
@@ -126,11 +127,10 @@ export class Router {
 				li3.classList.add('li-after-modifier')
 				li3.classList.add('li-before-modifier')
 				li4.classList.add('li-after-modifier')
-
-				break;
+				break
 
 			default:
-				break;
+				break
 		}
 	}
 }

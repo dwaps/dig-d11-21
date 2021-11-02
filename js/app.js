@@ -18,7 +18,6 @@ export class App {
 	 * Initilaize the prev and next buttons
 	 */
 	static initBtn() {
-		console.log('init des boutons !')
 		const nextBtn = document.getElementById('next')
 		const prevBtn = document.getElementById('prev')
 
@@ -26,15 +25,15 @@ export class App {
 			switch (Router.currentRoute) {
 				case Router.Route.PAGE2:
 					location.href = "?page1"
-					break;
+					break
 
 				case Router.Route.PAGE3:
 					location.href = "?page2"
-					break;
+					break
 
 				case Router.Route.PAGE4:
 					location.href = "?page3"
-					break;
+					break
 			}
 		})
 
@@ -59,12 +58,12 @@ export class App {
 						console.error("There is an error in the form !")
 						// TODO visuel à la page 1
 					}
-					break;
+					break
 
 				case Router.Route.PAGE2:
 					Page2.saveCategories()
 					location.href = "?page3"
-					break;
+					break
 
 				case Router.Route.PAGE3:
 					if (Page3.formControl()) {
@@ -87,7 +86,7 @@ export class App {
 						//TODO visuel à la page 3
 					}
 					location.href = "?page4"
-					break;
+					break
 			}
 		})
 	}
