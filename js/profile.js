@@ -12,7 +12,12 @@ export class Profile {
 		this.address = address
 	}
 
+	static findAll() {
+		return JSON.parse(localStorage.getItem(Profile.STORAGE_KEY)) || []
+	}
+
 	save() {
-		
+		const oldProfile = Profile.findAll()
+		localStorage.setItem(Profile.STORAGE_KEY, JSON.stringify([...oldProfile, this]))
 	}
 }

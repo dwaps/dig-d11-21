@@ -40,6 +40,8 @@ export class App {
 		nextBtn.addEventListener('click', () => {
 			switch (Router.currentRoute) {
 				case Router.Route.PAGE1:
+					const feedbackPage1 = document.querySelector('.page-1 .feedback')
+
 					if (Page1.formControl()) {
 						const form = document.getElementById('page-1-form')
 						const lastName = form[0].value
@@ -50,13 +52,17 @@ export class App {
 						telephone = telephone.split(' ').join('')
 
 						const user = new User(lastName, firstName, email, password, telephone)
-						user.save()
+						if (!user.isAlreadySaved()) {
+							user.save()
+							location.search = "?page2"
+						} else {
+							console.error('Email is already used !')
+							feedbackPage1.innerText = "Email déjà utilisée !"
+						}
 
-						// TODO Check if the email is already used (dans les profiles enregistré dans le localstorage)
-						location.search = "?page2"
 					} else {
 						console.error("There is an error in the form !")
-						// TODO visuel à la page 1
+						feedbackPage1.innerText = "Il y a une erreur dans le formulaire !"
 					}
 					break
 
@@ -66,6 +72,7 @@ export class App {
 					break
 
 				case Router.Route.PAGE3:
+					const feedbackPage3 = document.querySelector('.page-3 .feedback')
 					if (Page3.formControl()) {
 						const form = document.getElementById('page-3-form')
 						const lastName = form[0].value
@@ -84,7 +91,7 @@ export class App {
 						location.href = "?page4"
 					} else {
 						console.error("There is an error in the form !")
-						//TODO visuel à la page 3
+						feedbackPage3.innerText = "Il y a une erreur dans le formulaire !"
 					}
 					break
 			}

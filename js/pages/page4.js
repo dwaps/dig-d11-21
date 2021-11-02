@@ -12,9 +12,9 @@ export class Page4 {
 	 */
 	static initialization() {
 		// Init Fields
-		const user = (JSON.parse(sessionStorage.getItem(this.SESSION_USER_KEY)))
-		const categories = (JSON.parse(sessionStorage.getItem(this.SESSION_CATEGORIES_KEY)))
-		const address = (JSON.parse(sessionStorage.getItem(this.SESSION_ADDRESS_KEY)))
+		const user = (JSON.parse(sessionStorage.getItem(Page4.SESSION_USER_KEY)))
+		const categories = (JSON.parse(sessionStorage.getItem(Page4.SESSION_CATEGORIES_KEY)))
+		const address = (JSON.parse(sessionStorage.getItem(Page4.SESSION_ADDRESS_KEY)))
 
 		const lastNameInput = document.querySelector('.last-name')
 		const firstNameInput = document.querySelector('.first-name')
@@ -30,6 +30,9 @@ export class Page4 {
 			if (categories[i][1] == true) {
 				categoriesInput.innerHTML += ` <span>${categories[i][0]}</span>`
 			}
+		}
+		if (categoriesInput.innerText == '') {
+			categoriesInput.innerText = "Aucunes catégories n'a été sélectionnées."
 		}
 		roadNumberInput.innerText = `${address.roadNumber}`
 		addressInput.innerText = `${address.address}`

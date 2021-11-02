@@ -1,9 +1,6 @@
 export class Page3 {
 	constructor() {
 	}
-
-	static SESSION_KEY = "categories"
-
 	/**
 	 * Check the form at page 3
 	 * @returns {boolean} true if it pass the control otherwise false

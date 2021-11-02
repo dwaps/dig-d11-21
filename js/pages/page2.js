@@ -16,7 +16,7 @@ export class Page2 {
 		}
 		
 		//We need to change the Map to an object before storing it in the sessionStorage otherwise we get an empty Object.
-		sessionStorage.setItem(this.SESSION_KEY, JSON.stringify([...categories]))
+		sessionStorage.setItem(Page2.SESSION_KEY, JSON.stringify([...categories]))
 	}
 
 }
