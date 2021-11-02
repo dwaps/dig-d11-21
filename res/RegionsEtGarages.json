@@ -1,0 +1,1618 @@
+{
+    "regions": [
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+            "nom":"Auvergne Rhône Alpes",
+            "gps":{
+                "lat":"45.70431767615946",
+                "lon":"4.552408309171005"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef02",
+            "nom":"Bourgogne-Franche-Comté",
+            "gps":{
+                "lat":"47.22411826044546",
+                "lon":"4.86190909645763"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef03",
+            "nom":"Bretagne",
+            "gps":{
+                "lat":"48.179304708777856",
+                "lon":"-2.650353250722619"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef04",
+            "nom":"Centre-Val de Loire",
+            "gps":{
+                "lat":"47.57554772958216",
+                "lon":"1.89245215217468"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+            "nom":"Grand Est",
+            "gps":{
+                "lat":"48.706069063684275",
+                "lon":"5.824718741053574"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+            "nom":"Hauts de France",
+            "gps":{
+                "lat":"50.36677365422803",
+                "lon":"2.5776866795682203"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef07",
+            "nom":"Ile de France",
+            "gps":{
+                "lat":"48.742843246735134",
+                "lon":"2.499818515721968"
+                },
+            "zoom":"8"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef08",
+            "nom":"Normandie",
+            "gps":{
+                "lat":"49.08465672479509",
+                "lon":"0.22344495897738648"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+            "nom":"Nouvelle Aquitaine",
+            "gps":{
+                "lat":"45.09458462439494",
+                "lon":"0.41897743641280116"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+            "nom":"Occitanie",
+            "gps":{
+                "lat":"43.83116079319948",
+                "lon":"2.2697621413305966"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef11",
+            "nom":"Pays de la Loire",
+            "gps":{
+                "lat":"47.515847624623575",
+                "lon":"-0.7505567121621263"
+                },
+            "zoom":"7"
+        },
+        {
+            "id":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+            "nom":"Provence Alpes Côte d'Azur",
+            "gps":{
+                "lat":"44.005498497965014",
+                "lon":"6.149967495513507"
+                },
+            "zoom":"8"
+        }
+    ],
+    "garages": [
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e001",
+            "nom":"WEST BIKE",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef07",
+                "adr":"21 RN 10, 78310 Coignieres",
+                "gps":{
+                    "lat":"48.75346461914332",
+                    "lon":"1.9362108153407531"
+                }
+            },
+            "contact":{
+                "tel":"+33.1.34.61.44.66",
+                "mail":"vincent@groupetardieu.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e002",
+            "nom":"Tendance Roadster",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef07",
+                "adr":"98 rue baudin, 92300 Levallois-perret",
+                "gps":{
+                    "lat":"48.89960076755248",
+                    "lon":"2.289948569318494"
+                }
+            },
+            "contact":{
+                "tel":"+33.1.74.63.86.76",
+                "mail":"infos@tendance-roadster.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e003",
+            "nom":"Royal Enfield Montlhéry",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef07",
+                "adr":"58 Route d'Orléans, 91310 Montlhéry",
+                "gps":{
+                    "lat":"48.64431346665593",
+                    "lon":"2.2702123711648126"
+                }
+            },
+            "contact":{
+                "tel":"+33.1.85.41.11.43",
+                "mail":"91@royalrider.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e004",
+            "nom":"Royal Rider 75",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef07",
+                "adr":"7 Boulevard Beaumarchais, 75004 Paris",
+                "gps":{
+                    "lat":"48.85447723777077",
+                    "lon":"2.3685676000000004"
+                }
+            },
+            "contact":{
+                "tel":"+33.1.83.62.40.62",
+                "mail":"75@royalrider.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e005",
+            "nom":"Ormotors",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef07",
+                "adr":"266 Boulevard du Havre, 95220 Pierrelaye",
+                "gps":{
+                    "lat":"49.006047922142464",
+                    "lon":"2.173826028835188"
+                }
+            },
+            "contact":{
+                "tel":"+33.1.39.31.06.54",
+                "mail":"ormotors95@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e006",
+            "nom":"Royal Rider 77",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef07",
+                "adr":"2T rue de l'Epinette, 77340 Pontault Combault",
+                "gps":{
+                    "lat":"48.77995870270061",
+                    "lon":"2.611576257670376"
+                }
+            },
+            "contact":{
+                "tel":"+33.1.78.76.55.56",
+                "mail":"77@royalrider.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e007",
+            "nom":"Kustom Store Motorcycles",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"475 Rue Mario et Monique Piani, 69480 Ambérieux",
+                "gps":{
+                    "lat":"45.929303014504406",
+                    "lon":"4.736566372895061"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.78.86.60.40",
+                "mail":"contact@ksmotorcycles.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e008",
+            "nom":"Royal Enfield Annecy",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"3 rue de la crête, 74000 Annecy",
+                "gps":{
+                    "lat":"45.9084358909414",
+                    "lon":"6.105383583061793"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.50.67.90.78",
+                "mail":"royalenfieldannecy@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e009",
+            "nom":"Nicolas Motos",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"27 Rue du Québec, 07100 Annonay",
+                "gps":{
+                    "lat":"45.250316681439095",
+                    "lon":"4.680202155824059"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.75.32.45.23",
+                "mail":"nicolasmotos@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e010",
+            "nom":"Couleurs Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"1 Chemin du Moulon Inférieur, 7200 Aubenas",
+                "gps":{
+                    "lat":"44.614066130769345",
+                    "lon":"4.40001275582406"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.75.89.16.75",
+                "mail":"couleursmoto@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e011",
+            "nom":"Auvergne Motos",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"20 Rue Denis Papin, 63170 Aubiere",
+                "gps":{
+                    "lat":"45.752155884527824",
+                    "lon":"3.137339274857446"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.73.15.30.52",
+                "mail":"nicolas@auvergne-motos.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e012",
+            "nom":"Elite moto 15",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"42 avenue des Volontaires, 15000 Aurillac",
+                "gps":{
+                    "lat":"44.91560055814558",
+                    "lon":"2.4400675865055645"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.71.48.09.11",
+                "mail":"elitemoto.15@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e013",
+            "nom":"Raffin Motos",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"Route de Bourgogne, 1270 Coligny",
+                "gps":{
+                    "lat":"46.38443792676674",
+                    "lon":"5.344269457670377"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.74.30.12.44",
+                "mail":"raffin.motos@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e014",
+            "nom":"Royal Enfield Grenoble",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"6 rue Pierre Dupont, 38000 Grenoble",
+                "gps":{
+                    "lat":"45.186668761360686",
+                    "lon":"5.686703601847193"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.38.49.00.49",
+                "mail":"dauphibike@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e015",
+            "nom":"Sud Est Automobiles Motorbike Shop",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"1911 RD 1006, 73490 La Ravoire",
+                "gps":{
+                    "lat":"45.563549061965276",
+                    "lon":"5.969867293890833"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.79.72.82.10",
+                "mail":"davidmonleau@sudestautos.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e016",
+            "nom":"Royal Enfield Lyon",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"8 Chemin du Tronchon, 69410 Lyon Champagne-au-Mont-d'Or",
+                "gps":{
+                    "lat":"45.80175997379619",
+                    "lon":"4.780313"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.81.09.96.96",
+                "mail":"contact@motorcycles-store.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e017",
+            "nom":"Motorama",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"64 avenue du Général de Gaulle, 03100 Montluçon",
+                "gps":{
+                    "lat":"46.345970313728806",
+                    "lon":"2.609519501846318"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.70.28.12.79",
+                "mail":"as.motorama@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e018",
+            "nom":"CHOLLET MOTO",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"9 rue du mont rond, 1630 Saint Genis Pouilly",
+                "gps":{
+                    "lat":"46.25559865845893",
+                    "lon":"6.026477457670376"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.50.13.19.22",
+                "mail":"cholletmotostgenis@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e019",
+            "nom":"Topaz Motorcycles",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"5 Rue Topaze, 26320 St Marcel Les Valence",
+                "gps":{
+                    "lat":"44.92054273760576",
+                    "lon":"4.878077628835188"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.75.55.84.74",
+                "mail":"topazmotorcycles@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e020",
+            "nom":"Philip'Motos",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"9 rue de dunkerque, 42100 St Étienne",
+                "gps":{
+                    "lat":"45.416285692855205",
+                    "lon":"4.405801419033387"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.77.81.16.50",
+                "mail":"philipmotos@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e021",
+            "nom":"LE SHOP MOTO",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef01",
+                "adr":"24 PLACE JEAN EPINAT, 03200 Vichy",
+                "gps":{
+                    "lat":"46.13063165248792",
+                    "lon":"3.4273953269888713"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.70.98.29.34",
+                "mail":"philippechesnel@sfr.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e022",
+            "nom":"Royal Enfield Besançon",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef02",
+                "adr":"1 rue de Valset, 25220 Chalezeule",
+                "gps":{
+                    "lat":"47.26434923281592",
+                    "lon":"6.057447228835188"
+                }
+            },
+            "contact":{
+                "tel":"+33.9.85.60.36.15",
+                "mail":"royalenfield@vp-1.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e023",
+            "nom":"Royal Enfield Macôn",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef02",
+                "adr":"200 chemin joncheres, 71850 Charnay Les Macon",
+                "gps":{
+                    "lat":"46.2892072559333",
+                    "lon":"4.781646184659246"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.85.39.84.92",
+                "mail":"contact@atelier-orangemecanique.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e024",
+            "nom":"Bresse Quad et Moto Vintage",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef02",
+                "adr":"Z.A. du Champ Chassy, 71380 Châlon / Châtenoy-en-Bresse",
+                "gps":{
+                    "lat":"46.786844704669065",
+                    "lon":"4.909112213494418"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.85.42.25.52",
+                "mail":"contact@bresse-moto.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e025",
+            "nom":"NR Part Racing",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef02",
+                "adr":"7 Rue des Etourneaux, 21220 Fixin",
+                "gps":{
+                    "lat":"47.242311447564745",
+                    "lon":"4.987909071164812"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.80.35.18.72",
+                "mail":"nr.partsracing@sfr.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e026",
+            "nom":"ELITE MOTO 89",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef02",
+                "adr":"23 Rue Lorraine, 89100 SENS / SAINT DENIS LES SENS",
+                "gps":{
+                    "lat":"48.2149983590245",
+                    "lon":"3.2755978576703764"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.86.83.70.70",
+                "mail":"elitemoto.sens@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e027",
+            "nom":"Trail 70",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef02",
+                "adr":"Rue du praley - Espace de la motte, 70004 Vesoul Cedex",
+                "gps":{
+                    "lat":"47.636065875266006",
+                    "lon":"6.153778228835189"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.84.75.83.34",
+                "mail":"contact@trail-70.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e028",
+            "nom":"Royal Enfield Lorient",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef03",
+                "adr":"11 Rue de St Exupéry, 56100 Lorient",
+                "gps":{
+                    "lat":"47.763566747983624",
+                    "lon":"-3.4027572232962364"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.97.56.06.00",
+                "mail":"gildas@morbihan-moto.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e029",
+            "nom":"MK Meca",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef03",
+                "adr":"Rue Jean Monnet, 29600 Morlaix",
+                "gps":{
+                    "lat":"48.58721758361697",
+                    "lon":"-3.8063522134944354"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.98.88.88.99",
+                "mail":"mkmeca@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e030",
+            "nom":"Moto Diffusion 56",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef03",
+                "adr":"9 Rue Edgar Touffreau, 56880 Ploeren",
+                "gps":{
+                    "lat":"47.66141278086439",
+                    "lon":"-2.806058257670376"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.97.46.91.91",
+                "mail":"ivan.morbihanmoto@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e031",
+            "nom":"Motopassion 35",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef03",
+                "adr":"37 B rue manoir de servigné, 35000 Rennes",
+                "gps":{
+                    "lat":"48.10090998658599",
+                    "lon":"-1.7331672423296238"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.99.14.01.00",
+                "mail":"motopassion35@free.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e032",
+            "nom":"Richard Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef03",
+                "adr":"42 avenue Pierre Mendès France, 22950 Tregueux",
+                "gps":{
+                    "lat":"48.48940999783068",
+                    "lon":"-2.7655049306815056"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.96.61.63.53",
+                "mail":"richard.moto@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e033",
+            "nom":"Center Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef04",
+                "adr":"14 avenue du Président Wilson, 41000 Blois",
+                "gps":{
+                    "lat":"47.58369627553156",
+                    "lon":"1.3403858981536827"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.54.78.07.23",
+                "mail":"center.motos@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e034",
+            "nom":"Access 2 roues",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef04",
+                "adr":"10 rue des grandes filles dieux, 28000 Chartres",
+                "gps":{
+                    "lat":"48.451835881948924",
+                    "lon":"1.4922755562507244"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.37.21.18.67",
+                "mail":"access2roues@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e035",
+            "nom":"Chinon motos",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef04",
+                "adr":"2 rue René Cassin, 37500 Chinon",
+                "gps":{
+                    "lat":"47.1499223062256",
+                    "lon":"0.2365111846592473"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.47.98.41.19",
+                "mail":"chinonmotos37@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e036",
+            "nom":"Cycles DIAS",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef04",
+                "adr":"11 Boulevard Stalingrad, 36100 Issoudun",
+                "gps":{
+                    "lat":"46.94951354138365",
+                    "lon":"1.9873680423296236"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.54.21.17.13",
+                "mail":"cyclesdiasissoudun@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e037",
+            "nom":"S Bike 37",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef04",
+                "adr":"1 rue Pierre de Coubertin, 37540 St Cyr Sur Loire",
+                "gps":{
+                    "lat":"47.42006004414651",
+                    "lon":"0.6613979828129302"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.47.54.64.66",
+                "mail":"magasin@s-bike37.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e038",
+            "nom":"FC MOTOS RACE",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef04",
+                "adr":"379 route d orléans, 18230 St Doulchard",
+                "gps":{
+                    "lat":"47.10837878632181",
+                    "lon":"2.3778764423296233"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.48.70.91.90",
+                "mail":"fcmotos-race@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e039",
+            "nom":"Acte 3 Metz",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"12 rue du bois d Orly, 57685 Augny",
+                "gps":{
+                    "lat":"49.07419725654566",
+                    "lon":"6.105943749784817"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.87.38.44.19",
+                "mail":"stephane.acte3@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e040",
+            "nom":"Auto moto 55",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"5 rue Jean Claude Duret, 55430 Belleville Sur Meuse",
+                "gps":{
+                    "lat":"49.18207835459614",
+                    "lon":"5.368532419640793"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.29.84.26.55",
+                "mail":"autosmotos.yamaha@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e041",
+            "nom":"JMS",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"6 rue nationale, 57800 Cocheren",
+                "gps":{
+                    "lat":"49.154734828891726",
+                    "lon":"6.842869457670376"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.87.04.57.60",
+                "mail":"jms-co@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e042",
+            "nom":"CK Motos",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"98 Route de Marienthal, 67500 Haguenau",
+                "gps":{
+                    "lat":"48.79778027761941",
+                    "lon":"7.802183444175052"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.88.73.20.99",
+                "mail":"direction@ckmotos.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e043",
+            "nom":"Direct Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"61 Rue de la gare, 51140 Muizon",
+                "gps":{
+                    "lat":"49.27601249650015",
+                    "lon":"3.9055737288351886"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.26.35.16.57",
+                "mail":"directmoto@live.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e044",
+            "nom":"Royal Enfield Nancy",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"Rue du pont de villey ZAC du jonchery, 54200 Nancy / Dommartin Les Toul",
+                "gps":{
+                    "lat":"48.67679464770258",
+                    "lon":"5.921196232981908"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.83.43.55.06",
+                "mail":"motors@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e045",
+            "nom":"Royal Enfield Mulhouse",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"4 A rue des pyrenées, 68390 Sausheim",
+                "gps":{
+                    "lat":"47.77428351231458",
+                    "lon":"7.387691742329624"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.89.52.03.17",
+                "mail":"contact@moto-pulsion.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e046",
+            "nom":"Royal Enfield Strasbourg",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef05",
+                "adr":"8 Rue Jean Monnet,  Eckb Strasbourg",
+                "gps":{
+                    "lat":"48.58759628252029",
+                    "lon":"7.687788905824059"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.88.64.89.26",
+                "mail":"royalenfieldschumpp@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e047",
+            "nom":"Royal Enfield Arras",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+                "adr":"255 Avenue John F Kennedy, 62000 Arras",
+                "gps":{
+                    "lat":"50.2840411943223",
+                    "lon":"2.7397832155465816"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.21.16.04.02",
+                "mail":"royalenfieldarras@groupe-lempereur.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e048",
+            "nom":"JR Motorbike",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+                "adr":"1691 Avenue de Paris, 59400 Cambrai",
+                "gps":{
+                    "lat":"50.15611419416179",
+                    "lon":"3.2230373288351886"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.27.37.85.24",
+                "mail":"jr.motorbike@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e049",
+            "nom":"ADL MOTO",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+                "adr":"Rue Colbert, 02000 Chambry",
+                "gps":{
+                    "lat":"49.58406296341161",
+                    "lon":"3.6503066628772225"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.23.79.21.15",
+                "mail":"adl.motos@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e050",
+            "nom":"Dunes Motorsport",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+                "adr":"Route de Furnes, 59941 Dunkerque Cedex",
+                "gps":{
+                    "lat":"51.03157741993536",
+                    "lon":"2.3975928117847416"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.28.69.90.69",
+                "mail":"dunes.motorsport.gp@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e051",
+            "nom":"Royal Enfield Lille",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+                "adr":"3 Rue de la Source, 59320 Hallennes-lez-Haubourdin",
+                "gps":{
+                    "lat":"50.60425022570017",
+                    "lon":"2.957141498153683"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.28.77.77.11",
+                "mail":"contact@royalenfieldlille.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e052",
+            "nom":"AFM",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+                "adr":"687 route de Berck, 62155 Merlimont",
+                "gps":{
+                    "lat":"50.43445238364178",
+                    "lon":"1.6093162288469587"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.21.09.12.36",
+                "mail":"afm.christophe@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e053",
+            "nom":"Ride Attitude",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef06",
+                "adr":"2120 Route des Flandres, 60700 PONT-SAINTE-MAXENCE",
+                "gps":{
+                    "lat":"49.32739978179493",
+                    "lon":"2.604092957670376"
+                }
+            },
+            "contact":{
+                "tel":"+33.3.44.31.66.20",
+                "mail":"ride-attitude@securimails.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e054",
+            "nom":"100% moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef08",
+                "adr":"Rue de la charité, 61250 CONDÉ SUR SARTHE",
+                "gps":{
+                    "lat":"48.43372497428533",
+                    "lon":"0.05724365589109548"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.33.80.28.00",
+                "mail":"commercial@jouvencel.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e055",
+            "nom":"ORIGINAL GARAGE",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef08",
+                "adr":"330 Rue Léon Foucault, 14530 Herouville St Clair",
+                "gps":{
+                    "lat":"49.21042776600682",
+                    "lon":"-0.3471018865055645"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.31.97.34.03",
+                "mail":"a.dasilva@hscmoto.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e056",
+            "nom":"Royal Enfield Rouen",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef08",
+                "adr":"10 place Waldeck-Rousseau, 76140 Le Petit Quevilly",
+                "gps":{
+                    "lat":"49.42472510304479",
+                    "lon":"1.0558554404833065"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.35.72.01.48",
+                "mail":"contact@euroscoot76.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e057",
+            "nom":"Niel Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef08",
+                "adr":"4 rue Nadar, 14100 Lisieux",
+                "gps":{
+                    "lat":"49.16690974980957",
+                    "lon":"0.2168253558240591"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.31.62.17.11",
+                "mail":"niel-motos@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e058",
+            "nom":"Evasion Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef08",
+                "adr":"864 Rue Julles Valles, 50000 Saint Lo",
+                "gps":{
+                    "lat":"49.10046171044622",
+                    "lon":"-1.0766475693184945"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.33.57.06.74",
+                "mail":"morgan@evasion-moto.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e059",
+            "nom":"SP Koncept",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef08",
+                "adr":"183 Rue Emile Levassor, 27000 Évreux",
+                "gps":{
+                    "lat":"49.02757421006182",
+                    "lon":"1.1878470576703763"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.32.34.56.60",
+                "mail":"spkoncept@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e060",
+            "nom":"Track Motors",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"16 rue Leonard de Vinci, 17440 Aytre",
+                "gps":{
+                    "lat":"46.13345709918342",
+                    "lon":"-1.0971558806815056"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.46.67.76.98",
+                "mail":"trackmotor@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e061",
+            "nom":"Royal Enfield Biarritz",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"ZA de Bassilour, Rue Calamardin,  Bida Biarritz",
+                "gps":{
+                    "lat":"43.430341218303454",
+                    "lon":"-1.5763718846592472"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.59.26.51.25",
+                "mail":"royalenfieldbiarritz@hotmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e062",
+            "nom":"Bordeaux Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"9 rue francis garnier, 33300 Bordeaux",
+                "gps":{
+                    "lat":"44.87440395649133",
+                    "lon":"-0.5636233404833064"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.57.10.25.28",
+                "mail":"commercial@bordeaux-motos.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e063",
+            "nom":"MJAP",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"Parc Entreprise Ouest, rue Louis Rodas, 19110 Brive-la-Gaillarde",
+                "gps":{
+                    "lat":"45.14099103955284",
+                    "lon":"1.4730468755178592"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.55.88.06.86",
+                "mail":"brive@dafy-moto.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e064",
+            "nom":"Moto Vintage / Bourasseau",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"126 avenue du 25 aout 1944, 79140 Cerizay",
+                "gps":{
+                    "lat":"46.81491581853418",
+                    "lon":"-0.6871242153407529"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.49.80.19.91",
+                "mail":"royalenfieldcerizay@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e065",
+            "nom":"Royal Enfield Angoulême",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"1820 rue des platanes, 16430 Champniers",
+                "gps":{
+                    "lat":"45.69991833783601",
+                    "lon":"0.18058229019819896"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.45.91.27.91",
+                "mail":"quad16ktm@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e066",
+            "nom":"Absolut Moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"39 avenue du Général de Gaulle, 24660 Coulounieix Chamiers",
+                "gps":{
+                    "lat":"45.188431417088694",
+                    "lon":"0.6981396343750049"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.53.09.19.74",
+                "mail":"absolutmoto24660@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e067",
+            "nom":"Olli motorcycles",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"86 Rue Lagrua, 33260 La Teste-de-Buch",
+                "gps":{
+                    "lat":"44.644372417593935",
+                    "lon":"-1.157307328835188"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.56.66.52.95",
+                "mail":"laurent@ollimotorcycles.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e068",
+            "nom":"Moto Move",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"9 rue pierre de fermat, 87280 Limoges",
+                "gps":{
+                    "lat":"45.88994292319902",
+                    "lon":"1.276872271164812"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.55.33.94.74",
+                "mail":"j.faucher@polemotolimoges.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e069",
+            "nom":"Bike Avenue Pau",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"15 Rue Pierre Gilles de Gennes, 64140 Lons",
+                "gps":{
+                    "lat":"43.30333393477848",
+                    "lon":"-0.40741494602225814"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.59.32.01.36",
+                "mail":"bike-avenue@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e070",
+            "nom":"AZ Motors",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"1 Rue Henri de Montherlant, 19360 Malemort",
+                "gps":{
+                    "lat":"45.17490684659348",
+                    "lon":"1.5769095478685753"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.55.20.99.03",
+                "mail":"azmotors@sfr.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e071",
+            "nom":"Center bike / MOTOBOX",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"813 route de bordeaux, 47200 Marmande",
+                "gps":{
+                    "lat":"44.514817881350424",
+                    "lon":"0.1298977576703763"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.53.64.42.83",
+                "mail":"motobox@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e072",
+            "nom":"Stand Bike",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef09",
+                "adr":"20 route de Poitiers, 86360 Montamise",
+                "gps":{
+                    "lat":"46.61220801493131",
+                    "lon":"0.41453135951669356"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.49.46.19.19",
+                "mail":"stand.bike@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e073",
+            "nom":"Ets Raynaud",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"71 allée d léna, 11000 Carcassonne",
+                "gps":{
+                    "lat":"43.21655816799821",
+                    "lon":"2.3449632558240596"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.68.25.19.27",
+                "mail":"cph@cycles-raynaud.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e074",
+            "nom":"LCF",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"10 Avenue du Général Leclerc, 09000 Foix",
+                "gps":{
+                    "lat":"42.972508076620116",
+                    "lon":"1.6081435711648122"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.61.05.29.98",
+                "mail":"lcfmoto@free.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e075",
+            "nom":"Tendance Roadster Sud",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"5 Rue de la Mairie, 81570 Frejeville",
+                "gps":{
+                    "lat":"43.6106178109426",
+                    "lon":"2.1446851"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.63.50.31.94",
+                "mail":"virginie@tendance-roadster.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e076",
+            "nom":"MOTO SERVICE 82",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"426 avenue de Toulouse, 82000 Montauban",
+                "gps":{
+                    "lat":"44.003205321358294",
+                    "lon":"1.3405587018463172"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.63.91.05.42",
+                "mail":"motoservice82@free.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e077",
+            "nom":"MOTO STORE 34",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"Moto-Park,  Maug Montpellier",
+                "gps":{
+                    "lat":"43.59226396576131",
+                    "lon":"3.9409575039777422"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.99.54.24.24",
+                "mail":"s.vidou@suttelgroup.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e078",
+            "nom":"Moto Store 30",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"27 Bis rue du pied ferme, 30900 Nîmes",
+                "gps":{
+                    "lat":"43.80794601288094",
+                    "lon":"4.326964349653916"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.99.54.24.24",
+                "mail":"commercial.motostore30@suttelgroup.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e079",
+            "nom":"Elite Moto 12",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"74 Rue des Orfèvres - Parc Activités de Bel Air, 12850 Onet-Le-Château",
+                "gps":{
+                    "lat":"44.3774572289501",
+                    "lon":"2.540630257670376"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.65.68.42.47",
+                "mail":"elitemoto.12@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e080",
+            "nom":"Moto Fusion 66",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"115 Chemin de la fauceille, 66000 Perpignan",
+                "gps":{
+                    "lat":"42.66817449866492",
+                    "lon":"2.899729013494435"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.68.87.09.48",
+                "mail":"motofusion66@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e081",
+            "nom":"Moto Passion 65",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"2 impasse du stade, 65200 Pouzac",
+                "gps":{
+                    "lat":"43.0804660804673",
+                    "lon":"0.13885207116481177"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.62.34.04.53",
+                "mail":"paul.adrien.collette@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e082",
+            "nom":"X Motors",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef10",
+                "adr":"45 route de Labège, 31400 Toulouse",
+                "gps":{
+                    "lat":"43.560288431146056",
+                    "lon":"1.5025144423296237"
+                }
+            },
+            "contact":{
+                "tel":"+33.5.61.80.00.00",
+                "mail":"contact@xmotors.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e083",
+            "nom":"City Bike",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef11",
+                "adr":"Parc de l&#39automobile Zone des Montrons, 53000 Laval",
+                "gps":{
+                    "lat":"48.0841353249561",
+                    "lon":"-0.793257459458757"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.43.37.22.76",
+                "mail":"citybike.olivier@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e084",
+            "nom":"Cycles Cesbron",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef11",
+                "adr":"ZA Moulin Marcille, 2 rue Lino Ventura, 49130 Les Ponts de Cé",
+                "gps":{
+                    "lat":"47.43391761977896",
+                    "lon":"-0.5015743865055644"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.41.44.87.44",
+                "mail":"fabrice.cesbron@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e085",
+            "nom":"Royal Enfield Nantes",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef11",
+                "adr":"Rue du commandant Charcot, 44700 Orvault",
+                "gps":{
+                    "lat":"47.253956903044845",
+                    "lon":"-1.6180371619332257"
+                }
+            },
+            "contact":{
+                "tel":"+33.2.40.16.34.40",
+                "mail":"commercial@royalenfield-nantes.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e086",
+            "nom":"CLASSICA BIKE",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"300 Chemin Roger Martin, 13090 Aix En Provence",
+                "gps":{
+                    "lat":"43.516574094551686",
+                    "lon":"5.429222599999999"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.42.94.39.43",
+                "mail":"mv13@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e087",
+            "nom":"Scuderia moto",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"ZAC des bousquets, 83390 Cuers",
+                "gps":{
+                    "lat":"43.22967054922137",
+                    "lon":"6.080382171164811"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.94.27.00.00",
+                "mail":"contact@scuderiamoto83.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e088",
+            "nom":"Scuderia Moto Frejus",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"127 Rue des Moulins, 83600 Fréjus",
+                "gps":{
+                    "lat":"43.43049653201496",
+                    "lon":"6.737825828835189"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.94.19.14.59",
+                "mail":"contact@scuderiamotofrejus.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e089",
+            "nom":"DAFY MOTO 05",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"2 Allée du torrent, 05000 Gap",
+                "gps":{
+                    "lat":"44.566600145087286",
+                    "lon":"6.097285"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.92.53.43.88",
+                "mail":"je@ham05.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e090",
+            "nom":"SUBRA MOTOS",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"49 RUE JEAN DEURRIEU, 13690 Graveson",
+                "gps":{
+                    "lat":"43.8865529472701",
+                    "lon":"4.778793726988869"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.90.94.87.71",
+                "mail":"subra.motos@wanadoo.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e091",
+            "nom":"ACCESS 2 ROUES 06",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"1 boulevard du Nord, 06110 Le Cannet",
+                "gps":{
+                    "lat":"43.5702099921378",
+                    "lon":"7.008457839378617"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.93.43.23.23",
+                "mail":"access2roues06@orange.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e092",
+            "nom":"Groupe Maximin",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"25, boulevard de St Marcel, 13011 Marseille",
+                "gps":{
+                    "lat":"43.28917463850108",
+                    "lon":"5.457490700000002"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.91.24.60.35",
+                "mail":"royalenfieldmarseille@gmail.com"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e093",
+            "nom":"SUPERBIKE",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"80 Boulevard Françoise DUPARC, 13004 Marseille",
+                "gps":{
+                    "lat":"43.304867262113056",
+                    "lon":"5.401174028835188"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.91.49.14.72",
+                "mail":"contact@superbike-marseille.fr"
+            }
+        },
+        {
+            "id":"6e5dc28e-0e82-102a-987c-47ecc98e094",
+            "nom":"Royal Enfield Nice",
+            "pos":{
+                "reg":"6e5dc28e-0e82-430a-987c-47ecc98ef12",
+                "adr":"33 rue Dabray, 06000 Nice",
+                "gps":{
+                    "lat":"43.70994788400762",
+                    "lon":"7.256921923011129"
+                }
+            },
+            "contact":{
+                "tel":"+33.4.93.13.03.05",
+                "mail":"commercial@bikeup.fr"
+            }
+        }
+    ]
+}
