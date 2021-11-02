@@ -34,7 +34,7 @@ window.onscroll = function() {
 
 
 /* Initialisation de la carte en vue France */
-const parmFranceLat = 47.2, parmFranceLon = 1.7, parmFranceZoom = 6;
+const parmFranceLat = 47.2, parmFranceLon = 1.7, parmFranceZoom = 5;
 let maCarte = L.map('maCarte').setView([parmFranceLat, parmFranceLon], parmFranceZoom);
 L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
     minZoom: 1,
@@ -53,7 +53,6 @@ const myIcon = L.icon({
     iconAnchor: [10, 36],
     popupAnchor: [0, -36]
 });
-
 
 /* Chargement des régions et des garages du fichier JSON */
 import { Region } from "./classRegion.js";
@@ -100,6 +99,7 @@ function removeAllMarkers(){
 function setRegionMarker(idRegion){
     let region = listRegions.find(region => region[0].id === idRegion)[0];
     if(region.markers === undefined){
+        let markerClusters = L.markerClusterGroup({zoomToBoundsOnClick: true});
         region.markers = new Array;
         garages.filter(garage => garage.pos.reg === region.id)
                .forEach(garage => {
@@ -111,7 +111,8 @@ function setRegionMarker(idRegion){
                                         <p class="tel"><i class="fas fa-phone-square-alt"></i> <a href="tel:${garage.contact.tel}" title="Pour nous appeler...">${garage.contact.tel}</a></p>
                                       </div>`);
                     marker.bindTooltip(garage.nom);
-                    region.markers.push(marker);
+                    markerClusters.addLayer(marker);
+                    region.markers.push(markerClusters);
                 });
     }
     L.layerGroup(region.markers).addTo(maCarte);
@@ -129,6 +130,8 @@ function setMapView(idRegion){
 }
 
 // TODO :
-// 1. Group de markers (cf. discord de Christian)
+// * 1. Group de markers (cf. discord de Christian)
 // 2. Connection
-// 3. Revue de code + commentaires + optimisation / factorisation
+// 3. maj readme.txt
+// 4. Explosion dans plusieurs fichiers + Revue de code + commentaires + optimisation / factorisation
+
