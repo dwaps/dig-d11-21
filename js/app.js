@@ -81,11 +81,11 @@ export class App {
 						const newAddress = new Address(lastName, firstName, telephone, roadNumber, address, city, zip)
 						console.log('newAddress is :', newAddress)
 						newAddress.save()
+						location.href = "?page4"
 					} else {
 						console.error("There is an error in the form !")
 						//TODO visuel à la page 3
 					}
-					location.href = "?page4"
 					break
 			}
 		})

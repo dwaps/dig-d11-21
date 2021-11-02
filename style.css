@@ -27,12 +27,7 @@ body {
 .page-2,
 .page-3,
 .page-4 {
-	height: 300px;
-}
-
-p,
-span {
-	margin: 24px;
+	height: 350px;
 }
 
 /* PAGE 2 */

@@ -1,9 +1,10 @@
 export class Profile {
+	static STORAGE_KEY = "profile"
 
 	/**
-	 * @param {User} user 
-	 * @param {Map} categories 
-	 * @param {Adress} address 
+	 * @param {Object} user An object with same parameters as User
+	 * @param {String[][]} categories 
+	 * @param {Object} address An object with same parameters as User
 	 */
 	constructor(user, categories, address) {
 		this.user = user
@@ -11,4 +12,7 @@ export class Profile {
 		this.address = address
 	}
 
+	save() {
+		
+	}
 }

@@ -1,3 +1,4 @@
+import { Page4 } from "./pages/page4.js"
 
 export class Router {
 	static currentRoute = ""
@@ -37,9 +38,9 @@ export class Router {
 
 			case Router.Route.PAGE4:
 				Router.currentRoute = Router.Route.PAGE4
-
 				this.loadView(Router.currentRoute)
 				this.loadProgressBar()
+				Page4.initialization()
 				break
 
 			default:

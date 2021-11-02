@@ -18,8 +18,9 @@ export class Page3 {
 		const address = form[4].value
 		console.log('address is :', address)
 		const city = form[5].value
-		const zip = form[6].value
+		let zip = form[6].value
 		telephone = telephone.split(' ').join('')
+		zip = zip.split(' ').join('')
 
 		const regexSpecialCaractere = /[@&"'`~^#{}<>_=\[\]()!:;,?./§$£€*\+]+/
 		const simpleRegex = /[<>{}]+/
