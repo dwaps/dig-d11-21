@@ -1,0 +1,28 @@
+{
+    "centres": [
+        {
+            "nom":"M2i - Paris Chaillot ",
+            "adresse":"17-19 rue de Chaillot, 75016 Paris",
+            "open":{
+                "jour":"lundi au vendredi",
+                "horaires":"9:00 - 17:30"
+            },
+            "gps":{
+                "lat":"48.86705119021771",
+                "lon":"2.2967373696825786"
+            }        
+        },
+        {
+            "nom":"M2i - Paris Picpus ",
+            "adresse":"146-148 rue de Picpus, 75012 Paris",
+            "open":{
+                "jour":"lundi au vendredi",
+                "horaires":"9:00 - 17:30"
+            },
+            "gps":{
+                "lat":"48.83564920433017",
+                "lon":"2.4032423694455534"
+            }        
+        }
+    ]
+}

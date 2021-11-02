@@ -86,7 +86,20 @@ aside>img {
 
 #carte {
     height: 40rem;
-    /* height: 800px; */
+}
+.id{
+font-weight: bold;
+font-size: 20px;
+}
+
+.adresse,
+.statut{
+    font-size: 15px;
+}
+
+.ouverture{
+    font-style: italic;
+    font-size: 15px;
 }
 
 span {
@@ -145,6 +158,7 @@ footer {
     #carte {
         height: 30rem;
     }
+
     /* Gestion des particularités d'affichage */
     #portofolio-image {
         display: none;
