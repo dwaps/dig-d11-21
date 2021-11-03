@@ -1,4 +1,5 @@
 import preferences from './PreferencesData.js'
+import User from './User.js'
 
 class Preferences
 {
@@ -30,6 +31,7 @@ class Preferences
         </div>`
         const preferencesDiv = document.querySelector('.row.justify-content-center')
         preferences.forEach(preference => {
+            if (preference === src) User.setPreference(src)
             preferencesDiv.innerHTML += `
                 <div class="col-6 col-md-4 d-flex justify-content-center cardVP ${preference === src?'activated':''}" >
                     <img class="" src="${preference}"/>
@@ -92,6 +94,7 @@ class Preferences
                 const card = el
                 Array.from(cards).forEach(el => el.classList.remove('activated'))
                 card.classList.add('activated')
+                User.setPreference(card.children[0].currentSrc)
                 localStorage.setItem('stepTwoItemSelected', card.children[0].currentSrc)
             })
         })

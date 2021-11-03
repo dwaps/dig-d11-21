@@ -39,11 +39,16 @@ class Controls
             e.preventDefault()
             let step = parseInt(localStorage.getItem('step'))
             if (step === 0) {
-                const errors = Form.verify()
+                const errors = Form.verify(1)
                 if (errors) return
             } else if (step === 1) {
                 const itemSelected = localStorage.getItem('stepTwoItemSelected')
                 if (!itemSelected) return
+            } else if (step === 2) {
+                const errors = Form.verify(2)
+                if (errors) return
+            } else if (step === 3) {
+                
             }
             step++
             prevButton.className = 'btn btn-secondary'

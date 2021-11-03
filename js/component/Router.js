@@ -34,15 +34,17 @@ class Router
         switch (Router.#step)
         {
             case 0 :
-                Form.render(1)
+                Form.render(0)
                 break
             case 1 :
                 Preferences.render()
                 break
             case 2 :
-                const root = document.querySelector('#main')
-                root.innerHTML = 'adresse de livraison'
                 Form.render(2)
+                break
+            case 3 :
+                const root = document.querySelector('#main')
+                root.innerHTML = 'Finalisation'
         }
     }
 }

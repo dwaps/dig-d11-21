@@ -1,3 +1,4 @@
+import User from './User.js'
 class Form
 {
     static required = false
@@ -7,11 +8,7 @@ class Form
         const root = document.querySelector('#main')
         root.innerHTML = `<form class='needs-validation' novalidate>`
         const form = document.querySelector('.needs-validation')
-        if (!option)
-        {
-            form.innerHTML += Form.#default()
-        }
-        else if (option === 1)
+        if (option === 0)
         {
             form.innerHTML += Form.#addNameInput()
             form.innerHTML += Form.#addEmailInput()
@@ -20,9 +17,12 @@ class Form
         }
         else if (option === 2)
         {
-            form.innerHTML += Form.#addAddressInputs()
+            form.innerHTML = Form.#addAddressInputs()
         }
-        
+        else 
+        {
+            form.innerHTML += Form.#default()
+        }
         form.innerHTML += `<div id='errorsForm'></div>`
     }
 
@@ -112,35 +112,34 @@ class Form
         return row
     }
 
-    static #addAddressInputs = () =>
+    static #addAddressInputs = () => 
     {
         const row = `
         <div class="row">
             <div class="col-5 col-md-3">
-                <label for="streetNumber">Numéro de rue</label>
+                <label for="streetNumberInput">Numéro de rue</label>
                 <div class="input-group has-validation">
-                    <input id='streetNumber' class='form-control' type="number" required=${Form.required}>
+                    <input id='streetNumberInput' class='form-control' type="number" required=${Form.required}>
                     <div class="invalid-feedback">
                         Veuillez renseigner votre numéro de rue
                     </div>
                 </div>
             </div>
-            <div class="col-7 col-md-">
-                <label for="streetName">Nom de Rue</label>
+            <div class="col-7 col-md-9">
+                <label for="streetNameInput">Nom de Rue</label>
                 <div class="input-group has-validation">
-                    <input id='streetName' class='form-control' type="text" required=${Form.required}>
+                    <input id='streetNameInput' class='form-control' type="text" required=${Form.required}>
                     <div class="invalid-feedback">
                         Veuillez renseigner votre nom de rue
                     </div>
                 </div>
             </div>
         </div>
-        
         <div class="row">
             <div class="col">
-                <label for="streetZipcode">Code Postal</label>
+                <label for="streetZipcodeInput">Code Postal</label>
                 <div class="input-group has-validation">
-                    <input autocomplete="postal-code" id='streetZipcode' class='form-control' type="number" required=${Form.required}>
+                    <input autocomplete="postal-code" id='streetZipcodeInput' class='form-control' type="number" required=${Form.required}>
                     <div class="invalid-feedback">
                         Sample Text
                     </div>
@@ -149,9 +148,9 @@ class Form
         </div>
         <div class="row">
             <div class="col">
-                <label for="streetCity">Ville</label>
+                <label for="streetCityInput">Ville</label>
                 <div class="input-group has-validation">
-                    <input id='streetCity' class='form-control' type="text" required=${Form.required}>
+                    <input id='streetCityInput' class='form-control' type="text" required=${Form.required}>
                     <div class="invalid-feedback">
                         Sample Text
                     </div>
@@ -163,7 +162,6 @@ class Form
         return row
     }
     
-
     static #default = () =>
     {
         const row = `
@@ -183,28 +181,44 @@ class Form
 
 
 
-    static verify()
+    static verify(param)
     {
-        const firstname = document.querySelector('#firstnameInput').value
-        const lastname = document.querySelector('#lastnameInput').value
-        const email = document.querySelector('#emailInput').value
-        const pwd = document.querySelector('#pwdInput').value
-        const confPwd = document.querySelector('#confPwdInput').value
-        const tel = document.querySelector('#telInput').value
         const errors = []
-        if (firstname.length < 0 || lastname.length < 0 || 
-            email.length < 0 || pwd.length < 0 || 
-            confPwd.length < 0 || tel.length < 0 ) {
-                errors.push('Veuillez renseigner tous les champs')
+        if (param === 1)
+        {
+            const firstname = document.querySelector('#firstnameInput').value
+            const lastname = document.querySelector('#lastnameInput').value
+            const email = document.querySelector('#emailInput').value
+            const pwd = document.querySelector('#pwdInput').value
+            const confPwd = document.querySelector('#confPwdInput').value
+            const tel = document.querySelector('#telInput').value
+            if (firstname.length < 1 || lastname.length < 1 || 
+                email.length < 1 || pwd.length < 1 || 
+                confPwd.length < 1 || tel.length < 1 ) {
+                    errors.push('Veuillez renseigner tous les champs')
             }
-        else if (pwd !== confPwd) {
-            errors.push('Veuillez faire correspondre les password')
-        } else {
-            // Create User
+            else if (pwd !== confPwd) {
+                errors.push('Veuillez faire correspondre les password')
+            } else {
+                User.newEntry(firstname, lastname, email,pwd, tel)
+            }
         }
-        const div = document.querySelector('#errorsForm')
-        div.innerHTML = ''
-        errors.forEach(error => div.innerHTML +=`<p class='text-center'>${error}</p>`)
+        else if (param === 2)
+        {
+            const streetNumber = document.querySelector('#streetNumberInput').value
+            const streetName = document.querySelector('#streetNameInput').value
+            const streetZipcode = document.querySelector('#streetZipcodeInput').value
+            const streetCity = document.querySelector('#streetCityInput').value
+            if (streetNumber.length < 1 || streetName.length < 1 || 
+                streetZipcode.length < 1 || streetCity.length < 1 ) {
+                    errors.push('Veuillez renseigner tous les champs')
+            } else {
+                User.setAddress({streetNumber, streetName, streetZipcode, streetCity})
+            }
+        }
+        const errorsDiv = document.querySelector('#errorsForm')
+        errorsDiv.innerHTML = ''
+        errors.forEach(error => errorsDiv.innerHTML +=`<p class='text-center'>${error}</p>`)
         return !!errors.length
     }
 }
