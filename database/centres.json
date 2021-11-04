@@ -1,7 +1,7 @@
 {
     "centres": [
         {
-            "nom":"M2i - Paris Chaillot ",
+            "nom":"MII - Paris Chaillot ",
             "adresse":"17-19 rue de Chaillot, 75016 Paris",
             "open":{
                 "jour":"lundi au vendredi",
@@ -13,7 +13,7 @@
             }        
         },
         {
-            "nom":"M2i - Paris Picpus ",
+            "nom":"MII - Paris Picpus ",
             "adresse":"146-148 rue de Picpus, 75012 Paris",
             "open":{
                 "jour":"lundi au vendredi",

@@ -30,9 +30,9 @@ L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
 // Personnalisation des marqueurs des bornes
 const myBorneIcon = L.icon({
     iconUrl: './asset/icons/electric-point.png',
-    iconSize: [30, 30],
-    iconAnchor: [15, 30],
-    popupAnchor: [0, -30]
+    iconSize: [40, 40],
+    iconAnchor: [20, 40],
+    popupAnchor: [0, -40]
 });
 
 // Personnalisation des marqueurs des centres
@@ -56,11 +56,19 @@ centres.forEach(centre => {
         centreMarker.bindTooltip(centre.nom);
         });
 
-// initilaisation tableau des marqueurs
+// initilisation tableau des marqueurs
 let markers = [];
 
-// initialisation des groupes de marqeurs
-let markerClusters = L.markerClusterGroup();
+// initialisation et personnalisation des groupes de marqeurs
+let markerClusters = L.markerClusterGroup({
+	iconCreateFunction: function(cluster) {
+		return L.divIcon({ html: '<div class="mycluster"><b>' + cluster.getChildCount() + '</b></div>'});
+	},
+    polygonOptions : {
+        weight: 0.5,
+        color: 'darkgreen',
+    }
+});
 
 // Implémentataion des bornes sur la carte
 bornes.forEach(borne => {

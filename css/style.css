@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -8,22 +10,25 @@
     --bgc-color-secondary: #785f2fd2;
     --txt-color-primary: #000;
     --txt-color-secondary: #fff;
+    
 }
 
 body {
     display: flex;
     flex-flow: column nowrap;
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
     color: var(--txt-color-secondary);
     text-align: center;
     min-height: 100vh;
+
 }
 
+nav, main, footer {
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Barre de navigation */
-
 nav img {
     width: 60px;
 }
@@ -33,13 +38,6 @@ li a {
     text-decoration: none;
     padding: 10px 20px;
     text-align: center;
-}
-
-li a:hover,
-li a:focus,
-li a:active {
-    background-color: #583f10c4;
-    color: var(--txt-color-secondary);
 }
 
 nav {
@@ -57,9 +55,7 @@ body.scrolled nav #logo {
     width: 40px;
 }
 
-
 /* MAIN */
-
 main {
     display: flex;
     flex-direction: column;
@@ -82,35 +78,61 @@ aside>img {
 #contact {
     display: flex;
     align-items: center;
+    scroll-margin-top: 85px;
 }
 
+/* Style de la carte */
 #carte {
     height: 40rem;
 }
+
+/* Personnalisation du cluster */
+.mycluster {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--bgc-color-secondary);
+    box-shadow: 2px 2px 2px gray ;
+    color: var(--txt-color-secondary);
+    text-align: center;
+    font-size: 15px;    
+    line-height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.leaflet-marker-icon{
+    background: none !important;
+    border: none !important;
+}
+
+/* personnalisation du texte des popup des marqueurs */
 .id{
-font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
 font-size: 20px;
 }
 
 .adresse,
 .statut{
+    font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
 
 .ouverture{
+    font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-size: 15px;
 }
 
+/* Mise en forme message personnalité */
 span {
     font-weight: bold;
     color: darkgreen;
     font-style: italic;
 }
 
-
 /* Gestion des scrolls */
-
 #services,
 #ourTeam {
     scroll-margin-top: 69px;
@@ -120,9 +142,7 @@ span {
     scroll-margin-top: 85px;
 }
 
-
 /* FOOTER */
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -137,6 +157,7 @@ footer {
         color: var(--txt-color-secondary);
         transition: 700ms ease-in-out;
     }
+    
     /* Gestion des scrolls */
     body.scrolled nav {
         background-color: var(--bgc-color-secondary);
@@ -176,4 +197,5 @@ footer {
     #portofolio>div {
         border-right: 2px solid var(--txt-color-secondary)!important;
     }
+
 }

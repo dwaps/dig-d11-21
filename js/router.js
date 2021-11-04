@@ -40,17 +40,23 @@ export class Router {
             connectForm.hidden = true;
             homeSection.hidden = false;
             textPerso.innerHTML = `<h2 class="col-lg">Welcome <span>${dataUser.pseudo}</span></h2>
-      <form class="col-lg" >
-        <div class="d-grid col-9 mx-auto mb-3">
-          <div class="form-label"><label for="comments">Object</label>
-          <input class="form-control" type="text" placeholder="Enter the object of your request" id="object" name="object" value="">
+      <form>
+        <div class="col-9 mx-auto mb-3">
+        
+          <div class="form-label">
+            <label for="comments">Object</label>
+            <input class="form-control" type="text" placeholder="Enter the object of your request" id="object" name="object" value="">
           </div>
-          <div class="form-label"><label for="comments">Please write your message</label>
-          <textarea class="form-control" name="comments" id="comments" cols="30" rows="10" placeholder="Write your request here!"></textarea>
+
+          <div class="form-label">
+            <label for="comments">Please write your message</label>
+            <textarea class="form-control" name="comments" id="comments" cols="30" rows="10" placeholder="Write your request here!"></textarea>
           </div>
-  </div>
-  <input class="btn btn-danger mb-3" type="reset" value="Reset">
-  <input class="btn btn-success mb-3 disabled" type="submit" value="Send">
+  
+          <input class="btn btn-danger mb-3" type="reset" value="Reset">
+          <input class="btn btn-success mb-3 disabled" type="submit" value="Send">
+
+        </div>
       </form>`;
             return;
         }
