@@ -1,6 +1,6 @@
 # TP Diginamic D11 - JS-HCB - Axel Dulon
 
-- V1. rendu de TP JS-HCB (ajout JS au rendu HCB) - 29/10/21
+- V1. rendu de TP JS-HCB (ajout JS au rendu HCB) - En cours
 
 Intégration d'une carte interactive en `JavaScript` au projet 'HCB'
 
