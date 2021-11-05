@@ -1,13 +1,5 @@
-import { Page } from './classPage.js';
-import { Map } from './classMap.js';
+import { Page } from './Page.js';
+import { Map } from './Map.js';
 
-Page.create();
-Map.create();
-
-
-// TODO :
-// * 1. Group de markers (cf. discord de Christian)
-// * 2. Connection
-// 3. maj readme.txt
-// 4. Explosion dans plusieurs fichiers + Revue de code + commentaires + optimisation / factorisation
-
+new Page();  // Création de la page (menus & boutons du formulaire)
+new Map();   // Affichage de la carte
