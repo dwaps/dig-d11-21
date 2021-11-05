@@ -7,7 +7,7 @@ export class Region {
     }
 
     static findAll() {
-      return fetch("./res/RegionsEtGarages.json")
+      return fetch("./res/data.json")
         .then(res => res.json())
         .then(data => data.regions);
     }

@@ -235,12 +235,45 @@
           <div id="maCarte" class="carte"></div>
         </div>
         <div class="col-12 col-lg">
-          <!-- CONTACT.FORMULAIRE -->
-          <form id="fContact">
+          <!-- CONTACT.FORMULAIRE / OLD VERSION -->
+          <!-- <form id="fContact">
             <input type="text" class="form-control formObj" id="contactName" placeholder="Votre nom...">
             <textarea rows="4" class="form-control formObj" id="contactMsg" placeholder="Votre message..."></textarea>
             <button class="btn btn-primary formObj" type="submit">Submit</button>
-          </form>
+          </form> -->
+          <!-- CONTACT.FORMULAIRE / NEW VERSION -->
+          <form id="fConnect" name="fConnect" action="/" method="POST">
+            <div>
+                <button id="btnLogin" class="formObj btn btn-primary text-uppercase logoutKo" type="submit">Se connecter</button>
+                <button id="btnSign" class="formObj btn btn-outline-primary text-uppercase logoutKo" type="submit">S'inscrire</button>
+                <button id="btnLogout" class="formObj btn btn-primary text-uppercase logoutOk cache" type="submit">Se déconnecter</button>
+            </div>
+            <div id="txtBienvenue" class="text-center text-primary modeDeconnect logoutOk cache">Toto</div>
+            <div class="form-floating modeSign logoutKo cache">
+              <input class="form-control formObj" id="prenom" name="prenom" type="text" placeholder="Votre prénom..."/>
+              <label for="prenom">Votre prénom</label>
+            </div>
+            <div class="form-floating modeSign logoutKo cache">
+              <input class="form-control formObj" id="nom" name="nom" type="text" placeholder="Votre nom..."/>
+              <label for="nom">Votre nom</label>
+            </div>
+            <div class="form-floating modeLogin logoutKo">
+                <input class="form-control formObj" id="email" name="email" type="email" placeholder="Votre email..."/>
+                <label for="email">Votre email</label>
+            </div>
+            <div class="form-floating modeLogin logoutKo">
+                <input class="form-control formObj " id="password" name="password" type="password" placeholder="Votre mot de passe..."/>
+                <label for="password">Votre mot de passe</label>
+            </div>
+            <div class="form-floating modeSign cache logoutKo">
+              <input class="form-control formObj" id="password2" name="password2" type="password" placeholder="Resaisir votre mot de passe..."/>
+              <label for="password2">Resaisir votre mot de passe</label>
+            </div>
+            <div class="text-center" id="msgForm"></div>
+            <div class="text-center logoutKo">
+                <button id="btnGo" class="btn btn-primary formObj text-uppercase" type="submit">Go</button>
+            </div>
+        </form>
         </div>
       </div>
     </section>
