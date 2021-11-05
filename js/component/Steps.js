@@ -1,26 +1,26 @@
 class Steps
 {
 
-    static #class = "text-align"
-    static #style = "background-color:coral;"
-    static #styleSelected = "background-color:yellow;"
+    static #class = "pt-1 pb-1"
+    static #style = "background-color:coral; border-radius: 20px;"
+    static #styleSelected = "background-color:yellow; border-radius: 20px;"
 
     static render()
     {
         const step = localStorage.getItem('step')
         const div = document.querySelector('#steps')
         div.innerHTML = `
-            <div class="col-2" >
-				<div style=${step==0?Steps.#styleSelected:Steps.#style} class=${Steps.#class}>1</div>
+            <div class="col-2 text-center ${step==0?'stepSelected':'step'} " >
+				1
 			</div>
-			<div class="col-2" >
-				<div style=${step==1?Steps.#styleSelected:Steps.#style} class=${Steps.#class}>2</div>
+			<div class="col-2 text-center ${step==1?'stepSelected':'step'} " >
+				2
 			</div>
-			<div class="col-2" >
-				<div style=${step==2?Steps.#styleSelected:Steps.#style} class=${Steps.#class}>3</div>
+			<div class="col-2 text-center ${step==2?'stepSelected':'step'} " >
+				3
 			</div>
-			<div class="col-2" >
-				<div style=${step==3?Steps.#styleSelected:Steps.#style} class=${Steps.#class}>4</div>
+			<div class="col-2 text-center ${step==3?'stepSelected':'step'}" >
+				4
 			</div>`
     }    
 }

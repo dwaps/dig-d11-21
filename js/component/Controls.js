@@ -16,7 +16,7 @@ class Controls
         </div>
         <div class="col-2">
             <div class="d-grid gap-2">
-                <button id='nextButton' class='btn btn-primary'>Next</button>
+                <button id='nextButton' class='btn btn-primary ${step==3 && 'disabled'}'>Next</button>
             </div>
         </div>`
         Controls.#eventButton()
@@ -29,29 +29,27 @@ class Controls
             e.preventDefault()
             let step = parseInt(localStorage.getItem('step'))
             step--
-            if (step === 0) prevButton.className = 'btn btn-secondary disabled'
             localStorage.setItem('step', step)
             Router.main()
         })
 
         const nextButton = document.querySelector('#nextButton')
-        nextButton.addEventListener('click', (e) => {
+        nextButton.addEventListener('click', async (e) => {
             e.preventDefault()
             let step = parseInt(localStorage.getItem('step'))
             if (step === 0) {
                 const errors = Form.verify(1)
                 if (errors) return
+                step++
             } else if (step === 1) {
                 const itemSelected = localStorage.getItem('stepTwoItemSelected')
                 if (!itemSelected) return
+                step++
             } else if (step === 2) {
                 const errors = Form.verify(2)
                 if (errors) return
-            } else if (step === 3) {
-                
+                step++
             }
-            step++
-            prevButton.className = 'btn btn-secondary'
             localStorage.setItem('step', step)
             Router.main()
         })

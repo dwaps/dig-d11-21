@@ -16,7 +16,6 @@ class User
 
     static setPreference = (preference) =>
     {
-        console.log(preference);
         const userInfo = User.getInfos()
         userInfo.preference = preference
         localStorage.setItem('userInfo', JSON.stringify(userInfo))

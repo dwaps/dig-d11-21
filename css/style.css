@@ -8,7 +8,6 @@
 
 #main {
     flex-grow: 1;
-    border: 1px black solid;
 }
     #main>div.col>div.row {
       width: 45rem;
@@ -24,12 +23,34 @@
     
 
 #steps {
-    border: 1px black solid;
     min-height: 20vh;
 }
 
 #controls {
-    border: 1px black solid;
     min-height: 20vh;
 }
 
+.step {
+    border-radius: 50px;
+    width: 5em;
+    height: 5em;
+    background-color:coral;
+}
+
+.stepSelected {
+    border-radius: 50px;
+    width: 5em;
+    height: 5em;
+    background-color:yellow;
+}
+
+@media (max-width : 767px) {
+    .step {
+        width: 3em;
+        height: 3em;
+    }
+    .stepSelected {
+        width: 3em;
+        height: 3em;
+    }
+}

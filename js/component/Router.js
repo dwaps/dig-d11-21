@@ -2,6 +2,7 @@ import Form from './Form.js'
 import Controls from './Controls.js'
 import Steps from './Steps.js'
 import Preferences from './Preferences.js'
+import Confirm from './Confirm.js'
 
 class Router
 {
@@ -43,8 +44,7 @@ class Router
                 Form.render(2)
                 break
             case 3 :
-                const root = document.querySelector('#main')
-                root.innerHTML = 'Finalisation'
+                Confirm.render()
         }
     }
 }

@@ -14,7 +14,7 @@ class Preferences
     {
         Preferences.#init()
         await Preferences.#injectHTML()
-        Preferences.#animation()
+        Preferences.animation()
     }
 
     static #init = () =>
@@ -40,7 +40,7 @@ class Preferences
         preferencesDiv.innerHTML += '<style class="hover"></style>'
     }
 
-    static #animation = () =>
+    static animation = () =>
     {
         const cards = document.getElementsByClassName('cardVP')
         const styleDiv = document.getElementsByClassName('hover')
