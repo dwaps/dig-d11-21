@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multi Step Form | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Tp javascript</header>
+      <div class="progress-bar">
+        <div class="step">
+          <p>Information</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>categorie</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>adresse de livraison</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Confirmation</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="#">
+          <div class="page slide-page">
+            <div class="title">Information Generale</div>
+            <div class="field">
+              <div class="label">Nom</div>
+              <input type="text" id="lastname" name="lastname" placeholder="lastname" required>
+              <!-- <div class="label">Prenom</div> -->
+              <input type="text" id="firstname"name="firstname" placeholder="firstname" required>
+            </div>
+            <div class="field">
+              <div class="label">Email</div>
+              <input type="text" id="email"name="email" placeholder="email" required>
+            </div>
+            <div class="field">
+              <div class="label">Mot de passe</div>
+              <input type="password" name="password" id="password"placeholder="mot de passe" required>
+              <!-- <div class="label">Confirmation mot de pass</div> -->
+              <input type="password" name="cpass" id="cpass" placeholder="confirmation mot de pass" required>
+            </div>
+            <div class="field">
+              <button class="firstNext next">Next</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">categorie prefere</div>
+            
+            <div  class="field Box">
+              <label for="meuble">Meuble</label>
+              <input type="radio" name="categorie" id="meuble" value="meuble">
+              <label for="hifi">Hifi</label>
+              <input type="radio" name="categorie" id="hifi" value="hifi">
+              <label for="electromenager">electromenager</label>
+              <input type="radio" name="categorie" id="electromenager" value="electromenager">
+              <label for="informatique">informatique</label>
+              <input type="radio" name="categorie" id="informaique"value="informaique">
+            </div>
+            <!-- <div class="field">
+              <input type="checkbox" name="categorie">
+              <div class="label">hifi</div>
+            </div>
+            <div class="field">
+              <input type="checkbox" name="categorie">
+              <div class="label">electromenager</div>
+            </div>
+            <div class="field">
+              <input type="checkbox" name="categorie">
+              <div class="label">informatique</div>
+            </div> -->
+            <div class="field btns">
+              <button class="prev-1 prev">Previous</button>
+              <button class="next-1 next">Next</button>
+            </div>
+          </div>
+
+          <div class="page">
+            <div class="title">Adresse de Livraison</div>
+            <div class="field">
+              <label for="name">Nom</label>
+              <input type="text"  id="LastNameAdress" name="lastname" placeholder="nom">
+              <label for="name">Prenom</label>
+              <input type="text"  id="FistNameAdress" name="firstname" placeholder="prenom">
+            </div>
+            <div class="field">
+              <div class="label">adresse</div>
+              <input type="text" id="localisation" name="localisation" placeholder="Adresse">
+            </div>
+            <div class="field">
+              <div class="label">mobile</div>
+              <input type="tel" id="mobile" name="mobile" placeholder="mobile">
+            </div>
+            <div class="field btns">
+              <button class="prev-2 prev">Previous</button>
+              <button class="next-2 next">Next</button>
+            </div>
+          </div>
+          <div class="page recapitulatif">
+               <!-- <div class="field"style="flex-direction:column">
+                <h1>IDENTITER DE LUTILISATEUR</h1>
+                <div>
+                  <p>Nom :<span id="name"></span></p><br>
+                  <p>Prenom :<span id="prenom"></span></p><br>
+                  <p>email :<span id="mail"></span></p>
+                </div>
+
+               </div> -->
+               <div class="validation">
+                 <table id="t1">
+                   <thead>
+                     <tr>
+                       <th>Recapitulatif compte utilisateur</th>
+                      </thead>
+                      <tbody >
+                        <tr>
+                          <td id="name">Nom:</td>
+                          <td id="prenom"></td>
+                          <td id="mail"></td>
+                          <td id="catego"></td>
+                        </tr>
+                    </tbody>
+                  </table>
+                  <table id="t2">
+                    <thead>
+                  <tr>
+                    <th>Recapitulatif adresse livraison</th>
+                  </thead>
+                  <tbody>
+                     <tr>
+                       <td id="nameadress"></td>
+                       <td id="prenomadress"></td>
+                       <td id="adresse"></td>
+                       <td id="tel"></td>
+                     </tr>
+                    </tbody>
+                  </table>
+                </div>
+                  <div class="field btns">
+                    <button class="prev-3 prev">Previous</button><br>
+                    <button class="submit">Submit</button><br>
+                  </div>
+                </div>
+              </form>
+            </div>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
