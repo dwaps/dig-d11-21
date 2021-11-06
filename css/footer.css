@@ -1,0 +1,12 @@
+.container-footer {
+    padding: 30px 0px;
+    background-color: #2c2c2c;
+    color: #399ce7;
+    display: flex;
+    justify-content: space-around;
+    line-height: 3em;
+}
+
+.container-footer a {
+    color: rgb(180, 180, 180);
+}

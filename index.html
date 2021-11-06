@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.5.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css'
+        integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=='
+        crossorigin='anonymous' />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Azorius</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a class="logo-header" href="#">
+            <h1>Azorius</h1>
+        </a>
+        <div class="burger-nav hidden">
+            <p>☰</p>
+        </div>
+        <div class="empty-nav hidden"></div>
+        <nav class="nav-bar">
+            <div class="main-pages">
+                <a href="#">Accueil</a>
+                <a href="#services">Nos services</a>
+                <a href="#contact">Nos contacter</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <div id="hero">
+        <div class="hero-image">
+        </div>
+        <div class="icons-hero">
+            <i class="icons-hero fas fa-chevron-left"></i>
+            <i class="icons-hero far fa-play-circle"></i>
+            <i class="icons-hero fas fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <main id="services">
+        <!-- SERVICES -->
+        <section class="services">
+            <div class="service">
+                <div class="content-sev-icon"><i class="fas fa-quidditch"></i></div>
+                <h2>Quidditch</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, tempore? Tenetur veritatis sit
+                    exercitationem dignissimos voluptates. Voluptatibus necessitatibus, doloremque quos, quas officia
+                    officiis dignissimos magnam odit debitis labore ad quaerat?</p>
+            </div>
+            <div class="service">
+                <div class="content-sev-icon"><i class="fas fa-hat-wizard"></i></div>
+                <h2>Les maisons</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur officia cumque incidunt
+                    assumenda reiciendis quia laboriosam mollitia quaerat repellendus ea iure aliquid quasi? Quidem
+                    nihil nulla dolore veniam minus?</p>
+            </div>
+            <div class="service">
+                <div class="content-sev-icon"><i class="fas fa-train"></i></div>
+                <h2>Les transports</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem incidunt amet ipsum ea quibusdam
+                    dolorum alias nulla eum nemo doloremque, eveniet reiciendis, adipisci pariatur voluptatibus
+                    inventore? Voluptas esse expedita reiciendis?</p>
+            </div>
+        </section>
+
+        <!-- TEAM -->
+        <section class="team">
+            <div class="team-members">
+                <div class="member">
+                    <div class="member-img dumbledore">
+                    </div>
+                    <div class="text-member">
+                        <h2>Albus Dumbledore</h2>
+                        <p>Albus Perceval Wulfric Brian Dumbledore (1881 - 30 juin 1997), est l'un des plus puissants
+                            sorciers de tous les temps, le directeur de l'école de sorcellerie Poudlard. Avant cette
+                            nomination en remplacement du professeur Dippet, il était professeur de métamorphose. Albus
+                            Dumbledore s'est rendu célèbre en battant le mage noir Grindelwald en 1945 et en découvrant
+                            les douze propriétés du sang de dragon. Il a entretenu des relations avec les personnalités
+                            magiques les plus remarquables de son temps, l'alchimiste Nicolas Flamel, l'historienne de
+                            la magie Bathilda Tourdesac et le théoricien de la magie Adalbert Lasornette. Il existe une
+                            carte de Chocogrenouille à son effigie. Il est le seul sorcier que Voldemort ait jamais
+                            craint.</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-img gandalf">
+                    </div>
+                    <div class="text-member">
+                        <h2>Gandalf le Gris (Olórin)</h2>
+                        <p>Gandalf le Gris, plus tard connu sous le nom de Gandalf le Blanc, et initialement nommé
+                            Olórin, était un Istar (Magicien), envoyé sur la Terre du Milieu au Troisième Âge pour
+                            combattre la menace de Sauron. Il a rejoint la Compagnie de Thorin pour récupérer la
+                            Montagne Solitaire des griffes du dragon Smaug, a convoqué la Communauté de l'Anneau pour
+                            détruire l'Anneau Unique et a dirigé les Peuples Libres durant la Guerre de l'Anneau. L’âge
+                            de Gandalf est estimé à 9 000 ans à l’époque de La Guerre de l’Anneau.</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <div class="member-img aslan">
+                    </div>
+                    <div class="text-member">
+                        <h2>Aslan</h2>
+                        <p>Aslan le Grand Lion est le personnage principal du Monde de Narnia et le plus important. Il
+                            s'agit d'un lion doué de parole. Il est le fils de l'Empereur d'au-delà des Mers, le
+                            créateur de Narnia, et son seul vrai seigneur. En Turc, Aslan veut dire lion. Aslan est
+                            juste. Créé par CS Lewis, il est le seul personnage de la saga à apparaitre dans tous les
+                            livres et adaptations cinématographiques. Il a créé le Royaume de Narnia en chantant : cela
+                            a fait apparaitre les arbres, les animaux, les collines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <div class="portfolio-content">
+                <div class="portfolio-text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident nisi optio exercitationem,
+                        quis eligendi labore voluptate praesentium odio atque tenetur iste cumque ipsam similique
+                        laboriosam distinctio quibusdam fugiat magni modi neque in natus. Rerum nesciunt porro vero odit
+                        doloribus exercitationem facilis ad id repudiandae culpa, mollitia, ipsa consequatur
+                        voluptatibus expedita excepturi. Nulla, vero? Quibusdam, animi labore autem voluptatum alias
+                        vel, quisquam quam vitae totam nam obcaecati sint voluptatem nostrum? Obcaecati, sit in? Modi
+                        ullam commodi atque! Temporibus dolor nulla non accusamus provident quae corrupti aliquam
+                        reiciendis laborum quod totam minus quibusdam recusandae ipsam itaque, molestias assumenda vero.
+                        Ab totam similique saepe animi quae fuga? Fugiat ullam dicta aliquid nesciunt minima quae vitae
+                        provident cum assumenda cupiditate, odio dolores facilis earum ab deleniti rem blanditiis
+                        obcaecati harum, totam itaque?</p>
+                </div>
+                <div class="portfolio-img"></div>
+            </div>
+        </section>
+
+        <h2 class="title-map">Carte des clubs de sport de Montpellier</h2>
+        <section class="contact-us" id="contact">
+                <div id='map' class="map"></div>
+            <div class="form" id="connect">
+                <form method="get" class="form-example" id="form-connect">
+                    <div class="form-name">
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name" required placeholder="Nom">
+                    </div>
+                    <div class="form-name">
+                        <label for="password">Mot de passe: </label>
+                        <input type="password" name="password" id="password" required placeholder="Mot de passe">
+                    </div>
+                    <div class="form-submit">
+                        <input type="submit" value="Se connecter">
+                    </div>
+                </form>
+            </div>
+            <div class="form" id="disconnect">
+                <form method="get" class="form-example" id="form-disconnect">
+                    <h2 id="pseudo-user"></h2>
+                    <div class="form-submit">
+                        <input type="submit" value="Se déconnecter">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div>
+                <p>Qui sommes nous ?</p>
+                <ul>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">L'école de magie</a></li>
+                    <li><a href="#">Actualités</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p>Les formations</p>
+                <ul>
+                    <li><a href="#">Enchanteur</a></li>
+                    <li><a href="#">Alchimiste</a></li>
+                    <li><a href="#">Sorcellerie numérique</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p>Info pratique</p>
+                <ul>
+                    <li><a href="#">Ou se trouve Azorius</a></li>
+                    <li><a href="#">Les dates</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="app/app.js"></script>
+    <script src="app/map.js"></script>
+    <script src="app/form.js"></script>
+</body>
+
+</html>

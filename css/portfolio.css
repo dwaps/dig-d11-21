@@ -1,0 +1,33 @@
+.portfolio {
+    padding: 100px 5%;
+}
+
+.portfolio-content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio-text {
+    font-size: 1.4rem;
+    line-height: 35px;
+}
+
+.portfolio-img {
+    background-image: url(https://i.pinimg.com/564x/c5/b5/ed/c5b5ed316feb670381d27b31f07ff356.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .portfolio-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .portfolio-text {
+        order: 1;
+    }
+}
