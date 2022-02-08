@@ -2,15 +2,21 @@
 
 <div class="todos">
 
+  <div *ngIf="todos.length <= 0">
+    <h3>Aucunes tâches pour le moment...</h3>
+  </div>
+
   <div *ngFor="let todo of todos; index as i" class="todo">
     <input
       [id]="'t-'+i"
       type="checkbox"
       (change)="todo.done = !todo.done"
       [checked]="todo.done">
-    <label [for]="'t-'+i">{{ todo.message }}</label>
+    <label
+      [for]="'t-'+i"
+      [style.textDecoration]="todo.done ? 'line-through' : ''">
+        {{ todo.message }}
+    </label>
   </div>
-
-  {{ todos |json }}
 
 </div>
