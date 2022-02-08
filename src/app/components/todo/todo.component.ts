@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Todo } from 'src/app/shared/models/todo';
 import { TodoService } from 'src/app/shared/services/todo.service';
@@ -20,6 +20,12 @@ export class TodoComponent implements OnInit, OnDestroy {
     this.sub = this.todoService.todos$.subscribe((todos) => {
       this.todos = todos;
     });
+  }
+
+  createTodo(totoTxt: string) {
+    console.log(totoTxt);
+    const todo = new Todo(totoTxt);
+    this.todoService.createTodo(todo);
   }
 
   ngOnDestroy() {

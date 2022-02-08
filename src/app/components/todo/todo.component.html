@@ -6,14 +6,17 @@
     <h3>Aucunes tâches pour le moment...</h3>
   </div>
 
+  <input type="text" #inputTodo>
+  <button (click)="createTodo(inputTodo.value)">Créer une tâche</button>
+
   <div *ngFor="let todo of todos; index as i" class="todo">
     <input
-      [id]="'t-'+i"
+      [id]="todo.id"
       type="checkbox"
       (change)="todo.done = !todo.done"
       [checked]="todo.done">
     <label
-      [for]="'t-'+i"
+      [for]="todo.id"
       [style.textDecoration]="todo.done ? 'line-through' : ''">
         {{ todo.message }}
     </label>
