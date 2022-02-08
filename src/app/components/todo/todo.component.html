@@ -1,0 +1,16 @@
+<h2>Liste de tâches</h2>
+
+<div class="todos">
+
+  <div *ngFor="let todo of todos; index as i" class="todo">
+    <input
+      [id]="'t-'+i"
+      type="checkbox"
+      (change)="todo.done = !todo.done"
+      [checked]="todo.done">
+    <label [for]="'t-'+i">{{ todo.message }}</label>
+  </div>
+
+  {{ todos |json }}
+
+</div>
