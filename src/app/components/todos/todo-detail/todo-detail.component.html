@@ -1,0 +1,7 @@
+<div *ngIf="todo">
+  <h3>Détail d'une tâche</h3>
+  <div class="desc">
+    <div><strong>Texte:</strong> {{ todo.message }}</div>
+    <div><strong>Etat:</strong> {{ todo.done ? '🟢' : '🔴' }}</div>
+  </div>
+</div>

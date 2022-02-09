@@ -1,0 +1,10 @@
+.todo {
+  text-align: left;
+  padding-left: 20px;
+}
+.todo:first-of-type {
+  padding-top: 20px;
+}
+.todo:last-of-type {
+  padding-bottom: 20px;
+}

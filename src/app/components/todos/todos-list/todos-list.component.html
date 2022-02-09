@@ -1,0 +1,19 @@
+<h2>Liste de tâches</h2>
+
+<div class="todos">
+
+  <div *ngIf="todos.length <= 0">
+    <h3>Aucunes tâches pour le moment...</h3>
+  </div>
+
+  <!-- <input type="text" #inputTodo> -->
+  <!-- <button (click)="createTodo(inputTodo.value)">Créer une tâche</button> -->
+
+  <div *ngFor="let todo of todos" class="todo">
+    <app-todo-item
+      (mouseenter)="selectTodo(todo)"
+      (mouseleave)="selectTodo()"
+      [todo]="todo"></app-todo-item>
+  </div>
+
+</div>
