@@ -1,0 +1,5 @@
+<h4 *ngIf="!book">Pas de livre sélectionné...</h4>
+<div *ngIf="book">
+  <h4>Titre: {{ book.title }}</h4>
+  <p>Prix: {{ book.price }}</p>
+</div>

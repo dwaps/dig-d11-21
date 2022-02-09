@@ -1,0 +1,7 @@
+<h2>Liste des livres</h2>
+  <div
+    *ngFor="let book of books; last as l"
+    (click)="selectedBook(book)">
+      {{ book.title }}
+      <hr *ngIf="!l">
+  </div>
