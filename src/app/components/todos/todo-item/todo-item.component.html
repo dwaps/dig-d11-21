@@ -1,7 +1,7 @@
 <input
   [id]="todo.id"
   type="checkbox"
-  (change)="todo.done = !todo.done"
+  (change)="onTodoStateChange()"
   [checked]="todo.done">
 <label
   [for]="todo.id"

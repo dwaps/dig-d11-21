@@ -6,8 +6,7 @@
     <h3>Aucunes tâches pour le moment...</h3>
   </div>
 
-  <!-- <input type="text" #inputTodo> -->
-  <!-- <button (click)="createTodo(inputTodo.value)">Créer une tâche</button> -->
+  <app-todo-form></app-todo-form>
 
   <div *ngFor="let todo of todos" class="todo">
     <app-todo-item

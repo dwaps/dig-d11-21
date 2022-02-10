@@ -29,4 +29,9 @@ export class TodoItemComponent {
       this.todoService.updateTodo(this.todo);
     }
   }
+
+  onTodoStateChange() {
+    this.todo.done = !this.todo.done;
+    this.todoService.updateTodo(this.todo);
+  }
 }

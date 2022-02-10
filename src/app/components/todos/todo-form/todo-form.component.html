@@ -1,1 +1,8 @@
-<p>todo-form works!</p>
+<form #form (submit)="createTodo($event, form)">
+  <input
+    type="text"
+    #input
+    (input)="todo.message = input.value"
+    placeholder="Nouvelle tâche">
+  <button type="submit">Go !</button>
+</form>
