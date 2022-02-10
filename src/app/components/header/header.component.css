@@ -1,0 +1,22 @@
+header {
+  display: flex;
+}
+
+div {
+  width: 200px;
+  background: white;
+  color: darkred;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+div:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+.active {
+  background: darkred;
+  color: white;
+}
