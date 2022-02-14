@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  template: `
+    <footer class="text-center">
+      <hr class="w-75 mt-5 mb-2 m-auto">
+      <p>&copy; DWAPS - 2021 / {{ currentYear }}</p>
+    </footer>
+  `,
+  styles: [`
+    footer {
+      font-size: 0.7rem;
+    }
+  `]
 })
-export class FooterComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class FooterComponent {
+  currentYear = new Date().getFullYear();
 }
