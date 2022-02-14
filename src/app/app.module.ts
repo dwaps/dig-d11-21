@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { UsersComponent } from './components/users/users.component';
 import { TodosComponent } from './components/todos/todos.component';
+import { UserItemComponent } from './components/users/user-item/user-item.component';
+import { UserListComponent } from './components/users/user-list/user-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TodosComponent } from './components/todos/todos.component';
     HeaderComponent,
     FooterComponent,
     UsersComponent,
-    TodosComponent
+    TodosComponent,
+    UserItemComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
