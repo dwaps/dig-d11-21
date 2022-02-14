@@ -1,0 +1,16 @@
+.btn-primary {
+  background: teal;
+  border-color: teal;
+  color: white;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 128, 128, 0.5);
+  }
+}
+
+.btn-delete {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: teal;
+  background: #012e2e;
+  color: white;
+}
