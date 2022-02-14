@@ -9,6 +9,7 @@
   </thead>
   <tbody>
     <tr app-user-item
+      (click)="selectUser(user)"
       *ngFor="let user of users$ |async"
       [userReceived]="user">
     </tr>
