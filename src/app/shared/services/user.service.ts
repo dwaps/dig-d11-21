@@ -9,9 +9,10 @@ import { User } from '../interfaces/user';
 })
 export class UserService {
   private baseUrl = environment.urlApi + '/users';
-  private currentUser$ = new BehaviorSubject<User|null>(null);
 
-  constructor(private http: HttpClient) { }
+  public currentUser$ = new BehaviorSubject<User|null>(null);
+
+  constructor(private http: HttpClient) {}
 
   public findAll(): Observable<User[]> {
     return this.http.get<User[]>(this.baseUrl);
