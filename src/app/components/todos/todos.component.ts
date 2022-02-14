@@ -32,4 +32,10 @@ export class TodosComponent implements OnInit {
     }
   }
 
+  deleteTodo(id: number) {
+    this.todoService.deleteTodo(id).subscribe(() => {
+      this.todoService.loadUserTodos(this.user!.id);
+    });
+  }
+
 }

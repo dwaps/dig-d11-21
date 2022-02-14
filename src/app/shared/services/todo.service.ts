@@ -23,4 +23,8 @@ export class TodoService {
         this.todos$.next(todos);
       });
   }
+
+  public deleteTodo(id: number) {
+    return this.http.delete(this.baseUrl + '/' + id);
+  }
 }
