@@ -1,1 +1,14 @@
-<p>todos works!</p>
+<div *ngIf="user" class="text-center">
+  <h3>Liste des todos de {{ user.name }}</h3>
+  <a
+    class="btn btn-primary"
+    routerLink="/users">
+    Retour à la liste des utilisateurs
+  </a>
+  <div class="todos list-group mt-5">
+    <div *ngFor="let todo of todos$ |async" class="todo list-group-item d-flex w-50 mx-auto justify-content-between">
+      <p class="pt-3">{{ todo.title }}</p>
+      <button class="btn-delete">&times;</button>
+    </div>
+  </div>
+</div>
