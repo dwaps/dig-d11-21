@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Todo } from '../interfaces/todo';
+import { UserService } from './user.service';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +15,7 @@ export class TodoService {
 
   constructor(
     private http: HttpClient,
+    private userService: UserService,
   ) {}
 
   public loadUserTodos(userId: number) {
@@ -22,6 +24,12 @@ export class TodoService {
       .subscribe(todos => {
         this.todos$.next(todos);
       });
+  }
+
+  public createTodo(todo: Todo) {
+    todo.userId = this.userService.currentUser$.value!.id;
+    todo.completed = false;
+    return this.http.post(this.baseUrl, todo);
   }
 
   public deleteTodo(id: number) {

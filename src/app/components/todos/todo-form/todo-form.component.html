@@ -1,0 +1,19 @@
+<form
+  [formGroup]="formCreateTodo"
+  class="text-center"
+  (ngSubmit)="onSubmit()">
+  <div class="form-floating my-4 w-50 mx-auto">
+    <input
+      id="title"
+      type="text"
+      class="form-control"
+      autocomplete="off"
+      formControlName="title"
+      placeholder="Saisir une tâche">
+    <label for="title">Saisir une tâche</label>
+    <button
+      class="btn btn-primary mt-3"
+      [disabled]="formCreateTodo.invalid"
+      type="submit">Go !</button>
+  </div>
+</form>
