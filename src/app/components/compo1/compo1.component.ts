@@ -1,5 +1,4 @@
-import { AfterViewInit, Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-import { Compo2Component } from '../compo2/compo2.component';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, ViewChildren, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-compo1',
@@ -9,11 +8,8 @@ import { Compo2Component } from '../compo2/compo2.component';
 })
 export class Compo1Component implements OnInit, AfterViewInit {
 
-  @ViewChild('title')
-  title!: ElementRef<HTMLElement>;
-
-  @ViewChild('child')
-  compo2!: Compo2Component;
+  @ViewChildren('myPar')
+  myPar!: QueryList<ElementRef<HTMLElement>>;
 
   constructor() { }
 
@@ -21,7 +17,12 @@ export class Compo1Component implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.title.nativeElement.innerText = 'Double de 4 = ' + this.compo2.double(4);
+  }
+
+  showTxt() {
+    this.myPar.forEach((p: ElementRef<HTMLElement>) => {
+      console.log(p.nativeElement.innerText);
+    })
   }
 
 }
