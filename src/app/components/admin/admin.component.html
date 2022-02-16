@@ -6,10 +6,12 @@
     formControlName="name"
     placeholder="Nom de la pizza">
   <br>
-  <input
-    type="text"
-    formControlName="category"
-    placeholder="Catégorie de la pizza">
+  <select formControlName="category">
+    <option value="" selected disabled>Choisissez...</option>
+    <option *ngFor="let cat of categories" [ngValue]="cat">
+      {{ cat }}
+    </option>
+  </select>
   <br>
   <input
     type="number"
