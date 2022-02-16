@@ -8,6 +8,6 @@ export class AuthService {
   constructor() { }
 
   isConnected() {
-    return false;
+    return true;
   }
 }

@@ -13,11 +13,15 @@ export class AuthGuard implements CanActivate, CanActivateChild {
   ) {}
 
   canActivate() {
-    if (!this.authService.isConnected()) {
-      this.router.navigateByUrl('/home');
-      return false;
-    }
-    return true;
+    return new Promise<boolean>((resolve, reject) => {
+      setTimeout(() => {
+        if (!this.authService.isConnected()) {
+          this.router.navigateByUrl('/home');
+          resolve(false);
+        }
+        resolve(true);
+      }, 3000);
+    });
   }
 
   canActivateChild() {
