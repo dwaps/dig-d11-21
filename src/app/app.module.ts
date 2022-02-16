@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { Route, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
@@ -38,7 +38,7 @@ const ROUTES: Route[] = [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(ROUTES),
-    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

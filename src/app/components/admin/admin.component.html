@@ -1,38 +1,25 @@
 <h1>Ajouter un ami</h1>
 
-<form #friendForm="ngForm" (ngSubmit)="submitForm(friendForm)">
+<form [formGroup]="formCreatePizza" (ngSubmit)="submitForm()">
   <input
-    required
-    ngModel
     type="text"
-    #name="ngModel"
-    name="friendName"
-    autocomplete="off"
-    minlength="3"
-    maxlength="10"
-    placeholder="Nom">
-    <div class="error" *ngIf="name.invalid && (name.dirty && name.touched)">
-      Le nom doit contenir entre 3 et 10 lettres
-    </div>
+    formControlName="name"
+    placeholder="Nom de la pizza">
+  <br>
   <input
-    required
-    ngModel
+    type="text"
+    formControlName="category"
+    placeholder="Catégorie de la pizza">
+  <br>
+  <input
     type="number"
-    #age="ngModel"
-    autocomplete="off"
-    name="age"
-    placeholder="Age">
+    formControlName="price"
+    placeholder="Prix de la pizza">
+  <br>
   <input
-    required
-    ngModel
-    type="email"
-    pattern=".+@.+\..{2,4}"
-    autocomplete="off"
-    #email="ngModel"
-    name="email"
-    placeholder="Email">
-    <button type="submit">Go !</button>
+    type="text"
+    formControlName="ingredients"
+    placeholder="Ingrédients de la pizza">
+  <br>
+  <button type="submit">Go !</button>
 </form>
-
-{{ friendForm.value |json }}
-{{ friendForm.valid |json }}
