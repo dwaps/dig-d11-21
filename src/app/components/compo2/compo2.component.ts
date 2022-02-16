@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-compo2',
@@ -6,11 +6,12 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./compo2.component.css'],
   encapsulation: ViewEncapsulation.ShadowDom
 })
-export class Compo2Component implements OnInit {
+export class Compo2Component {
 
-  constructor() { }
+  test = 'coco';
 
-  ngOnInit(): void {
+  double(a: number) {
+    return a*2;
   }
 
 }
