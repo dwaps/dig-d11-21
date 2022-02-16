@@ -1,11 +1,8 @@
-<h1 #title>compo1 works!</h1>
+<h1>compo1 works!</h1>
 
-<p #myPar>Text 1</p>
-<p #myPar>Text 2</p>
-<p #myPar>Text 3</p>
-
-<div *ngFor="let coco of [1,2,3]">
-  <app-compo2></app-compo2>
-</div>
-
-<button (click)="showTxt()">TEST</button>
+<app-compo2>
+  <h1>Mon titre</h1>
+  <h4 class="sub-title">Mon sous titre</h4>
+  <p id="my-par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nesciunt soluta consequatur accusantium alias laudantium eos maiores, odio amet, voluptate assumenda vero doloremque veritatis! Tempora voluptate accusamus sit soluta provident!</p>
+  <input type="text" placeholder="Saisir votre nom">
+</app-compo2>
