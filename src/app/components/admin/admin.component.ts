@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 
 
 enum Categories {
@@ -27,11 +27,21 @@ export class AdminComponent implements OnInit {
     ]),
     category: new FormControl('', Validators.required),
     price: new FormControl('', Validators.required),
-    ingredients: new FormControl('', Validators.required),
+    ingredients: new FormArray([
+      new FormControl('', Validators.required)
+    ]),
   });
+
+  get ingredients() {
+    return this.formCreatePizza.get('ingredients') as FormArray;
+  }
 
   ngOnInit() {
     console.log(this.formCreatePizza.get('category')!.value);
+  }
+
+  addElement() {
+    this.ingredients.push(new FormControl());
   }
 
   submitForm() {

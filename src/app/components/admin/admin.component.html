@@ -18,10 +18,15 @@
     formControlName="price"
     placeholder="Prix de la pizza">
   <br>
-  <input
-    type="text"
-    formControlName="ingredients"
-    placeholder="Ingrédients de la pizza">
+  <div formArrayName="ingredients">
+    <button (click)="addElement()">Ajouter un élément</button>
+    <div *ngFor="let ingredient of ingredients.controls; index as i">
+      <input
+        type="text"
+        [formControlName]="i"
+        placeholder="Ingrédients de la pizza">
+    </div>
+  </div>
   <br>
   <button type="submit">Go !</button>
 </form>
