@@ -1,20 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { IisDirty } from 'src/app/shared/guards/test.guard';
+import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-admin',
   templateUrl: './admin.component.html',
   styleUrls: ['./admin.component.css']
 })
-export class AdminComponent implements OnInit, IisDirty {
+export class AdminComponent {
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-  isDirty() {
-    return confirm("Voulez-vous vraiment quitter la page ?");
+  submitForm(form: NgForm) {
+    if (form.valid && form.touched) {
+      console.log(form.value);
+      form.reset();
+    }
   }
 
 }
