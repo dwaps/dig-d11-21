@@ -1,0 +1,7 @@
+<h3>Liste des livres</h3>
+<div *ngFor="let b of books; index as i">
+  <p>
+    {{ i }}/ Titre: {{ b.title }}
+    <button [routerLink]="['/books', b.id]">(détails)</button>
+  </p>
+</div>
