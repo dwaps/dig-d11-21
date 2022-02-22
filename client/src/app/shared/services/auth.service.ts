@@ -14,6 +14,17 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
+  public getConnectedUser() {
+    return this.http
+      .get<User>(`${this._urlAuthApi}/connected`)
+      .pipe(
+        tap(user => {
+          this.user$.next(user);
+          this.isLoggedIn$.next(!!user);
+        })
+      );
+  }
+
   public signup(user: User) {
     return this.http.post<User>(`${this._urlAuthApi}/signup`, user);
   }

@@ -4,24 +4,28 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AuthComponent } from './components/auth/auth.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProfilComponent } from './components/profil/profil.component';
-import { AuthGuard } from './shared/guard/auth.guard';
+import { AuthGuard } from './shared/guards/auth.guard';
+import { DataUserGuard } from './shared/guards/data-user.guard';
 
 const routes: Routes = [
   {
     path: '',
+    canActivate: [],
     component: HomeComponent
   },
   {
     path: 'login',
+    canActivate: [DataUserGuard],
     component: AuthComponent
   },
   {
     path: 'signup',
+    canActivate: [DataUserGuard],
     component: AuthComponent
   },
   {
     path: 'profil',
-    canActivate: [AuthGuard],
+    canActivate: [DataUserGuard, AuthGuard],
     component: ProfilComponent
   },
   { path: '**', redirectTo: '' }
