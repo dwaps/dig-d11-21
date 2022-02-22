@@ -65,6 +65,24 @@ router.post('/login', async (req, res) => {
     res.status(401).send('Problème côté serveur');
   } 
 });
+router.get('/connected', async (req, res) => {
+  const token = req.cookies.jwt;
+  if (token) {
+    const decodedToken = jsonwebtoken.verify(token, 'MY-SECRET');
+    if (decodedToken) {
+      try {
+        const user = await User
+          .findById(decodedToken.sub)
+          .select('-password -__v');
+        if (user) res.json(user);
+        else res.json(null);
+      }
+      catch { res.json(null); }
+    }
+    else { res.json(null); }
+  }
+  else { res.json(null); }
+});
 router.delete('logout', (req, res) => {
   res.clearCookie('jwt');
   res.end();
