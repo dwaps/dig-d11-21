@@ -1,11 +1,22 @@
 <mat-toolbar color="primary">
   <a routerLink="/">Logo</a>
-  <ul>
+  <ul *ngIf="!isLoggedIn">
     <li class="m-10">
       <a routerLink="/login">Connexion</a>
     </li>
     <li class="m-10">
       <a routerLink="/signup">Inscription</a>
+    </li>
+  </ul>
+  <ul *ngIf="isLoggedIn">
+    <li class="m-10">
+      <a routerLink="/profil">Profil</a>
+    </li>
+    <li
+      style="cursor:pointer"
+      class="m-10"
+      (click)="logout.emit(true)">
+      Déconnexion
     </li>
   </ul>
 </mat-toolbar>

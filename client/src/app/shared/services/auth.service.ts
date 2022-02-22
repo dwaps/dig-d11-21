@@ -39,4 +39,15 @@ export class AuthService {
         })
       );
   }
+
+  public logout() {
+    return this.http
+      .delete(`${this._urlAuthApi}/logout`)
+      .pipe(
+        tap(() => {
+          this.user$.next(null);
+          this.isLoggedIn$.next(false);
+        })
+      );
+  }
 }
