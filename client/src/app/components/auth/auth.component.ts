@@ -50,7 +50,12 @@ export class AuthComponent implements OnInit {
           });
       }
       else {
-        // CONNEXION
+        this.authService
+          .login(this.form.value)
+          .subscribe({
+            next: () => this.router.navigateByUrl('/profil'),
+            error: err => this.error = err?.error || 'Cet utilisateur n\'existe pas',
+          });
       }
     }
   }
