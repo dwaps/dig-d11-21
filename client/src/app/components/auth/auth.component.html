@@ -32,7 +32,9 @@
         <mat-error *ngIf="error">
           {{ error }}
         </mat-error>
-        <button mat-raised-button color="primary">Connexion</button>
+        <button mat-raised-button color="primary">
+          {{ isSignupFormView? 'Inscription' : 'Connexion' }}
+        </button>
       </form>
     </mat-card-content>
   </mat-card>
