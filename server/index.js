@@ -65,6 +65,10 @@ router.post('/login', async (req, res) => {
     res.status(401).send('Problème côté serveur');
   } 
 });
+router.delete('logout', (req, res) => {
+  res.clearCookie('jwt');
+  res.end();
+});
 app.use('/api/auth', router);
 
 app.get('*', (req, res) => {
