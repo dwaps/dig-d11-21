@@ -26,7 +26,10 @@ export class AuthComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if (this.route.snapshot.routeConfig?.path == 'signup') {
+    if (this.authService.user$.value) {
+      this.router.navigateByUrl('/');
+    }
+    else if (this.route.snapshot.routeConfig?.path == 'signup') {
       this.form.addControl('name', this.fb.control('', Validators.required));
       this.isSignupFormView = true;
     }
