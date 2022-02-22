@@ -83,7 +83,7 @@ router.get('/connected', async (req, res) => {
   }
   else { res.json(null); }
 });
-router.delete('logout', (req, res) => {
+router.delete('/logout', (req, res) => {
   res.clearCookie('jwt');
   res.end();
 });
