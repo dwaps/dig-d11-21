@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
@@ -20,6 +20,7 @@ export class AuthComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
+    private router: Router,
     private route: ActivatedRoute,
     private authService: AuthService,
   ) { }
@@ -41,7 +42,12 @@ export class AuthComponent implements OnInit {
   submit() {
     if (this.form.valid) {
       if (this.isSignupFormView) {
-        // INSCRIPTION
+        this.authService
+          .signup(this.form.value)
+          .subscribe({
+            next: () => this.router.navigateByUrl('/login'),
+            error: err => this.error = err?.error || 'Il y a eu un problème...',
+          });
       }
       else {
         // CONNEXION
