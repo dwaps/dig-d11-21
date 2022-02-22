@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "0.0.0-beta.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "prod": "PORT=80 node ."
+  },
+  "keywords": [],
+  "author": "Cornillon Michael <contact@dwaps.fr> (https://dwaps.fr/)",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
