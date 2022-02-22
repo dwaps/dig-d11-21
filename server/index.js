@@ -44,8 +44,26 @@ router.post('/signup', (req, res) => {
   }
   else { res.send('Il manque un champ...') }
 });
-router.post('/login', (req, res) => {
-  res.send('login');
+router.post('/login', async (req, res) => {
+  const { email, password } = req.body;
+  try {
+    const user = await User.findOne({ email });
+    if (user && bcrypt.compareSync(password, user.password)) {
+      const token = jsonwebtoken.sign({}, 'MY-SECRET', {
+        subject: user._id.toString(),
+        expiresIn: '30 days'
+      });
+      res.cookie('jwt', token, { httpOnly: true });
+      user.password = undefined;
+      res.json(user);
+    }
+    else {
+      res.status(401).send('Identifiants incorrrects');
+    }
+  }
+  catch {
+    res.status(401).send('Problème côté serveur');
+  } 
 });
 app.use('/api/auth', router);
 
