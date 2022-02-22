@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 @Component({
   selector: 'app-auth',
@@ -20,6 +21,7 @@ export class AuthComponent implements OnInit {
   constructor(
     private fb: FormBuilder,
     private route: ActivatedRoute,
+    private authService: AuthService,
   ) { }
 
   ngOnInit(): void {
@@ -37,6 +39,14 @@ export class AuthComponent implements OnInit {
   }
 
   submit() {
+    if (this.form.valid) {
+      if (this.isSignupFormView) {
+        // INSCRIPTION
+      }
+      else {
+        // CONNEXION
+      }
+    }
   }
 
 }
