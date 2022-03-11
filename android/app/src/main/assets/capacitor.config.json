@@ -1,0 +1,6 @@
+{
+	"appId": "fr.dwaps.cocojaco",
+	"appName": "my-app",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
