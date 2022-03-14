@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { NewsResponse } from '../interfaces';
+import { Article, NewsResponse } from '../interfaces';
 
 @Injectable({
   providedIn: 'root',
@@ -26,7 +26,7 @@ export class NewsService {
     return `https://newsapi.org/v2/top-headlines?${query}`;
   }
 
-  public getTopHeadLines(): Observable<NewsResponse> {
+  public getTopHeadLines(): Observable<Article[]> {
     return this.http
       .get<NewsResponse>(
         this.buildUrl({
