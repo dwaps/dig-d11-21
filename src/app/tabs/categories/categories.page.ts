@@ -19,21 +19,15 @@ enum Category {
   styleUrls: ['./categories.page.scss'],
 })
 export class CategoriesPage implements OnInit {
-  categories: Category[] = [
-    Category.BUSINESS,
-    Category.ENTERTAINMENT,
-    Category.GENERAL,
-    Category.HEALTH,
-    Category.SCIENCE,
-    Category.SPORTS,
-    Category.TECHNOLOGY,
-  ];
+  categories: Category[] = [];
   articles: Article[] = [];
-  selected: string = this.categories[0];
+  selected: string = '';
 
   constructor(private newsService: NewsService) {}
 
   ngOnInit() {
+    this.categories = Object.values(Category).map(v => v);
+    this.selected = this.categories[0];
     this.loadArticlesByCategory(this.selected);
   }
 
