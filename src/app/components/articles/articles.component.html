@@ -1,8 +1,11 @@
-<ion-card
-  color="light"
-  class="ion-margin"
-  *ngFor="let article of articles; index as i">
+<ion-grid>
+  <ion-row>
+    <ion-col
+      *ngFor="let article of articles; index as i"
+      size="12" size-lg="4">
 
-  <app-article [article]="article" [num]="i+1+' '"></app-article>
+      <app-article [article]="article" [num]="i+1+' '"></app-article>
 
-</ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
