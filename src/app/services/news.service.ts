@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
+import { NewsResponse } from '../interfaces';
 
 @Injectable({
   providedIn: 'root',
@@ -19,17 +20,17 @@ export class NewsService {
 
   private buildUrl(query: any) {
     query = Object.keys(query)
-      .map(k => `${k}=${query[k]}&`)
+      .map((k) => `${k}=${query[k]}&`)
       .join('')
       .slice(0, -1);
     return `https://newsapi.org/v2/top-headlines?${query}`;
   }
 
-  public getTopHeadLines(): Observable<any> {
+  public getTopHeadLines(): Observable<NewsResponse> {
     return this.http
-      .get(
+      .get<NewsResponse>(
         this.buildUrl({
-          sources: 'bbc-news'
+          sources: 'bbc-news',
         }),
         this.options
       )
