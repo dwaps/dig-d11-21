@@ -10,7 +10,9 @@
     <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
       {{ article.title }}
     </ion-card-title>
-    <ion-img [src]="article.urlToImage"></ion-img>
+    <ion-img
+      *ngIf="article.urlToImage && article.urlToImage.startsWith('http')"
+      [src]="article.urlToImage"></ion-img>
     <ion-card-content>
       <p>{{ article.description }}</p>
     </ion-card-content>

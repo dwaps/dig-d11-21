@@ -13,12 +13,13 @@ export class NewsService {
   private options = {
     params: {
       apiKey: this.apiKey,
+      country: 'fr',
     },
   };
 
   constructor(private http: HttpClient) {}
 
-  private buildUrl(query: any) {
+  private buildUrl(query: any = {}) {
     query = Object.keys(query)
       .map((k) => `${k}=${query[k]}&`)
       .join('')
@@ -29,11 +30,18 @@ export class NewsService {
   public getTopHeadLines(): Observable<Article[]> {
     return this.http
       .get<NewsResponse>(
-        this.buildUrl({
-          sources: 'bbc-news',
-        }),
+        this.buildUrl(),
         this.options
       )
-      .pipe(map((res: any) => res.articles));
+      .pipe(map((res: NewsResponse) => res.articles));
+  }
+
+  public getTopHeadLinesByCategory(category: string): Observable<Article[]> {
+    return this.http
+      .get<NewsResponse>(
+        this.buildUrl({ category }),
+        this.options
+      )
+      .pipe(map((res: NewsResponse) => res.articles));
   }
 }
