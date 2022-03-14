@@ -1,0 +1,8 @@
+<ion-card
+  color="light"
+  class="ion-margin"
+  *ngFor="let article of articles; index as i">
+
+  <app-article [article]="article" [num]="i+1+' '"></app-article>
+
+</ion-card>
