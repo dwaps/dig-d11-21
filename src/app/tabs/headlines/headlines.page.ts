@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IonInfiniteScroll } from '@ionic/angular';
 import { Article } from 'src/app/interfaces';
 import { NewsService } from 'src/app/services/news.service';
 
@@ -9,6 +10,7 @@ import { NewsService } from 'src/app/services/news.service';
 })
 export class HeadlinesPage implements OnInit {
   articles: Article[] = [];
+  endLoading: boolean = false;
 
   constructor(private newsService: NewsService) { }
 
@@ -18,6 +20,22 @@ export class HeadlinesPage implements OnInit {
       .subscribe(articles => {
         this.articles = articles;
       });
+  }
+
+  loadArticles(e: any) {
+    if (!this.endLoading) {
+      this.newsService
+        .getTopHeadLines()
+        .subscribe(articles => {
+          if (articles.length === this.articles.length) {
+            this.endLoading = true;
+            e.target.disabled = true;
+            return;
+          }
+          this.articles = articles;
+          e.target.complete();
+        });
+    }
   }
 
 }

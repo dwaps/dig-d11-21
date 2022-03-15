@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritesPage implements OnInit {
 
-  constructor() {
-    console.log(process.env);
-  }
+  constructor() {}
 
   ngOnInit() {
   }

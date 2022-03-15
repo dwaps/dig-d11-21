@@ -4,4 +4,23 @@
 
   <app-articles [articles]="articles"></app-articles>
 
+  <ion-text
+    class="ion-text-center ion-margin"
+    *ngIf="endLoading"
+    color="medium">
+    Il n'y a plus d'articles à charger!
+  </ion-text>
+
+  <ion-infinite-scroll
+    threshold="15%"
+    position="bottom"
+    (ionInfinite)="loadArticles($event)">
+
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Articles en chargement...">
+    </ion-infinite-scroll-content>
+
+  </ion-infinite-scroll>
+
 </ion-content>

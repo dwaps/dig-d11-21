@@ -9,11 +9,15 @@ import { Article, NewsResponse } from '../interfaces';
   providedIn: 'root',
 })
 export class NewsService {
-  private _apiKey = environment.apiKey;
+  private _articlesPerPage = {
+    page: 1,
+    articles: [],
+  };
   private _options = {
     params: {
-      apiKey: this._apiKey,
+      apiKey: environment.apiKey,
       country: 'fr',
+      pageSize: 10,
     },
   };
 
@@ -29,10 +33,13 @@ export class NewsService {
   public getTopHeadLines(): Observable<Article[]> {
     return this.http
       .get<NewsResponse>(
-        this.buildUrl(),
+        this.buildUrl({ page: this._articlesPerPage.page++ }),
         this._options
       )
-      .pipe(map((res: NewsResponse) => res.articles));
+      .pipe(map((res: NewsResponse) => {
+        this._articlesPerPage.articles = [...this._articlesPerPage.articles, ...res.articles];
+        return this._articlesPerPage.articles;
+      }));
   }
 
   public getTopHeadLinesByCategory(category: string): Observable<Article[]> {
