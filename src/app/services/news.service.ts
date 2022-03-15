@@ -9,10 +9,10 @@ import { Article, NewsResponse } from '../interfaces';
   providedIn: 'root',
 })
 export class NewsService {
-  private apiKey = environment.apiKey;
-  private options = {
+  private _apiKey = environment.apiKey;
+  private _options = {
     params: {
-      apiKey: this.apiKey,
+      apiKey: this._apiKey,
       country: 'fr',
     },
   };
@@ -21,9 +21,8 @@ export class NewsService {
 
   private buildUrl(query: any = {}) {
     query = Object.keys(query)
-      .map((k) => `${k}=${query[k]}&`)
-      .join('')
-      .slice(0, -1);
+      .map((k) => `${k}=${query[k]}`)
+      .join('&');
     return `https://newsapi.org/v2/top-headlines?${query}`;
   }
 
@@ -31,7 +30,7 @@ export class NewsService {
     return this.http
       .get<NewsResponse>(
         this.buildUrl(),
-        this.options
+        this._options
       )
       .pipe(map((res: NewsResponse) => res.articles));
   }
@@ -40,7 +39,7 @@ export class NewsService {
     return this.http
       .get<NewsResponse>(
         this.buildUrl({ category }),
-        this.options
+        this._options
       )
       .pipe(map((res: NewsResponse) => res.articles));
   }

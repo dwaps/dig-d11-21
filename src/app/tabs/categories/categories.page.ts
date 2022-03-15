@@ -36,7 +36,7 @@ export class CategoriesPage implements OnInit {
     const isValueKeyOfEnum = keys.includes(value.toUpperCase());
     return isValueKeyOfEnum
       ? value.toLowerCase()
-      : keys.find((key) => Category[key] === value);
+      : keys.find((key) => Category[key] === value).toLowerCase();
   }
 
   private loadArticlesByCategory(category: string) {
