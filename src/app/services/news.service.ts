@@ -5,6 +5,7 @@ import { map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { Article, NewsResponse } from '../interfaces';
 
+const api = environment.api;
 @Injectable({
   providedIn: 'root',
 })
@@ -27,7 +28,7 @@ export class NewsService {
     query = Object.keys(query)
       .map((k) => `${k}=${query[k]}`)
       .join('&');
-    return `https://newsapi.org/v2/top-headlines?${query}`;
+    return api.get(`https://newsapi.org/v2/top-headlines?${query}`);
   }
 
   public getTopHeadLines(): Observable<Article[]> {
