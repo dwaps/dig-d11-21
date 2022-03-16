@@ -84,6 +84,19 @@
 
 }
 
+.action-sheet-primary {
+  .action-sheet-group {
+    background: var(--ion-color-primary);
+    --color: #fff;
+  }
+  .action-sheet-button  {
+    color: #fff;
+  }
+  .danger.sc-ion-action-sheet-ios {
+    color: var(--ion-color-danger);
+  }
+}
+
 .circle-nb {
   display: inline-block;
   position: relative;
@@ -94,6 +107,7 @@
     border: 1px solid;
     border-radius: 50%;
     // background-color: opacify($color: #000000, $amount: 0)
+    background: rgba(var(--ion-color-primary-rgb), 0.3);
     width: 15px;
     height: 15px;
     transform: translateX(50%);
