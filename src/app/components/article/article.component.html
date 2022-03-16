@@ -4,22 +4,41 @@
   *ngIf="article">
 
   <ion-card-subtitle class="ion-margin">
-      <ion-text class="circle-nb" color="secondary">{{ num }}</ion-text>
-      <ion-text>{{ article.source.name }}</ion-text>
-    </ion-card-subtitle>
 
-    <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
-      {{ article.title }}
-    </ion-card-title>
+    <ion-row class="ion-justify-content-between ion-align-items-center">
+      <div (click)="openArticle()">
+        <ion-text
+          class="circle-nb"
+          color="secondary">
+            {{ num }}
+          </ion-text>
+        <ion-text>
+          {{ article.source.name }}
+        </ion-text>
+      </div>
+      <div (click)="openMenu()">
+        <ion-icon
+          color="secondary"
+          name="ellipsis-vertical-outline">
+        </ion-icon>
+      </div>
+    </ion-row>
+    
+  </ion-card-subtitle>
 
-    <ion-img
-      *ngIf="!hideImage"
-      (ionError)="hideImage = true"
-      [src]="article.urlToImage">
-    </ion-img>
+  <ion-card-title class="ion-padding-horizontal ion-margin-bottom">
+    {{ article.title }}
+  </ion-card-title>
 
-    <ion-card-content>
-      <p>{{ article.description }}</p>
-    </ion-card-content>
+  <ion-img
+    *ngIf="!hideImage"
+    (click)="openArticle()"
+    (ionError)="hideImage = true"
+    [src]="article.urlToImage">
+  </ion-img>
+
+  <ion-card-content>
+    <p>{{ article.description }}</p>
+  </ion-card-content>
 
 </ion-card>

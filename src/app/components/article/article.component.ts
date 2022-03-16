@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Browser } from '@capacitor/browser';
 import { Article } from 'src/app/interfaces';
 
 @Component({
@@ -7,11 +8,18 @@ import { Article } from 'src/app/interfaces';
   styleUrls: ['./article.component.scss'],
 })
 export class ArticleComponent implements OnInit {
-  @Input() article: Article|null = null;
+  @Input() article: Article | null = null;
   @Input() num: string = '';
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+  openMenu() {
+  }
+
+  openArticle() {
+    Browser.open({ url: this.article.url });
+  }
 
 }
