@@ -46,7 +46,7 @@ export class CategoriesPage implements OnInit {
       .subscribe((articles) => (this.articles = articles));
   }
 
-  segmentChanged(e: CustomEvent<IonSegment>) {
+  segmentChanged(e: any) {
     const selected = this.getCategoryValue(e.detail.value);
     this.loadArticlesByCategory(selected);
   }

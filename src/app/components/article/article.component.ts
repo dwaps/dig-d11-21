@@ -15,6 +15,7 @@ export class ArticleComponent implements OnInit {
   @Input() num: string = '';
 
   isFavorite: boolean = false;
+  showImage: boolean = true;
 
   constructor(
     private actionSheetController: ActionSheetController,

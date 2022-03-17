@@ -31,9 +31,9 @@
   </ion-card-title>
 
   <ion-img
-    *ngIf="!hideImage"
+    *ngIf="showImage"
     (click)="openArticle()"
-    (ionError)="hideImage = true"
+    (ionError)="showImage = false"
     [src]="article.urlToImage">
   </ion-img>
 
