@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SocialSharing } from '@awesome-cordova-plugins/social-sharing/ngx';
 import { Browser } from '@capacitor/browser';
-import { ActionSheetController, Platform } from '@ionic/angular';
+import { ActionSheetController, ActionSheetButton, Platform } from '@ionic/angular';
 import { Article } from 'src/app/interfaces';
+import { FavoritesService } from 'src/app/services/favorites.service';
 
 @Component({
   selector: 'app-article',
@@ -13,19 +14,24 @@ export class ArticleComponent implements OnInit {
   @Input() article: Article | null = null;
   @Input() num: string = '';
 
+  isFavorite: boolean = false;
+
   constructor(
     private actionSheetController: ActionSheetController,
     private socialSharing: SocialSharing,
-    private platform: Platform
+    private platform: Platform,
+    private favoriteService: FavoritesService
   ) { }
 
   ngOnInit() { }
 
   async openMenu() {
-    const buttons = [
+    this.isFavorite = this.favoriteService.isFavorite(this.article);
+
+    const buttons: ActionSheetButton[] = [
       {
-        text: 'Favori',
-        icon: 'heart-outline',
+        text: (this.isFavorite? '' : 'Définir comme ') + 'Favori',
+        icon: this.isFavorite? 'heart' : 'heart-outline',
         handler: () => this.onToggleFavorite(),
       },
       {
@@ -63,7 +69,7 @@ export class ArticleComponent implements OnInit {
   }
 
   onToggleFavorite() {
-    console.log("onToggleFavorite");
+    this.favoriteService.saveRemoveFavorite(this.article);
   }
 
 }
